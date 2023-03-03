@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
 
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import { Outter } from './components/Outter';
+import { Outter } from './components/Outter/Outter';
+import { Home } from './components/home/Home';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' component={Outter} />
+          <Route exact path='/' component={Home} />
           <Route component={NotFound} />
         </Switch>
         <Link to='/'>Back To Top</Link>
