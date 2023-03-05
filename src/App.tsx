@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import { Outter } from './components/Outter/Outter';
 import { Home } from './components/home/Home';
 
 function App() {

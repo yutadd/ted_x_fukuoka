@@ -1,0 +1,14 @@
+.menu {
+    position:relative;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+.menu:hover{
+    background-color: #00AAC4;
+    color:black;
+}
+.direct{
+    padding-top:15px;
+}

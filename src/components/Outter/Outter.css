@@ -1,4 +1,27 @@
 .header{
     position: absolute;
-    z-index: 99;
+    z-index: 1;
+    width: 100%;
+}
+.header-inner{
+    padding:0 15%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin:0px;
+    color:white;
+    padding-bottom: 5px;
+    margin:0 auto;
+}
+.logo_outter{
+    color: black;
+}
+.HamburgerMenu{
+    user-select: none;
+    cursor: grab;
+    display: block;
+    margin-top: 15px;
+    color:white;
+    text-decoration: none;
 }
