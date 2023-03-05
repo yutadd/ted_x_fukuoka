@@ -12,3 +12,15 @@
 .direct{
     padding-top:15px;
 }
+
+.menu-outter{
+    width:150px;
+}
+.inner{
+    border: 1px solid white;
+    padding:2px;
+    display:block;
+}
+.indirect{
+    display:block;
+}

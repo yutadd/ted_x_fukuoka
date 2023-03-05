@@ -6,9 +6,8 @@
 .header-inner{
     padding:0 15%;
     background-color: black;
-    display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    
     margin:0px;
     color:white;
     padding-bottom: 5px;
@@ -21,6 +20,7 @@
     user-select: none;
     cursor: grab;
     display: block;
+    width:150px;
     margin-top: 15px;
     color:white;
     text-decoration: none;

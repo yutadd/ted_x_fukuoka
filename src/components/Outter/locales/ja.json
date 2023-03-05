@@ -1,5 +1,17 @@
 {
     "header":{
-        "home":"ホーム"
+        "home":"ホーム",
+        "latest":{
+            "latest":"2023 最新情報!",
+            "upcoming":"近日開催イベント",
+            "past":"過去のイベント",
+            "blog":"ブログ"
+        },
+        "about":{
+            "about":"TEDxFukuokaについて",
+            "TED":"TEDとは",
+            "TEDx":"TEDxとは",
+            "partners":"パートナー企業"
+        }
     }
 }

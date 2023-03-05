@@ -8,16 +8,16 @@ export const DropDownMenu = (props: any): JSX.Element => {
     useEffect(() => {
         let vec = [];
         if (!props.isSingle) {
-            for (const el of props.inner_texts) {
-                vec.push(<div key={el} className="menu">{el}
-                </div>)
+            for (let i = 0; i < props.inner_texts.length; i++) {
+                vec.push(<a href={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">{props.inner_texts[i]}
+                </a>)
             }
             setElements(vec);
         }
     }, [])
     return (
         <>
-            <div className='menu-outter'>
+            <div className={props.isDirect ? 'menu-outter' : "menu-outter indirect"}>
                 {/* メニューのトリガーとなるボタン */}
                 {props.isSingle ? (<><div className={props.isDirect ? 'direct' : ''}><a className='menu' href={props.link}>{props.text}</a></div></>) : (
                     <><div className={props.isDirect ? "direct" : ""} onClick={() => { setIsOpen(!isOpen); }}>{props.text}</div>
