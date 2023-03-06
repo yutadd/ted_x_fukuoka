@@ -19,21 +19,13 @@
 .HamburgerMenu{
     user-select: none;
     cursor: grab;
-    display: block;
-    width:150px;
+    display:inline-block;
+    width:50px;
     margin-top: 15px;
     color:white;
     text-decoration: none;
 }
-.toTop{
-    display:block;
-    text-decoration: none;
-    color:white;
-    background-color: gray;
-    text-align: center;
-    width:100%;
-    padding:10px
-}
+
 .toTop:hover{
     background-color: aqua;
 }

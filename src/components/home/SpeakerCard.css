@@ -2,6 +2,10 @@
     width:25%;
     position:relative;
     background-color: black;
+    display: inline-block;
+}
+@media (max-width:768px) {
+    .box{width:100%;}
 }
 .category{
     position:absolute;
@@ -9,7 +13,6 @@
     top:0;
     display: block;
     background-color: black;
-    
     padding:0px 3px;
 }
 .image{

@@ -2,8 +2,9 @@ import React from "react";
 import { Outter } from "../Outter/Outter";
 import { SpeakerCard } from "./SpeakerCard";
 import "./Home.css";
-export const Home = (): JSX.Element => {
+import { Recently } from "./Recently";
 
+export const Home = (): JSX.Element => {
     return (
         <Outter>
             <div className="top" >
@@ -13,6 +14,11 @@ export const Home = (): JSX.Element => {
             </div>
             <a href="#top" className="toTop">TOP</a>
             <SpeakerCard />
+            <SpeakerCard />
+            <SpeakerCard />
+            <SpeakerCard />
+            <SpeakerCard />
+            <Recently />
         </Outter >
     )
 }

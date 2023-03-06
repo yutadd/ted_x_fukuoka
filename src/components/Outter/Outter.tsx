@@ -6,11 +6,12 @@ let lang: any;
 function prepare() {
     var userLang = navigator.language;
     if (userLang.trim() === "ja") {
-        lang = require("./locales/ja.json");
+        lang = require("../../locales/outter/ja.json");
     } else {
-        lang = require("./locales/en.json");
+        lang = require("../../locales/outter/en.json");
     }
 }
+
 
 export const Outter = (props: any): JSX.Element => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -51,7 +52,7 @@ export const Outter = (props: any): JSX.Element => {
                 </div>
             </div>
             {props.children}
-            
+
         </div>
     )
 }

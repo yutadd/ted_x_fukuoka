@@ -10,10 +10,11 @@
     "@types/node": "^16.18.14",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "markdown-it": "^13.0.1",
     "react": "^18.2.0",
+    "react-markdown": "^8.0.5",
     "react-router-dom": "^5.3.3",
     "react-scripts": "5.0.1",
+    "remark-gfm": "^3.0.1",
     "serve": "^14.2.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -43,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "@types/markdown-it": "^12.2.3",
     "@types/react-router-dom": "^5.3.3"
   }
 }

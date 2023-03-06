@@ -3,7 +3,7 @@ export const SpeakerCard = (props: any): JSX.Element => {
     return (
         <>
             <div className="box">
-                <a href="" ><img className="image" width="100%" height="auto" src="https://tedxfukuoka.com/wp/wp-content/uploads/Tatsushi_Momen_1000x1000-400x400.jpg" alt="" >
+                <a href="" ><img className="image" width="100%" height="auto" src="https://www.shoshinsha-design.com/wp-content/uploads/2018/06/%E4%BA%BA%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png" alt="" >
                 </img></a>
                 <a href="" className="category">category</a>
                 <div className="title">

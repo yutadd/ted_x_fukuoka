@@ -8,3 +8,13 @@
  width:100%;
  height:auto;
 }
+.toTop{
+    display:block;
+    text-decoration: none;
+    color:white;
+    background-color: gray;
+    text-align: center;
+    width:100%;
+    padding:10px;
+    font-weight: 800;
+}

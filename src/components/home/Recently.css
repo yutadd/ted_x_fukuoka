@@ -1,0 +1,9 @@
+.recently-outter{
+    
+}
+.recently-title{
+    border-inline-start:5px solid black;
+    margin-inline-start:40%;
+    font-size: 25px;
+    padding-left: 10px;
+}
