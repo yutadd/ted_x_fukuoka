@@ -20,9 +20,9 @@ export const DropDownMenu = (props: any): JSX.Element => {
             <div className={props.isDirect ? 'menu-outter' : "menu-outter indirect"}>
                 {/* メニューのトリガーとなるボタン */}
                 {props.isSingle ? (<><div className={props.isDirect ? 'direct' : ''}><a className='menu' href={props.link}>{props.text}</a></div></>) : (
-                    <><div className={props.isDirect ? "direct" : ""} onClick={() => { setIsOpen(!isOpen); }}>{props.text}</div>
+                    <><div className={props.isDirect ? "direct" : ""} onMouseLeave={() => { setIsOpen(!isOpen); }} onMouseEnter={() => { setIsOpen(!isOpen); }}>{props.text}
                         {/* isOpenがtrueのときだけメニューを表示 */}
-                        {isOpen ? inner_elements : <></>}</>)}
+                        {isOpen ? inner_elements : <></>}</div></>)}
 
             </div >
         </>

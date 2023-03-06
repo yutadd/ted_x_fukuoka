@@ -1,0 +1,41 @@
+.box{
+    width:25%;
+    position:relative;
+    background-color: black;
+}
+.category{
+    position:absolute;
+    float:left;
+    top:0;
+    display: block;
+    background-color: black;
+    
+    padding:0px 3px;
+}
+.image{
+    vertical-align: bottom;
+    opacity: 80%;
+    transition-duration: 600ms;
+}
+.image:hover{
+    opacity: 100%;
+    transition-duration: 600ms;
+}
+.category:hover{
+    background-color: aqua;
+}
+.title{
+    position:absolute;
+    bottom: 0px;
+    opacity: 75%;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
