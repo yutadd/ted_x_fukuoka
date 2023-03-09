@@ -1,9 +1,26 @@
-.recently-outter{
+.recently-context{
+    color:black;
+    width:30%;
+    border-bottom: 1px dotted black;
+}
+.recently-context-outter{
+    padding:15px;
+}
+.recently-contexts{
+    margin-top:30px;
     
 }
 .recently-title{
-    border-inline-start:5px solid black;
-    margin-inline-start:40%;
+    border-left: 5px solid black;
     font-size: 25px;
-    padding-left: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    width:200px;
+}
+.recently-title-outter{
+    text-align: center;
+}
+.recently-contents-outter{
+    width:100%;
+    text-align: center;
 }

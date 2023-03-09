@@ -1,0 +1,74 @@
+{
+    "speakers":[
+        {
+            "name":"Chika Tsubouchi",
+            "category":"2023",
+            "file":"chika_tsubouchi.jpg"
+        },
+        {
+            "name":"Takushi Sato",
+            "category":"2023",
+            "file":"takushi_sato.jpg"
+        },
+        {
+            "name":"Kay Taira",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"Yoshiko Ishibashi",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"Takayuki Konishi",
+            "category":"2023",
+            "file":"takayuki_konishi.jpg"
+        },
+        {
+            "name":"Kozo Hino",
+            "category":"2023",
+            "file":"kozo_hino.jpg"
+        },
+        {
+            "name":"Ryoko Inoue",
+            "category":"2023",
+            "file":"ryoko_inoue.jpg"
+        },
+        {
+            "name":"Scott Valentine",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"Minami Shibata",
+            "category":"2023",
+            "file":"minami_shibata.jpg"
+        },
+        {
+            "name":"Tatsuo Kuzuhara",
+            "category":"2023",
+            "file":"tatsuo_kuzuhara.jpg"
+        },
+        {
+            "name":"Ippei Matsukiyo",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"Miyuki Kawamura",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"Mamoru Masumoto",
+            "category":"2023",
+            "file":"mamoru_masumoto.jpg"
+        },
+        {
+            "name":"Nuren Abedin",
+            "category":"2023",
+            "file":"nuren_abedin.jpg"
+        }
+    ]
+}

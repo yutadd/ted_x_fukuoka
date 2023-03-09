@@ -1,0 +1,74 @@
+{
+    "speakers":[
+        {
+            "name":"坪内 知佳",
+            "category":"2023",
+            "file":"chika_tsubouchi.jpg"
+        },
+        {
+            "name":"佐藤 拓史",
+            "category":"2023",
+            "file":"takushi_sato.jpg"
+        },
+        {
+            "name":"平 希井",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"石橋 芳子",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"小西 高之",
+            "category":"2023",
+            "file":"takayuki_konishi.jpg"
+        },
+        {
+            "name":"日野 公三",
+            "category":"2023",
+            "file":"kozo_hino.jpg"
+        },
+        {
+            "name":"井上 良子",
+            "category":"2023",
+            "file":"ryoko_inoue.jpg"
+        },
+        {
+            "name":"スコット・バレンタイン",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"しばた みなみ",
+            "category":"2023",
+            "file":"minami_shibata.jpg"
+        },
+        {
+            "name":"葛原 辰夫",
+            "category":"2023",
+            "file":"tatsuo_kuzuhara.jpg"
+        },
+        {
+            "name":"松清 一平",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"川村 みゆき",
+            "category":"2023",
+            "file":""
+        },
+        {
+            "name":"増本 衛",
+            "category":"2023",
+            "file":"mamoru_masumoto.jpg"
+        },
+        {
+            "name":"アベディン・ヌレン",
+            "category":"2023",
+            "file":"nuren_abedin.jpg"
+        }
+    ]
+}

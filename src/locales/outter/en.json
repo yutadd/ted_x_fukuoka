@@ -13,5 +13,10 @@
             "TEDx":"about TEDx",
             "partners":"partners"
         }
+    },
+    "footer":{
+        "cc":"Creative Commons License",
+        "contact":"Contact",
+        "media":"Media"
     }
 }
