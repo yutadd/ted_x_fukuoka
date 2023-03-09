@@ -31,7 +31,7 @@ export const Home = (): JSX.Element => {
         <Outter>
             <div className="top" >
                 <a href="/" className="top-inner">
-                    <img className="background-image" src="/images/concept_image.png" alt="" />
+                    <img className="background-image" src="/images/concept_image.jpg" alt="" />
                 </a>
             </div>
             {speakers}

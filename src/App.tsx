@@ -2,6 +2,7 @@ import React from 'react';
 
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import { Home } from './components/home/Home';
+import { Profile } from './components/Profile/Profile';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/profile/:name' component={Profile}/>
           <Route component={NotFound} />
         </Switch>
         {/*<Link to='/'>Back To Top</Link>*/}
@@ -17,7 +19,7 @@ function App() {
     </>
   );
 }
-function NotFound() {
+export function NotFound() {
   return (
     <div>
       <h1>404 Not Found</h1>
