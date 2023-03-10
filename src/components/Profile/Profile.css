@@ -1,5 +1,27 @@
+.page_title_outter{
+    padding-top: 86px;
+    text-align: center;
+}
 .contexts-outter{
-    padding-top:68px;
     text-decoration:initial;
     color:initial;
+    display: inline-block;
+    width:35%;
+    vertical-align: top;
+    padding-left:20%;
+}
+
+.embedding-outter{
+    width:42%;
+    padding-top:35px;
+    display:inline-block;
+    height:auto;
+}
+iframe{
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+.contexts-outter img{
+    max-width:100%;
 }

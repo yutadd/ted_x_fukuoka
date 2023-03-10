@@ -37,6 +37,7 @@
 }
 .footer-item{
     font-size: small;
+    text-decoration: none;
     color:white;
     display: block;
     width:20%;
