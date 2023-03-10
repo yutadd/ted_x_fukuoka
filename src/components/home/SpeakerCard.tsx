@@ -7,7 +7,7 @@ export const SpeakerCard = (props: any): JSX.Element => {
                 </img></a>
                 <a href="" className="category">{props.category}</a>
                 <div className="title">
-                    <a href="" >{props.name}</a>
+                    <a className="title-inner" href="" >{props.name}</a>
                 </div>
             </div>
         </>

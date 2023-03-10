@@ -14,6 +14,10 @@
     display: block;
     background-color: black;
     padding:0px 3px;
+
+        text-decoration: none;
+        color: white;
+
 }
 .image{
     vertical-align: bottom;
@@ -36,9 +40,10 @@
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
+    
 
 }
-a{
+.title-inner{
     text-decoration: none;
     color: white;
 }

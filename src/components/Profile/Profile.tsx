@@ -8,6 +8,7 @@ import remarkGfm from 'remark-gfm';
 import { Outter } from '../Outter/Outter';
 import "./Profile.css";
 export const Profile = (props: any) => {
+    
     const [text, setText] = useState("");
     const [analyzed, setAnalyzed] = useState("")
     let name = props.match.params.name;
