@@ -36,11 +36,17 @@
     display: flex;
 }
 .footer-item{
-    font-size: small;
+    font-size: large;
     text-decoration: none;
     color:white;
     display: block;
     width:20%;
+    
+}
+@media (max-width:500px) {
+    .footer-item{
+        font-size: small; 
+    }
 }
 .border-right{
     border-right: 1px solid white;
