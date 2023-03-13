@@ -1,8 +1,11 @@
 .card-container{
     display: block;
+    position:relative;
     text-align: center;
+    padding:30px 0px;
 }
 .card-image{
+    padding-right: 5%;
     width:300px;
     height: auto;
     display: inline-block;
@@ -14,10 +17,19 @@
     }
 }
 .card-text-outter{
+    padding-top: 50px;
+    padding-left: 5%;
     vertical-align: top;
     width:300px;
     display:inline-block;
-    text-align: center;
+    
+}
+.card-name{
+    font-size: large;
+    font-weight: 800;
+    width:100%;
+    text-align: left;
+    display:inline-block;
 }
 .card-text{
     overflow-wrap: break-word;
@@ -25,7 +37,13 @@
 }
 @media (max-width:390px){
     .card-text-outter{
+        padding-top: 10px;
         width:100%;
+        padding-left: 0%;
+        text-align: center;
+    }
+    .card-name{
+        width:90%;
     }
     .card-text{
         display: inline-block;

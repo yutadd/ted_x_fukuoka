@@ -20,11 +20,17 @@ function prepare() {
 }
 export const Profiles = (props: any) => {
     prepare();
+    let result = [];
+    for (const elm of lang["speakers"]) {
+
+        result.push(<SpeakerCard key={"/images/" + elm["file"]} file={"/images/" + (elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />);
+    }
+
     return (
         <>
             <Outter>
                 <div className='profile-title'><div className='profile-title-text'>LiveSpeakers</div><div className='profile-title-subtext'>Speakers on TEDxFukuoka</div></div>
-                <SpeakerCard image="/images/chika_tsubouchi.jpg" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaあああああああああああああああああああああああああああああああああああああああああああ" />
+                {result}
             </Outter>
         </>
     );
