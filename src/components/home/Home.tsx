@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Outter } from "../Outter/Outter";
-import { SpeakerCard } from "./SpeakerCard";
+import { SpeakerTile } from "./SpeakerTile";
 import "./Home.css";
 import { Recently } from "./Recently";
 
@@ -20,7 +20,7 @@ export const Home = (): JSX.Element => {
     const init = () => {
         let result = [];
         for (const elm of lang["speakers"]) {
-            result.push(<SpeakerCard key={elm["name"]} name={elm["name"]} category={elm["category"]} file={elm["file"]} />);
+            result.push(<SpeakerTile key={elm["name"]} name={elm["name"]} category={elm["category"]} file={elm["file"]} />);
         }
         setSpeakers(result);
     }

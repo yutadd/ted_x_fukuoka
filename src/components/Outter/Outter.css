@@ -1,6 +1,7 @@
 .header{
     position: absolute;
     z-index: 1;
+    position: fixed;
     width: 100%;
 }
 .header-inner{
@@ -36,7 +37,8 @@
     display: flex;
 }
 .footer-item{
-    font-size: large;
+    font-size: 20px;
+    padding:10px;
     text-decoration: none;
     color:white;
     display: block;
@@ -46,6 +48,7 @@
 @media (max-width:500px) {
     .footer-item{
         font-size: small; 
+        padding:0px;
     }
 }
 .border-right{
