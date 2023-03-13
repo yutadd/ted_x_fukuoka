@@ -8,6 +8,7 @@ import rehypeRaw from "rehype-raw";
 import rehypeSanitize from "rehype-sanitize";
 import { Outter } from '../Outter/Outter';
 import "./Profile.css";
+import { SpeakerCard } from './SpeakerCard';
 let lang: any;
 function prepare() {
     var userLang = navigator.language;
@@ -22,9 +23,9 @@ export const Profiles = (props: any) => {
     return (
         <>
             <Outter>
-
+                <div className='profile-title'><div className='profile-title-text'>LiveSpeakers</div><div className='profile-title-subtext'>Speakers on TEDxFukuoka</div></div>
+                <SpeakerCard image="/images/chika_tsubouchi.jpg" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaあああああああああああああああああああああああああああああああああああああああああああ" />
             </Outter>
-
         </>
     );
 }

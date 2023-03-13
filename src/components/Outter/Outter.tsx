@@ -33,7 +33,7 @@ export const Outter = (props: any): JSX.Element => {
                 <div className="header-inner" style={{ "display": showInnerMenu ? "block" : "flex" }}>{/*ハンバーガーメニューを開いた際は一行だと見にくいので、ヘッダー内部の要素が複数行になるようにする。*/}
                     <div className="logo_outter"><img width="auto" height="50px" src="https://tedxfukuoka.com/wp/wp-content/uploads/TEDxFukuoka_logo_k_RGB450.jpg?1677835120" alt="TEDxFukuoka_logo" />
                         <a style={{ display: showHamburgerMenu ? "inline-block" : "none" }} onClick={() => { setShowInnerMenu(!showInnerMenu) }} className="HamburgerMenu">
-                            <img width="auto" height="32px" src="hamburger.png" alt="" />
+                            <img width="auto" height="32px" src="/hamburger.png" alt="" />
                         </a>
                     </div>
                     {showHamburgerMenu ? (

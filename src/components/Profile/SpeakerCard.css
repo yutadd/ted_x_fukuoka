@@ -1,0 +1,35 @@
+.card-container{
+    display: block;
+    text-align: center;
+}
+.card-image{
+    width:300px;
+    height: auto;
+    display: inline-block;
+}
+@media (max-width:390px){
+    .card-image{
+        width:100%;
+        display: block;
+    }
+}
+.card-text-outter{
+    vertical-align: top;
+    width:300px;
+    display:inline-block;
+    text-align: center;
+}
+.card-text{
+    overflow-wrap: break-word;
+    text-align: left;
+}
+@media (max-width:390px){
+    .card-text-outter{
+        width:100%;
+    }
+    .card-text{
+        display: inline-block;
+        width:90%;
+        
+    }
+}
