@@ -10,8 +10,8 @@ export const DropDownMenu = (props: any): JSX.Element => {
         let vec = [];
         if (!props.isSingle) {
             for (let i = 0; i < props.inner_texts.length; i++) {
-                vec.push(<Link to={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">{props.inner_texts[i]}
-                </Link>)
+                vec.push(<>{props.inner_links[i].startsWith('http') ? <a href={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">{props.inner_texts[i]}</a> : <Link to={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">{props.inner_texts[i]}
+                </Link>}</>)
             }
             setElements(vec);
         }
@@ -20,7 +20,7 @@ export const DropDownMenu = (props: any): JSX.Element => {
         <>
             <div className={props.isDirect ? 'menu-outter' : "menu-outter indirect"}>
                 {/* メニューのトリガーとなるボタン */}
-                {props.isSingle ? (<><div className={props.isDirect ? 'direct' : ''}><Link className='menu' to={props.link}>{props.text}</Link></div></>) : (
+                {props.isSingle ? (<><div className={props.isDirect ? 'direct' : ''}>{props.link.startsWith('http') ? <a className='menu' href={props.link}>{props.text}</a> : <Link className='menu' to={props.link}>{props.text}</Link>}</div></>) : (
                     <><div className={props.isDirect ? "direct" : ""} onMouseLeave={() => { setIsOpen(!isOpen); }} onMouseEnter={() => { setIsOpen(!isOpen); }}>
                         {props.text}
                         {/* isOpenがtrueのときだけメニューを表示 */}

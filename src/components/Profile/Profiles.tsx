@@ -27,12 +27,6 @@ export const Profiles = (props: any) => {
 
         result.push(<SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />);
     }
-    useEffect(() => {
-        const targetEl = document.getElementById(window.location.hash.split('#')[1])
-        console.log(window.location.hash.split('#')[1]);
-        targetEl?.scrollIntoView({ behavior: 'smooth' })
-
-    }, []);
     return (
         <>
             <Outter>
