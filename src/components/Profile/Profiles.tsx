@@ -18,14 +18,21 @@ function prepare() {
         lang = require("../../locales/speakers/en.json");
     }
 }
+
 export const Profiles = (props: any) => {
     prepare();
     let result = [];
+
     for (const elm of lang["speakers"]) {
 
-        result.push(<SpeakerCard key={"/images/" + elm["file"]} file={"/images/" + (elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />);
+        result.push(<SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />);
     }
+    useEffect(() => {
+        const targetEl = document.getElementById(window.location.hash.split('#')[1])
+        console.log(window.location.hash.split('#')[1]);
+        targetEl?.scrollIntoView({ behavior: 'smooth' })
 
+    }, []);
     return (
         <>
             <Outter>

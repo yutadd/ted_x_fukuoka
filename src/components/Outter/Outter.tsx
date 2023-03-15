@@ -39,14 +39,14 @@ export const Outter = (props: any): JSX.Element => {
                     {showHamburgerMenu ? (
                         <>
                             {showInnerMenu ? <><DropDownMenu isDirect={false} isSingle={true} link={"/"} text={lang["header"]["home"]} />
-                                <DropDownMenu isDirect={true} isSingle={false} link="/" text={lang["header"]["latest"]["latest"]} inner_texts={[lang["header"]["latest"]["upcoming"], lang["header"]["latest"]["past"], lang["header"]["latest"]["blog"]]} inner_links={["#recently", "https://tedxfukuoka.com/category/past/", "https://tedxfukuoka.com/category/blog/"]} />
+                                <DropDownMenu isDirect={true} isSingle={false} link="/" text={lang["header"]["latest"]["latest"]} inner_texts={[lang["header"]["latest"]["upcoming"], lang["header"]["latest"]["past"], lang["header"]["latest"]["blog"]]} inner_links={["/#recently", "https://tedxfukuoka.com/category/past/", "https://tedxfukuoka.com/category/blog/"]} />
                                 <DropDownMenu isDirect={true} isSingle={false} link="/" text={lang["header"]["about"]["about"]} inner_texts={[lang["header"]["about"]["TED"], lang["header"]["about"]["TEDx"], lang["header"]["about"]["partners"]]} inner_links={["https://tedxfukuoka.com/aboutted/", "https://tedxfukuoka.com/abouttedx/", "https://tedxfukuoka.com/partners-2/"]} /></>
 
                                 : <></>}</>)
                         :
                         (<>
                             <DropDownMenu isDirect={true} isSingle={true} link="/" text={lang["header"]["home"]} />
-                            <DropDownMenu isDirect={true} isSingle={false} link="/" text={lang["header"]["latest"]["latest"]} inner_texts={[lang["header"]["latest"]["upcoming"], lang["header"]["latest"]["past"], lang["header"]["latest"]["blog"]]} inner_links={["#recently", "https://tedxfukuoka.com/category/past/", "https://tedxfukuoka.com/category/blog/"]} />
+                            <DropDownMenu isDirect={true} isSingle={false} link="/" text={lang["header"]["latest"]["latest"]} inner_texts={[lang["header"]["latest"]["upcoming"], lang["header"]["latest"]["past"], lang["header"]["latest"]["blog"]]} inner_links={["/#recently", "https://tedxfukuoka.com/category/past/", "https://tedxfukuoka.com/category/blog/"]} />
                             <DropDownMenu isDirect={true} isSingle={false} link="/" text={lang["header"]["about"]["about"]} inner_texts={[lang["header"]["about"]["TED"], lang["header"]["about"]["TEDx"], lang["header"]["about"]["partners"]]} inner_links={["https://tedxfukuoka.com/aboutted/", "https://tedxfukuoka.com/abouttedx/", "https://tedxfukuoka.com/partners-2/"]} />
                         </>
                         )

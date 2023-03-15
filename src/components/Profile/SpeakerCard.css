@@ -7,7 +7,7 @@
 .card-image {
   padding-right: 5%;
   width: 300px;
-  height: auto;
+  height: 300px;
   display: inline-block;
 }
 @media (max-width: 390px) {
