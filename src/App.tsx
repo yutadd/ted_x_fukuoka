@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import { Home } from './components/home/Home';
 import { Profiles } from './components/Profile/Profiles';
 
 function App() {
-
   return (
     <>
       <BrowserRouter>

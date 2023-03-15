@@ -26,6 +26,12 @@ export const Home = (): JSX.Element => {
     }
     useEffect(() => {
         init();
+        setTimeout(() => {
+            const targetEl = document.getElementById(window.location.hash.split('#')[1])
+            console.log(window.location.hash.split('#')[1]);
+            console.log("scrolling to " + targetEl);
+            targetEl?.scrollIntoView({ behavior: 'smooth' });
+        }, 200);
     }, []);
     return (
         <Outter>

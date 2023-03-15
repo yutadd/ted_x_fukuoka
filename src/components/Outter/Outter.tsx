@@ -22,9 +22,6 @@ export const Outter = (props: any): JSX.Element => {
             setWindowWidth(window.innerWidth);
         };
         window.addEventListener('resize', handleResize);
-        const targetEl = document.getElementById(window.location.hash.split('#')[1])
-        console.log(window.location.hash.split('#')[1]);
-        targetEl?.scrollIntoView({ behavior: 'smooth' })
     }, []);
     useEffect(() => {
         setShowHamburgerMenu(windowWidth < 768); // 768px以下の場合はメニューを表示する

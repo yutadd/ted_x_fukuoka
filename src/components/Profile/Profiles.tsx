@@ -10,6 +10,7 @@ import { Outter } from '../Outter/Outter';
 import "./Profile.css";
 import { SpeakerCard } from './SpeakerCard';
 let lang: any;
+
 function prepare() {
     var userLang = navigator.language;
     if (userLang.trim() === "ja") {
@@ -27,6 +28,14 @@ export const Profiles = (props: any) => {
 
         result.push(<SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />);
     }
+    useEffect(() => {
+        setTimeout(() => {
+            const targetEl = document.getElementById(window.location.hash.split('#')[1])
+            console.log(window.location.hash.split('#')[1]);
+            console.log("scrolling to " + targetEl);
+            targetEl?.scrollIntoView({ behavior: 'smooth' });
+        }, 500);
+    }, []);
     return (
         <>
             <Outter>
