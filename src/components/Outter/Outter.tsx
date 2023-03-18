@@ -1,9 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { stateContext } from "../../App";
 import { HamburgerMenu } from "./HamburgerMenu";
 import "./Outter.css";
-
-
 export const Outter = (props: any): JSX.Element => {
     const context = useContext(stateContext);
     const lang = context.outterLang;

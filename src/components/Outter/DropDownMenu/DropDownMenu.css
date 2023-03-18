@@ -1,27 +1,28 @@
 .menu {
-    margin:5px 0px;
-    position:relative;
-    background-color: #000;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
-.menu:hover{
-    background-color: #00AAC4;
-    color:black;
+  margin: 9px 0px;
+  position: relative;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
 }
-.direct{
-    padding-top:15px;
+.menu:hover {
+  background-color: #00aac4;
+  color: black;
+}
+.direct {
+  padding-top: 15px;
 }
 
-.menu-outter{
-    width:175px;
+.menu-outter {
+  white-space: break-spaces;
+  font-size: 20px;
+  width: 175px;
 }
-.inner{
-    border: 1px solid white;
-    padding:2px;
-    display:block;
+.inner {
+  border: 1px solid white;
+  padding: 2px;
+  display: block;
 }
-.indirect{
-    display:block;
+.indirect {
+  display: block;
 }
