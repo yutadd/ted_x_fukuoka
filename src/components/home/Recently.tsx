@@ -1,38 +1,30 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { stateContext } from "../../App";
 import "./Recently.css";
-let lang: any;
-function prepare() {
-    var userLang = navigator.language;
-    if (userLang.trim() === "ja") {
-        lang = require("../../locales/recently/ja.json");
-    } else {
-        lang = require("../../locales/recently/en.json");
-    }
-}
-export const Recently = (props: any): JSX.Element => {
-    prepare();
-    const [contexts, setContexts] = useState<JSX.Element[]>([]);
-    const [title, setTitle] = useState<string>("");
-    useEffect(() => {
-        const result = [];
-        for (const els of lang["events"]) {
-            result.push(<div key={els["title"]} className="recently-context-outter"><a className="recently-context" href={els["link"]}>{els["title"]}</a></div>);
-        }
-        setContexts(result);
-        setTitle(lang["title"]);
-    }, [])
 
+/**
+ * 最新情報の表示を行うオブジェクト
+ */
+export const Recently = (): JSX.Element => {
+    //最新情報やイベント情報の言語情報読み込み
+    const context = useContext(stateContext);
+    const lang = context.recentlyLang;
+    //イベント情報の読み込み
+    const result = [];
+    for (const els of lang["events"]) {
+        result.push(<div key={els["title"]} className="recently-context-outter"><a className="recently-context" href={els["link"]}>{els["title"]}</a></div>);
+    }
 
     return (
         <div className="recently-contents-outter">
             <hr />
             <div className="recently-title-outter">
                 <div className="recently-title">
-                    {title}
+                    {lang["title"]}
                 </div>
             </div>
             <div className="recently-contexts">
-                {contexts}
+                {result}
             </div>
         </div>
     )
