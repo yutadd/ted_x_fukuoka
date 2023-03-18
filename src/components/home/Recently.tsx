@@ -18,11 +18,10 @@ export const Recently = (): JSX.Element => {
     return (
         <div className="recently-contents-outter">
             <hr />
-            <div className="recently-title-outter">
-                <div className="recently-title">
-                    {lang["title"]}
-                </div>
+            <div className="recently-title">
+                {lang["title"]}
             </div>
+            <br />
             <div className="recently-contexts">
                 {result}
             </div>
