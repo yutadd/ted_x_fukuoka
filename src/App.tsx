@@ -21,8 +21,8 @@ function prepare() {
     speakerLang = require("./locales/speakers/ja.json");
   } else {
     outterLang = require("./locales/outter/en.json");
-    recentlyLang = require("./locales/recently/ja.json");
-    speakerLang = require("./locales/speakers/ja.json");
+    recentlyLang = require("./locales/recently/en.json");
+    speakerLang = require("./locales/speakers/en.json");
   }
 }
 const initialValue = { category: "2023", setCategory: null, outterLang: null, recentlyLang: null, speakerLang: null }
