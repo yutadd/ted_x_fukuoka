@@ -1,22 +1,24 @@
 {
-    "header":{
-        "home":"home",
-        "latest":{
-            "latest":"event",
-            "upcoming":"upcoming",
-            "past":"past events",
-            "blog":"blog"
-        },
-        "about":{
-            "about":"TEDxFukuoka",
-            "TED":"about TED",
-            "TEDx":"about TEDx",
-            "partners":"partners"
-        }
+  "header": {
+    "switchTo2020": "switch to 2020",
+    "switchTo2023": "switch to 2023",
+    "home": "home",
+    "latest": {
+      "latest": "event",
+      "upcoming": "upcoming",
+      "past": "past events",
+      "blog": "blog"
     },
-    "footer":{
-        "cc":"Creative Commons License",
-        "contact":"Contact",
-        "media":"Media"
+    "about": {
+      "about": "TEDxFukuoka",
+      "TED": "about TED",
+      "TEDx": "about TEDx",
+      "partners": "partners"
     }
+  },
+  "footer": {
+    "cc": "Creative Commons License",
+    "contact": "Contact",
+    "media": "Media"
+  }
 }

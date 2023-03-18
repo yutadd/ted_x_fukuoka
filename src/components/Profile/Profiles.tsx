@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { unified } from 'unified';
 // markdown をパースする
 import ReactMarkdown from 'react-markdown';
@@ -9,6 +9,7 @@ import rehypeSanitize from "rehype-sanitize";
 import { Outter } from '../Outter/Outter';
 import "./Profile.css";
 import { SpeakerCard } from './SpeakerCard';
+import { stateContext } from '../../App';
 let lang: any;
 
 function prepare() {
@@ -21,12 +22,14 @@ function prepare() {
 }
 
 export const Profiles = (props: any) => {
+    const context = useContext(stateContext);
     prepare();
     let result = [];
 
     for (const elm of lang["speakers"]) {
-
-        result.push(<SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />);
+        if (elm["category"] === context.category) {
+            result.push(<SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />);
+        }
     }
     useEffect(() => {
         setTimeout(() => {
