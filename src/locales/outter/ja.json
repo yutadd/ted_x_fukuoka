@@ -1,22 +1,24 @@
 {
-    "header":{
-        "home":"ホーム",
-        "latest":{
-            "latest":"2023 最新情報!",
-            "upcoming":"近日開催イベント",
-            "past":"過去のイベント",
-            "blog":"ブログ"
-        },
-        "about":{
-            "about":"TEDxFukuokaについて",
-            "TED":"TEDとは",
-            "TEDx":"TEDxとは",
-            "partners":"パートナー企業"
-        }
+  "header": {
+    "switchTo2020": "2020年度版に切り替える",
+    "switchTo2023": "2023年度版に切り替える",
+    "home": "ホーム",
+    "latest": {
+      "latest": "2023 最新情報!",
+      "upcoming": "近日開催イベント",
+      "past": "過去のイベント",
+      "blog": "ブログ"
     },
-    "footer":{
-        "cc":"クリエイティブ・コモンズ・ライセンス",
-        "contact":"お問い合わせ",
-        "media":"報道関係"
+    "about": {
+      "about": "TEDxFukuokaについて",
+      "TED": "TEDとは",
+      "TEDx": "TEDxとは",
+      "partners": "パートナー企業"
     }
+  },
+  "footer": {
+    "cc": "クリエイティブ・コモンズ・ライセンス",
+    "contact": "お問い合わせ",
+    "media": "報道関係"
+  }
 }
