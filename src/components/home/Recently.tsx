@@ -3,7 +3,7 @@ import { stateContext } from "../../App";
 import "./Recently.css";
 
 /**
- * 最新情報の表示を行うオブジェクト
+ * 最新情報の表示を行う要素
  */
 export const Recently = (): JSX.Element => {
     //最新情報やイベント情報の言語情報読み込み

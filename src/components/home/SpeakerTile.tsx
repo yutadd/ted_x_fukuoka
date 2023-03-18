@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import "./SpeakerTile.css";
 /**
- * スピーカータイル一枚分
+ * スピーカータイル一枚分の要素
  */
 export const SpeakerTile = (props: any): JSX.Element => {
     return (

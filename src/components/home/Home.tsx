@@ -5,14 +5,8 @@ import "./Home.css";
 import { Recently } from "./Recently";
 import { stateContext } from "../../App";
 
-
-
 /**
- * ヘッダーに表示される日本語と英語が1対1で対応したjsonオブジェクトファイルを読み込み、lang変数に束縛する。
- */
-
-/**
- * トップ画面のすべて
+ * トップ画面のすべての要素をひとまとめにする要素
  * ・ヘッダー
  * ・トップ画像
  * ・スピーカータイル

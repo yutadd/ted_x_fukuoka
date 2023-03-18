@@ -16,10 +16,12 @@ export const HamburgerMenu = () => {
     }, []);
     return (
         <>
-            {/**
-         * もし横が狭いなら、ハンバーガーメニューを表示し、
-         * メニューも縦に一つづつ並べるようにする
-         */}
+            {
+                /**
+                 * もし横が狭いなら、ハンバーガーメニューを表示し、
+                 * メニューも縦に一つづつ並べるようにする
+                 */
+            }
             <div className="header-inner" style={{ "display": showInnerMenu && showHamburgerMenu ? "block" : "flex" }}>
                 <div className="logo_outter">
                     <img width="auto" height="50px" src="https://tedxfukuoka.com/wp/wp-content/uploads/TEDxFukuoka_logo_k_RGB450.jpg?1677835120" alt="TEDxFukuoka_logo" />

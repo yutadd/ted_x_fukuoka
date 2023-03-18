@@ -9,12 +9,14 @@ export const Profiles = (props: any) => {
     let result = [];
     for (const elm of lang["speakers"]) {
         if (elm["category"] === context.category) {
-            result.push(<SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />);
+            result.push(
+                <SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />
+            );
         }
     }
     useEffect(() => {
         setTimeout(() => {
-            const targetEl = document.getElementById(window.location.hash.split('#')[1])
+            const targetEl = document.getElementById(window.location.hash.split('#')[1]);
             console.log(window.location.hash.split('#')[1]);
             console.log("scrolling to " + targetEl);
             targetEl?.scrollIntoView({ behavior: 'smooth' });
@@ -23,7 +25,12 @@ export const Profiles = (props: any) => {
     return (
         <>
             <Outter>
-                <div className='profile-title'><div className='profile-title-text'>LiveSpeakers</div><div className='profile-title-subtext'>Speakers on TEDxFukuoka</div></div>
+                <div className='profile-title'>
+                    <div className='profile-title-text'>
+                        LiveSpeakers
+                    </div>
+                    <div className='profile-title-subtext'>Speakers on TEDxFukuoka</div>
+                </div>
                 {result}
             </Outter>
         </>

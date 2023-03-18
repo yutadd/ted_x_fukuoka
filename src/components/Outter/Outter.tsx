@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { stateContext } from "../../App";
-import { DropDownMenu } from "./DropDownMenu/DropDownMenu";
 import { HamburgerMenu } from "./HamburgerMenu";
 import "./Outter.css";
 
