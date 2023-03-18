@@ -4,20 +4,7 @@
     position: fixed;
     width: 100%;
 }
-.header-inner{
-    padding:0 15%;
-    background-color: black;
-    justify-content: space-between;
-    margin:0px;
-    color:white;
-    padding-bottom: 5px;
-    margin:0 auto;
-}
-.logo_outter{
-    color: black;
-    flex-wrap: nowrap;
-    display: flex;
-}
+
 .HamburgerMenu{
     user-select: none;
     cursor: grab;

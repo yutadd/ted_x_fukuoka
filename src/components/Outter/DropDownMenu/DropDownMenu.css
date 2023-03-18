@@ -1,5 +1,4 @@
 .menu {
-  margin: 9px 0px;
   position: relative;
   background-color: #000;
   color: white;
@@ -14,9 +13,11 @@
 }
 
 .menu-outter {
+  line-height: 25px;
   white-space: break-spaces;
   font-size: 20px;
   width: 175px;
+  margin: 9px 0px;
 }
 .inner {
   border: 1px solid white;
@@ -25,4 +26,12 @@
 }
 .indirect {
   display: block;
+}
+@media (max-width: 500px) {
+  .menu-outter {
+    font-size: 25px;
+  }
+  .menu {
+    margin: 14px 0px;
+  }
 }

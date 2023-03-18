@@ -1,21 +1,21 @@
-.top{
-    padding-top: 69px;
-    width:100%;
-    height:auto;
-    background-color:black;
+.top {
+  padding-top: 60px;
+  width: 100%;
+  height: auto;
+  background-color: black;
 }
-.background-image{
- position:relative;
- width:100%;
- height:auto;
+.background-image {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
-.toTop{
-    display:block;
-    text-decoration: none;
-    color:white;
-    background-color: gray;
-    text-align: center;
-    width:100%;
-    padding:10px;
-    font-weight: 800;
+.toTop {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-weight: 800;
 }

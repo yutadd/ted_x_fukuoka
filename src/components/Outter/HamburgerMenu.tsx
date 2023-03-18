@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { stateContext } from "../../App";
 import { DropDownMenu } from "./DropDownMenu/DropDownMenu";
-
+import "./HamburgerMenu.css"
 export const HamburgerMenu = () => {
     const context = useContext(stateContext);
     const lang = context.outterLang;

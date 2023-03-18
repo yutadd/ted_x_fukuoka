@@ -3,7 +3,7 @@ import { Outter } from '../Outter/Outter';
 import "./Profile.css";
 import { SpeakerCard } from './SpeakerCard';
 import { stateContext } from '../../App';
-export const Profiles = (props: any) => {
+export const Profiles = () => {
     const context = useContext(stateContext);
     const lang = context.speakerLang;
     let result = [];
