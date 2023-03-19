@@ -24,7 +24,7 @@ export const HamburgerMenu = () => {
             }
             <div className="header-inner" style={{ "display": showInnerMenu && showHamburgerMenu ? "block" : "flex" }}>
                 <div className="logo_outter">
-                    <img width="auto" height="50px" src="https://tedxfukuoka.com/wp/wp-content/uploads/TEDxFukuoka_logo_k_RGB450.jpg?1677835120" alt="TEDxFukuoka_logo" />
+                    <img width="auto" height="50px" className="logo_innter" src="https://tedxfukuoka.com/wp/wp-content/uploads/TEDxFukuoka_logo_k_RGB450.jpg?1677835120" alt="TEDxFukuoka_logo" />
                     <a style={{ display: showHamburgerMenu ? "inline-block" : "none" }} onClick={() => { setShowInnerMenu(!showInnerMenu) }} className="HamburgerMenu">
                         <img width="auto" height="32px" src="/hamburger.png" alt="" />
                     </a>

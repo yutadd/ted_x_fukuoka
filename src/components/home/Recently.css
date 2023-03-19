@@ -23,7 +23,6 @@
 .recently-contents-outter {
   width: 100%;
   text-align: center;
-  padding-left: 5%;
 }
 @media (max-width: 500px) {
   .recently-contexts {
