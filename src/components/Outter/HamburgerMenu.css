@@ -16,4 +16,10 @@
 }
 .hamburger-img {
   vertical-align: super;
+  margin-left: 100%;
+}
+@media (max-width: 500px) {
+  .logo_innter {
+    margin-top: 0%;
+  }
 }
