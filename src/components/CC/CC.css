@@ -1,0 +1,16 @@
+.cc-title-outter {
+  padding-top: 100px;
+  font-size: 30px;
+  padding-left: 5%;
+}
+.cc-title {
+  color: #929699;
+}
+.cc-contents-outter {
+  text-align: center;
+}
+.cc-contents-inner {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+}

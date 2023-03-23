@@ -44,7 +44,7 @@ export const Home = (): JSX.Element => {
             </div>
             {speakers}
             <div id="recently">
-                <Recently />
+            <Recently />
             </div>
         </Outter >
     )

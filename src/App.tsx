@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { CC } from './components/CC/CC';
 import { Events } from './components/Events/Events';
 import { Home } from './components/home/Home';
 import { Profiles } from './components/Profile/Profiles';
@@ -42,6 +43,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/profiles' component={Profiles} />
           <Route exact path='/event/:event' component={Events} />
+          <Route exact path='/cc' component={CC} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

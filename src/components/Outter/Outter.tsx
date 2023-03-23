@@ -12,7 +12,7 @@ export const Outter = (props: any): JSX.Element => {
             </div>
             {props.children}
             <div className="footer-outter">
-                <a href="https://tedxfukuoka.com/cc/" className="footer-item border-right">
+                <a href="/cc/" className="footer-item border-right">
                     {lang["footer"]["cc"]}
                 </a>
                 <a href="https://tedxfukuoka.com/contact/" className="footer-item border-right">

@@ -1,25 +1,26 @@
 {
-    "title":"最新情報　　",
-    "events":[
-        {
-            "title":"TEDxFukuoka2023 All Good Things",
-            "link":"https://tedxfukuoka.com/tedxfukuoka2023/"
-        },
-        {
-            "title":"TEDxFukuoka2022 Countdown",
-            "link":"https://tedxfukuoka.com/tedxfukuoka2022/"
-        },
-        {
-            "title":"TEDxFukuokaSalon vol.15",
-            "link":"https://tedxfukuoka.com/tedxfukuokasalon15/"
-        },
-        {
-            "title":"TEDxFukuokaLive2019チケット販売開始",
-            "link":"https://tedxfukuoka.com/3939-2/"
-        },
-        {
-            "title":"2019.1.26 TEDxFukuoka 2019 キックオフイベント開催！",
-            "link":"https://tedxfukuoka.com/tedxfukuoka2019_kickoff/"
-        }
-    ]
+  "title": "最新情報",
+  "other_events":"その他のイベント",
+  "events": [
+    {
+      "title": "TEDxFukuoka2023 All Good Things",
+      "link": "/event/tedxfukuoka2023"
+    },
+    {
+      "title": "TEDxFukuoka2022 Countdown",
+      "link": "https://tedxfukuoka.com/tedxfukuoka2022/"
+    },
+    {
+      "title": "TEDxFukuokaSalon vol.15",
+      "link": "https://tedxfukuoka.com/tedxfukuokasalon15/"
+    },
+    {
+      "title": "TEDxFukuokaLive2019チケット販売開始",
+      "link": "https://tedxfukuoka.com/3939-2/"
+    },
+    {
+      "title": "2019.1.26 TEDxFukuoka 2019 キックオフイベント開催！",
+      "link": "https://tedxfukuoka.com/tedxfukuoka2019_kickoff/"
+    }
+  ]
 }

@@ -3,6 +3,7 @@ import { Outter } from '../Outter/Outter';
 import "./Profile.css";
 import { SpeakerCard } from './SpeakerCard';
 import { stateContext } from '../../App';
+import { Recently } from '../home/Recently';
 export const Profiles = () => {
     const context = useContext(stateContext);
     const lang = context.speakerLang;
@@ -32,6 +33,7 @@ export const Profiles = () => {
                     <div className='profile-title-subtext'>Speakers on TEDxFukuoka</div>
                 </div>
                 {result}
+                <Recently />
             </Outter>
         </>
     );

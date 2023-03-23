@@ -2,12 +2,12 @@ import { Link, useParams } from "react-router-dom"
 import { Outter } from "../Outter/Outter";
 import "./Events.css"
 import { useContext, useEffect, useState } from 'react';
-import { unified } from 'unified';
 // markdown をパースする
 import ReactMarkdown from 'react-markdown';
 // Support GFM (tables, autolinks, tasklists, strikethrough)
 import remarkGfm from 'remark-gfm';
 import { stateContext } from "../../App";
+import { Recently } from "../home/Recently";
 export const Events = () => {
     const context = useContext(stateContext);
     const [text, setText] = useState("");
@@ -41,9 +41,10 @@ export const Events = () => {
                 </div>
             </div>
             <div className="event-others-outter">
-                <div className="event-others-title">Other Events</div>
+                <div className="event-others-title">{context.recentlyLang["other_events"]}</div>
                 {events}
             </div>
+            <Recently />
         </Outter>
     );
 }
