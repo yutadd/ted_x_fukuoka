@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { stateContext } from "../../../App"
 import { Outter } from "../../Outter/Outter"
 import "./Media.css"
@@ -10,9 +10,12 @@ import { Recently } from "../../home/Recently";
 export const Media = () => {
     const context = useContext(stateContext);
     const [text, setText] = useState("");
-    fetch("/about/Media_" + context.lang + ".md").then((res) => res.text().then((tx) => {
-        setText(tx);
-    }));
+    useEffect(() => {
+        fetch("/about/Media_" + context.lang + ".md").then((res) => res.text().then((tx) => {
+            setText(tx);
+        }));
+    }, []);
+
     return <Outter>
         <div className="media-title-outter">
             <div className="media-title">

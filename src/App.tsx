@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { CC } from './components/About/CC/CC';
 import { Contact } from './components/About/Contact/Contact';
 import { Media } from './components/About/Media/Media';
+import { Partners } from './components/About/Partners/Partners';
 import { TED } from './components/About/TED/TED';
 import { TEDx } from './components/About/TEDx/TEDx';
 import { Events } from './components/Events/Events';
@@ -52,6 +53,7 @@ function App() {
           <Route exact path='/media' component={Media} />
           <Route exact path='/ted' component={TED} />
           <Route exact path='/tedx' component={TEDx} />
+          <Route exact path='/partners' component={Partners} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

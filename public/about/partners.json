@@ -20,6 +20,33 @@
       "file": "adamanda.png",
       "link": "https://www.amadaman.com/"
     },
-    {}
+    {
+      "file": "aaronyamashitatokyo.png",
+      "link": "https://www.facebook.com/aaronyamashitatokyo"
+    },
+    {
+      "file": "3support.png",
+      "link": "https://3support.co.jp/"
+    },
+    {
+      "file": "PsWorks.png",
+      "link": "#"
+    },
+    {
+      "link": "https://zoom.com/jp",
+      "file": "zoom.png"
+    },
+    {
+      "link": "https://peatix.com/?lang=ja",
+      "file": "peatix.png"
+    },
+    {
+        "file":"lolipop.png",
+        "link":"https://lolipop.jp/"
+    },
+    {
+        "file":"adachicoffee.png",
+        "link":"https://www.adachicoffee.com/"
+    }
   ]
 }

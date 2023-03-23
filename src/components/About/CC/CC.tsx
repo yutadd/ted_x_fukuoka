@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { stateContext } from "../../../App"
 import { Outter } from "../../Outter/Outter"
 import "./CC.css"
@@ -11,9 +11,12 @@ import { Recently } from "../../home/Recently";
 export const CC = () => {
     const context = useContext(stateContext);
     const [text, setText] = useState("");
-    fetch("/about/CC_" + context.lang + ".md").then((res) => res.text().then((tx) => {
-        setText(tx);
-    }));
+    useEffect(() => {
+        fetch("/about/CC_" + context.lang + ".md").then((res) => res.text().then((tx) => {
+            setText(tx);
+        }));
+    }, []);
+
     return <Outter>
         <div className="cc-title-outter">
             <div className="cc-title">

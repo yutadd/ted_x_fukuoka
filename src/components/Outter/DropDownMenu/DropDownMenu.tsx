@@ -6,18 +6,15 @@ export const DropDownMenu = (props: any): JSX.Element => {
     let menues = [];
     if (!props.isSingle) {
         for (let i = 0; i < props.inner_texts.length; i++) {
-            menues.push(<>
-                {
-                    (props.inner_links[i].startsWith('http') || window.location.pathname.endsWith(props.link)) ?
-                        <a href={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">
-                            {props.inner_texts[i]}
-                        </a>
-                        :
-                        <Link to={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">
-                            {props.inner_texts[i]}
-                        </Link>
-                }
-            </>
+            menues.push(
+                (props.inner_links[i].startsWith('http') || window.location.pathname.endsWith(props.link)) ?
+                    <a href={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">
+                        {props.inner_texts[i]}
+                    </a>
+                    :
+                    <Link to={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">
+                        {props.inner_texts[i]}
+                    </Link>
             )
         }
     }

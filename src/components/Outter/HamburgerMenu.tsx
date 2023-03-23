@@ -33,8 +33,8 @@ export const HamburgerMenu = () => {
                     {(showInnerMenu || !showHamburgerMenu) ?
                         <>
                             <DropDownMenu isDirect={!showHamburgerMenu} isSingle={true} link={"/"} text={lang["header"]["home"]} />
-                            <DropDownMenu isDirect={!showHamburgerMenu} isSingle={false} link="/" text={lang["header"]["latest"]["latest"]} inner_texts={[lang["header"]["latest"]["upcoming"], lang["header"]["latest"]["past"], lang["header"]["latest"]["blog"]]} inner_links={["/#recently", "https://tedxfukuoka.com/category/past/", "https://tedxfukuoka.com/category/blog/"]} />
-                            <DropDownMenu isDirect={!showHamburgerMenu} isSingle={false} link="/" text={lang["header"]["about"]["about"]} inner_texts={[lang["header"]["about"]["TED"], lang["header"]["about"]["TEDx"], lang["header"]["about"]["partners"]]} inner_links={["/ted", "/tedx", "https://tedxfukuoka.com/partners-2/"]} />
+                            <DropDownMenu isDirect={!showHamburgerMenu} isSingle={true} link="/event/tedxfukuoka2023" text={lang["header"]["latest"]["latest"]} />
+                            <DropDownMenu isDirect={!showHamburgerMenu} isSingle={false} link="/" text={lang["header"]["about"]["about"]} inner_texts={[lang["header"]["about"]["TED"], lang["header"]["about"]["TEDx"], lang["header"]["about"]["partners"]]} inner_links={["/ted", "/tedx", "/partners"]} />
                             <DropDownMenu onClick={() => { context.setCategory(context.category === "2023" ? "2020" : "2023"); console.log(context.category === "2023" ? "switching to 2020" : "switching to 2023") }} isDirect={!showHamburgerMenu} isSingle={true} link={"#_"} text={lang["header"][context.category === "2023" ? "switchTo2020" : "switchTo2023"]} />
                         </>
                         :
