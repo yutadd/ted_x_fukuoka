@@ -1,6 +1,10 @@
 import React, { createContext, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { CC } from './components/CC/CC';
+import { CC } from './components/About/CC/CC';
+import { Contact } from './components/About/Contact/Contact';
+import { Media } from './components/About/Media/Media';
+import { TED } from './components/About/TED/TED';
+import { TEDx } from './components/About/TEDx/TEDx';
 import { Events } from './components/Events/Events';
 import { Home } from './components/home/Home';
 import { Profiles } from './components/Profile/Profiles';
@@ -44,6 +48,10 @@ function App() {
           <Route exact path='/profiles' component={Profiles} />
           <Route exact path='/event/:event' component={Events} />
           <Route exact path='/cc' component={CC} />
+          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/media' component={Media} />
+          <Route exact path='/ted' component={TED} />
+          <Route exact path='/tedx' component={TEDx} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

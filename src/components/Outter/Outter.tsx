@@ -15,10 +15,10 @@ export const Outter = (props: any): JSX.Element => {
                 <a href="/cc/" className="footer-item border-right">
                     {lang["footer"]["cc"]}
                 </a>
-                <a href="https://tedxfukuoka.com/contact/" className="footer-item border-right">
+                <a href="/contact" className="footer-item border-right">
                     {lang["footer"]["contact"]}
                 </a>
-                <a href="https://tedxfukuoka.com/media/" className="footer-item border-right">
+                <a href="/media" className="footer-item border-right">
                     {lang["footer"]["media"]}
                 </a>
                 <div className="footer-item">Copyright ©  TEDxFukuoka</div>

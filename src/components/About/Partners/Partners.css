@@ -1,0 +1,17 @@
+.partners-title-outter {
+    padding-top: 100px;
+    font-size: 30px;
+    padding-left: 5%;
+  }
+  .partners-title {
+    color: #929699;
+  }
+  .partners-contents-outter {
+    text-align: center;
+  }
+  .partners-contents-inner {
+    display: inline-block;
+    text-align: left;
+    width: 90%;
+  }
+  

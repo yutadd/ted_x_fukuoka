@@ -1,0 +1,16 @@
+.media-title-outter {
+  padding-top: 100px;
+  font-size: 30px;
+  padding-left: 5%;
+}
+.media-title {
+  color: #929699;
+}
+.media-contents-outter {
+  text-align: center;
+}
+.media-contents-inner {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+}
