@@ -1,44 +1,66 @@
-.header{
-    position: absolute;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
+.header {
+  position: absolute;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 
-.HamburgerMenu{
-    user-select: none;
-    cursor: grab;
-    display:inline-block;
-    width:50px;
-    margin-top: 15px;
-    color:white;
-    text-decoration: none;
+.HamburgerMenu {
+  user-select: none;
+  cursor: grab;
+  display: inline-block;
+  width: 50px;
+  margin-top: 15px;
+  color: white;
+  text-decoration: none;
 }
 
-.toTop:hover{
-    background-color: aqua;
+.toTop:hover {
+  background-color: aqua;
 }
 
-.footer-outter{
-    background-color: black;
-    display: flex;
+.footer-outter {
+  background-color: black;
+  display: block;
 }
-.footer-item{
-    font-size: 20px;
-    padding:10px;
-    text-decoration: none;
-    color:white;
+.footer-left-panel {
+  display: inline-block;
+  width: 50%;
+}
+.footer-logo-image {
+  padding-top: 20px;
+  padding-left: 60px;
+}
+.footer-right-panel {
+  width: 50%;
+  vertical-align: top;
+  padding-top: 50px;
+  text-align: right;
+  display: inline-block;
+}
+.footer-right-item {
+  display: block;
+  padding-right: 80px;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .footer-left-panel {
     display: block;
-    width:20%;
-    
-}
-@media (max-width:500px) {
-    .footer-item{
-        font-size: small; 
-        padding:0px;
-    }
-}
-.border-right{
-    border-right: 1px solid white;
-    padding:0px 5px;
+    width: 100%;
+  }
+  .footer-logo-image {
+    padding-top: 10px;
+    padding-left: 5%;
+    width: 95%;
+  }
+  .footer-right-panel {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .footer-right-item {
+    padding-right: 5%;
+    text-align: left;
+    padding-left: 5%;
+  }
 }

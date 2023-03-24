@@ -12,19 +12,21 @@ export const Recently = (): JSX.Element => {
     //イベント情報の読み込み
     const result = [];
     for (const els of lang["events"]) {
-        result.push(<div key={els["title"]} className="recently-context-outter"><a className="recently-context" href={els["link"]}>{els["title"]}</a></div>);
+        result.push(
+            <a key={els["title"]} href={els["link"]} className="recently-panel-outter">
+                <img className="recently-panel-logo" src={"/images/" + els["logo"]} alt="" />
+                <div className="recently-title">
+                    {els["title"]}
+                </div>
+                <div className="recently-added-date">{els["added_date"]}</div>
+            </a>
+        );
     }
 
     return (
-        <div className="recently-contents-outter">
-            <hr />
-            <div className="recently-title">
-                {lang["title"]}
-            </div>
-            <br />
-            <div className="recently-contexts">
-                {result}
-            </div>
+        <div className="recently-outter">
+            <div className="recently-title-outter">{lang["title"]}</div>
+            <div className="recently-events-outter">{result}</div>
         </div>
     )
 }

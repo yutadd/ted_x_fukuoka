@@ -12,18 +12,22 @@ export const Outter = (props: any): JSX.Element => {
             </div>
             {props.children}
             <div className="footer-outter">
-                <a href="/cc/" className="footer-item border-right">
-                    {lang["footer"]["cc"]}
-                </a>
-                <a href="/contact" className="footer-item border-right">
-                    {lang["footer"]["contact"]}
-                </a>
-                <a href="/media" className="footer-item border-right">
-                    {lang["footer"]["media"]}
-                </a>
+                <div className="footer-left-panel">
+                    <img className="footer-logo-image" src="/images/TEDxFukuoka_logo_k_RGB450.jpg" alt="TEDxFukuoka_logo" />
+                </div>
+                <div className="footer-right-panel">
+                    <a href="/cc/" className="footer-right-item">
+                        {lang["footer"]["cc"]}
+                    </a>
+                    <a href="/contact" className="footer-right-item">
+                        {lang["footer"]["contact"]}
+                    </a>
+                    <a href="/media" className="footer-right-item">
+                        {lang["footer"]["media"]}
+                    </a>
+                </div>
                 <div className="footer-item">Copyright ©  TEDxFukuoka</div>
             </div>
-            <a href="#top" className="toTop">↑ TOP ↑</a>
         </div>
     )
 }

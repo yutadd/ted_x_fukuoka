@@ -1,10 +1,12 @@
 {
-  "title": "Recently information 2023",
+  "title": "Recently information",
   "other_events": "Other Events",
   "events": [
     {
       "title": "TEDxFukuoka2023 All Good Things",
-      "link": "/event/tedxfukuoka2023"
+      "link": "/event/tedxfukuoka2023",
+      "logo": "concept_image.jpg",
+      "added_date": "2023.03.8"
     }
   ]
 }

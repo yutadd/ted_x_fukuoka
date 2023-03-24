@@ -1,10 +1,12 @@
 {
   "title": "最新情報",
-  "other_events":"その他のイベント",
+  "other_events": "その他のイベント",
   "events": [
     {
       "title": "TEDxFukuoka2023 All Good Things",
-      "link": "/event/tedxfukuoka2023"
+      "link": "/event/tedxfukuoka2023",
+      "logo": "concept_image.jpg",
+      "added_date": "2023.03.8"
     }
   ]
 }
