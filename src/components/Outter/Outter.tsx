@@ -8,6 +8,9 @@ export const Outter = (props: any): JSX.Element => {
     return (
         <div id="top">
             <div className="header">
+                <div className="header-logo-outter">
+                    <img width="auto"  className="header-logo-img" src="/images/TEDxFukuoka_logo_k_RGB450.jpg" alt="TEDxFukuoka_logo" />
+                </div>
                 <HamburgerMenu />
             </div>
             {props.children}

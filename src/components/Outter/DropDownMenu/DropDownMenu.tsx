@@ -20,11 +20,11 @@ export const DropDownMenu = (props: any): JSX.Element => {
     }
     return (
         <>
-            <div className={props.isDirect ? 'menu-outter' : "menu-outter indirect"}>
+            <div className="dropdownmenu-outter ">
                 {/* メニューのトリガーとなるボタン */}
                 {props.isSingle ? (
                     <>
-                        <div onClick={props.onClick} className={props.isDirect ? 'direct' : ''}>{(props.link.startsWith('http') || window.location.pathname.endsWith(props.link)) ?
+                        <div onClick={props.onClick} className="dropdownmenu-inner">{(props.link.startsWith('http') || window.location.pathname.endsWith(props.link)) ?
                             <a className='menu' href={props.link}>
                                 {props.text}
                             </a>
@@ -36,7 +36,7 @@ export const DropDownMenu = (props: any): JSX.Element => {
                     </>
                 ) : (
                     <>
-                        <div className={props.isDirect ? "direct" : ""} onMouseLeave={() => { setIsOpen(!isOpen); }} onMouseEnter={() => { setIsOpen(!isOpen); }}>
+                        <div className="dropdownmenu-inner" onMouseLeave={() => { setIsOpen(!isOpen); }} onMouseEnter={() => { setIsOpen(!isOpen); }}>
                             {props.text}
                             {/* isOpenがtrueのときだけメニューを表示 */}
                             {isOpen ? menues : <></>}

@@ -1,25 +1,12 @@
-.header-inner {
-  padding: 0 7%;
-  background-color: black;
-  justify-content: space-between;
-  margin: 0px;
-  color: white;
-  padding-bottom: 5px;
-  margin: 0 auto;
-}
-.logo_outter {
-  color: black;
+.HamburgerMenu {
+  text-align: left;
+  width: 18%;
   display: inline-block;
-}
-.logo_innter {
-  margin-top: 9%;
+  vertical-align: top;
+  padding-top: 25px;
+  color: white;
+  text-decoration: none;
 }
 .hamburger-img {
-  vertical-align: super;
-  margin-left: 100%;
-}
-@media (max-width: 500px) {
-  .logo_innter {
-    margin-top: 0%;
-  }
+  height: 60px;
 }

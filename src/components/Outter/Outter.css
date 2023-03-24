@@ -3,20 +3,18 @@
   z-index: 1;
   position: fixed;
   width: 100%;
+  background-color: black;
 }
 
-.HamburgerMenu {
-  user-select: none;
-  cursor: grab;
+.header-logo-outter {
+  color: black;
   display: inline-block;
-  width: 50px;
-  margin-top: 15px;
-  color: white;
-  text-decoration: none;
+  text-align: center;
+  width: 82%;
 }
-
-.toTop:hover {
-  background-color: aqua;
+.header-logo-img {
+  width: 300px;
+  margin: 8px 0px;
 }
 
 .footer-outter {

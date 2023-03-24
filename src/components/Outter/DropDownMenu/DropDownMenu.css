@@ -1,37 +1,36 @@
 .menu {
   position: relative;
   background-color: #000;
-  color: white;
   text-decoration: none;
+  margin: 14px 0px;
+  display: block;
+  color: white;
+}
+.inner {
+  /*ドロップダウンメニュー内部の要素は階層構造を表すため、少し右側にパディングする*/
+  padding-left: 14px;
 }
 .menu:hover {
   background-color: #00aac4;
   color: black;
 }
-.direct {
-  padding-top: 15px;
+.dropdownmenu-inner {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
 }
-
-.menu-outter {
+.dropdownmenu-outter {
+  text-align: center;
+  display: block;
   line-height: 25px;
   white-space: break-spaces;
   font-size: 20px;
-  width: 175px;
+  color: white;
   margin: 9px 0px;
 }
-.inner {
-  border: 1px solid white;
-  padding: 2px;
-  display: block;
-}
-.indirect {
-  display: block;
-}
+
 @media (max-width: 500px) {
   .menu-outter {
     font-size: 25px;
-  }
-  .menu {
-    margin: 14px 0px;
   }
 }
