@@ -1,0 +1,31 @@
+.language-switcher-outter {
+  height: 50px;
+  overflow: hidden;
+  position: fixed;
+  display: inline-block;
+  user-select: none;
+  top: 25px;
+  left: 20px;
+  z-index: 2;
+}
+.language-switcher-outter .selected {
+  background-color: white;
+  color: black;
+}
+.language-switcher-outter .unselected {
+  cursor: pointer;
+}
+.language-switcher-inner {
+  background-color: black;
+  display: inline-block;
+  font-size: 30px;
+  padding: 5px 10px;
+  color: white;
+}
+@media (max-width: 490px) {
+  .language-switcher-outter {
+    top: 80px;
+    left: auto;
+    right: 50px;
+  }
+}

@@ -1,7 +1,7 @@
 .header {
-  position: absolute;
   z-index: 1;
   position: fixed;
+  text-align: center;
   width: 100%;
   background-color: black;
 }
@@ -10,7 +10,6 @@
   color: black;
   display: inline-block;
   text-align: center;
-  width: 82%;
 }
 .header-logo-img {
   width: 300px;
@@ -26,10 +25,10 @@
   width: 50%;
 }
 .footer-logo-image {
-  padding-top: 20px;
-  padding-left: 60px;
+  width: 70%;
 }
 .footer-right-panel {
+  font-size: 24px;
   width: 50%;
   vertical-align: top;
   padding-top: 50px;
@@ -42,7 +41,10 @@
   color: white;
   text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .header-logo-img {
+    width: 200px;
+  }
   .footer-left-panel {
     display: block;
     width: 100%;

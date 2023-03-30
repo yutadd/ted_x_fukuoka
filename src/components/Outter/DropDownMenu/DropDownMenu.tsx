@@ -36,8 +36,10 @@ export const DropDownMenu = (props: any): JSX.Element => {
                     </>
                 ) : (
                     <>
-                        <div className="dropdownmenu-inner" onMouseLeave={() => { setIsOpen(!isOpen); }} onMouseEnter={() => { setIsOpen(!isOpen); }}>
-                            {props.text}
+                        <div className="dropdownmenu-inner" onClick={() => { setIsOpen(!isOpen); }}>
+                            <div className='menu'>
+                                {props.text}
+                            </div>
                             {/* isOpenがtrueのときだけメニューを表示 */}
                             {isOpen ? menues : <></>}
                         </div>

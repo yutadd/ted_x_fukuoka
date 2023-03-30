@@ -1,6 +1,5 @@
 .menu {
   position: relative;
-  background-color: #000;
   text-decoration: none;
   margin: 14px 0px;
   display: block;
@@ -10,14 +9,16 @@
   /*ドロップダウンメニュー内部の要素は階層構造を表すため、少し右側にパディングする*/
   padding-left: 14px;
 }
-.menu:hover {
-  background-color: #00aac4;
-  color: black;
-}
+
 .dropdownmenu-inner {
   display: inline-block;
   text-align: left;
   width: 40%;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+.dropdownmenu-outter:hover {
+  background-color: #00aac4;
 }
 .dropdownmenu-outter {
   text-align: center;

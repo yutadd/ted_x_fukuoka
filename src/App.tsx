@@ -9,7 +9,8 @@ import { TEDx } from './components/About/TEDx/TEDx';
 import { Events } from './components/Events/Events';
 import { Home } from './components/home/Home';
 import { Profiles } from './components/Profile/Profiles';
-
+import Cookies from 'js-cookie';
+import "./App.css"
 export type SharedState = {
   lang: string
   category: string
@@ -22,9 +23,9 @@ let outterLang: any;
 let speakerLang: any;
 let lang: string;
 let recentlyLang: any;
-function prepare() {
-  var userLang = navigator.language;
-  if (userLang.trim() === "ja") {
+
+function load(lang_str: string) {
+  if (lang_str === "ja") {
     lang = "ja";
     outterLang = require("./locales/outter/ja.json");
     recentlyLang = require("./locales/recently/ja.json");
@@ -36,6 +37,19 @@ function prepare() {
     speakerLang = require("./locales/speakers/en.json");
   }
 }
+function prepare() {
+  const cookie_lang = Cookies.get('lang');
+  if (cookie_lang != undefined) {
+    load(cookie_lang);
+  } else {
+    var userBrowLang = navigator.language.trim();
+    load(userBrowLang);
+  }
+}
+function setCookieLangAndReload(setlang: string) {
+  Cookies.set('lang', setlang);
+  window.location.reload();
+}
 const initialValue = { category: "2023", lang: "ja", setCategory: null, outterLang: null, recentlyLang: null, speakerLang: null }
 export const stateContext = createContext<SharedState>(initialValue);
 function App() {
@@ -43,6 +57,10 @@ function App() {
   const [category, setCategory] = useState("2023");
   return (
     <stateContext.Provider value={{ category: category, lang: lang, setCategory: setCategory, outterLang: outterLang, recentlyLang: recentlyLang, speakerLang: speakerLang }}>
+      <div className='language-switcher-outter'>
+        <div onClick={() => setCookieLangAndReload("ja")} className={'language-switcher-inner' + (lang === "ja" ? " selected" : " unselected")}>JP</div>
+        <div onClick={() => setCookieLangAndReload("en")} className={'language-switcher-inner' + (lang === "en" ? " selected" : " unselected")}>EN</div>
+      </div>
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />

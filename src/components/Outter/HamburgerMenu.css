@@ -1,12 +1,23 @@
 .HamburgerMenu {
   text-align: left;
-  width: 18%;
+  right: 50px;
   display: inline-block;
   vertical-align: top;
   padding-top: 25px;
   color: white;
   text-decoration: none;
+  position: absolute;
 }
 .hamburger-img {
   height: 60px;
+}
+
+@media (max-width: 700px) {
+  .hamburger-img {
+    height: 40px;
+  }
+  .HamburgerMenu {
+    right: 5px;
+    padding-top: 17px;
+  }
 }
