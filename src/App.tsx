@@ -1,16 +1,16 @@
 import React, { createContext, useState } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Cookies from 'js-cookie';
+import "./App.css"
+import { Home } from './components/home/Home';
+import { Profiles } from './components/Profile/Profiles';
+import { Events } from './components/Events/Events';
 import { CC } from './components/About/CC/CC';
 import { Contact } from './components/About/Contact/Contact';
 import { Media } from './components/About/Media/Media';
-import { Partners } from './components/About/Partners/Partners';
 import { TED } from './components/About/TED/TED';
 import { TEDx } from './components/About/TEDx/TEDx';
-import { Events } from './components/Events/Events';
-import { Home } from './components/home/Home';
-import { Profiles } from './components/Profile/Profiles';
-import Cookies from 'js-cookie';
-import "./App.css"
+import { Partners } from './components/About/Partners/Partners';
 export type SharedState = {
   lang: string
   category: string
@@ -62,18 +62,18 @@ function App() {
         <div onClick={() => setCookieLangAndReload("en")} className={'language-switcher-inner' + (lang === "en" ? " selected" : " unselected")}>EN</div>
       </div>
       <BrowserRouter>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/profiles' component={Profiles} />
-          <Route exact path='/event/:event' component={Events} />
-          <Route exact path='/cc' component={CC} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path='/media' component={Media} />
-          <Route exact path='/ted' component={TED} />
-          <Route exact path='/tedx' component={TEDx} />
-          <Route exact path='/partners' component={Partners} />
-          <Route component={NotFound} />
-        </Switch>
+        <Routes>
+          <Route path='/' Component={Home} />
+          <Route path='/profiles' Component={Profiles} />
+          <Route path='/event/:event' Component={Events} />
+          <Route path='/cc' Component={CC} />
+          <Route path='/contact' Component={Contact} />
+          <Route path='/media' Component={Media} />
+          <Route path='/ted' Component={TED} />
+          <Route path='/tedx' Component={TEDx} />
+          <Route path='/partners' Component={Partners} />
+          <Route Component={NotFound} />
+        </Routes>
       </BrowserRouter>
     </stateContext.Provider>
 
