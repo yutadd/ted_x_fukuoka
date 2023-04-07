@@ -12,6 +12,7 @@
 }
 @media (max-width: 390px) {
   .card-image {
+    padding-right: 0px;
     width: 100%;
     height: auto;
     display: block;

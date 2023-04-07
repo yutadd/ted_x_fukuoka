@@ -6,6 +6,7 @@ export const HamburgerMenu = () => {
     const context = useContext(stateContext);
     const lang = context.outterLang;
     const [showInsideHamburgerMenu, setShowInsideHamburgerMenu] = useState(false);
+    const path = window.location.pathname;
     return (
         <>
 
@@ -18,7 +19,7 @@ export const HamburgerMenu = () => {
                         <DropDownMenu isSingle={true} link={"/"} text={lang["header"]["home"]} />
                         <DropDownMenu isSingle={true} link="/event/tedxfukuoka2023" text={lang["header"]["latest"]["latest"]} />
                         <DropDownMenu isSingle={false} link="/" text={lang["header"]["about"]["about"]} inner_texts={[lang["header"]["about"]["TED"], lang["header"]["about"]["TEDx"], lang["header"]["about"]["partners"]]} inner_links={["/ted", "/tedx", "/partners"]} />
-                        <DropDownMenu onClick={() => { context.setCategory(context.category === "2023" ? "2020" : "2023"); console.log(context.category === "2023" ? "switching to 2020" : "switching to 2023") }} isSingle={true} link={"#_"} text={lang["header"][context.category === "2023" ? "switchTo2020" : "switchTo2023"]} />
+                        {(path === "/" || path === "/profiles") ? <DropDownMenu onClick={() => { context.setCategory(context.category === "2023" ? "2020" : "2023"); console.log(context.category === "2023" ? "switching to 2020" : "switching to 2023") }} isSingle={true} link={"#_"} text={lang["header"][context.category === "2023" ? "switchTo2020" : "switchTo2023"]} /> : <></>}
                     </div>
                     :
                     <></>
