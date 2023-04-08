@@ -2,29 +2,37 @@
 
 ![concept_image](/images/concept_image.jpg)
 
-**Summaly**
+**We are pleased to announce TEDxFukuoka2023 conference.**
 
-Fukuoka, Japan – March 2, 2023 – TEDxFukuoka (Joe Okubo, Organizer) will host a TEDx event “TEDxFukuoka2023 　 All Good Things” on Saturday, April 22, from 1:00PM to 5:30PM at Science Hall (Fukuoka City Science Museum).
+TEDxFukuoka2023 will be held on Saturday, April 22 at the Science Hall, Fukuoka City Science Museum.  
+Between the show, enjoy talk with speakers/performers and participants mingle to discuss the presentations, generate new ideas and celebrate this year's theme “ALL GOOD THINGS”.
 
-TEDxFukuoka presents this year’s theme, “All Good Things”.  
-The event features 14 wonderful speakers who each embody the passion and inspiration behind TED spirit. They will share their ideas with Fukuoka and the world.
+Date: Saturday, April 22, 2023  
+Time: (Open:12:20PM) 1:00PM-5:30PM  
+Place: Science Hall, 6F Fukuoka City Science Museum, 4-2-1 Chuo-Ku, Fukuoka City  
+Cost: 5,000 Yen/Adult or 2,500 Yen/Student
 
-Stay after the sessions for the chance to mingle with both the speakers and participants.  
-**Speakers at TEDxFukuoka include (as follows in alphabetical order)**:
+**Scheduled Speakers and Performers;**  
+**Chika Tsubouchi** - President of GHIBLI/Model for the drama "First Penguin”  
+**Ippei Matsukiyo** - Korean HR matching / inbound marketing specialist  
+**Kei Taira** - Urban Circular Lifestyle Designer/ LFC composting adviser  
+**Kozo Hino** - Founder of Internet High School/Education Innovator  
+**Mamoru Masumoto** - Drone(UAV) Airway Designer  
+**Minami Shibata** - Painter/creator  
+**Miyuki Kawamura** - Polyhedral and geometric-based origami artist  
+**Nuren Abedin** - Research Fellow, Yunus & Shiiki Social Business Research Center, Kyushu University  
+**Ryoko Inoue** - Innovation Coordinator/Researcher, Social Innovation Lab Kyoto  
+**Scott Valentine** - Professor, Kyushu University Institute for Asian and Oceanian Studies  
+**Takayuki Konishi** - Irish Traditional Dance "Sean Nós" Dancer  
+**Takushi Sato** - Medical doctor  
+**Tatsuo Kuzuhara** - Cook on a Country Hill  
+**Yoshiko Ishibashi** - Social and Emotional Learning (SEL) ＆Emotional Intelligence workshop facilitator/trainer
 
-**Chika Tsubouchi** – President of GHIBLI/Model for the drama “First Penguin”  
-**Ippei Matsukiyo** – Korean HR matching / inbound marketing specialist  
-**Kei Taira** – Urban Circular Lifestyle Designer/ LFC composting adviser  
-**Kozo Hino** – Founder of Internet High School/Education Innovator  
-**Mamoru Masumoto** – Drone(UAV) Airway Designer  
-**Minami Shibata** – Painter/creator  
-**Miyuki Kawamura** – Polyhedral and geometric-based origami artist  
-**Nuren Abedin** – Research Fellow, Yunus & Shiiki Social Business Research Center, Kyushu University  
-**Ryoko Inoue** – Innovation Coordinator/Researcher, Social Innovation Lab Kyoto  
-**Scott Valentine** – Professor, Kyushu University Institute for Asian and Oceanian Studies  
-**Takayuki Konishi** – Irish Traditional Dance “Sean Nós” Dancer  
-**Takushi Sato** – Medical doctor  
-**Tatsuo Kuzuhara** – Cook on a Country Hill  
-**Yoshiko Ishibashi** – Social and Emotional Learning (SEL) &Emotional Intelligence workshop facilitator/trainer
+The TEDxFukuoka 2023 team is working hard to deliver an unforgettable show with captivating speakers and performers.
 
+Be sure to register as soon as possible.
+
+We look forward to seeing you at TEDxFukuoka2023!
+
+TEDxFukuoka2023 team  
 Application: http://bit.ly/3Jfx83D

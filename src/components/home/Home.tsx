@@ -38,13 +38,13 @@ export const Home = (): JSX.Element => {
     return (
         <Outter>
             <div className="top" >
-                <a href="/" className="top-inner">
+                <a href={(context.category == "2023" ? "/event/tedxfukuoka2023" : "/event/tedxfukuoka2020")} className="top-inner">
                     <img className="background-image" src={"/images/" + (context.category == "2023" ? "concept_image.jpg" : "concept_image2020.jpg")} alt="" />
                 </a>
             </div>
             {speakers}
             <div id="recently">
-            <Recently />
+                <Recently />
             </div>
         </Outter >
     )
