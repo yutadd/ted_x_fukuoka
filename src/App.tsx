@@ -72,6 +72,8 @@ function App() {
           <Route path='/ted' Component={TED} />
           <Route path='/tedx' Component={TEDx} />
           <Route path='/partners' Component={Partners} />
+          {/*パス互換性*/}
+          <Route path='/:event' Component={Events} />
           <Route Component={NotFound} />
         </Routes>
       </BrowserRouter>
