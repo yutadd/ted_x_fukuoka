@@ -12,8 +12,8 @@
   text-align: center;
 }
 .header-logo-img {
-  width: 300px;
-  margin: 8px 0px;
+  width: 250px;
+  margin: 0px;
 }
 
 .footer-outter {
@@ -22,27 +22,29 @@
 }
 .footer-left-panel {
   display: inline-block;
-  width: 50%;
+  width: 48%;
 }
 .footer-logo-image {
   width: 70%;
 }
 .footer-right-panel {
-  font-size: 24px;
+  font-size: 19px;
   width: 50%;
   vertical-align: top;
-  padding-top: 50px;
+  padding-top: 10px;
   text-align: right;
   display: inline-block;
 }
 .footer-right-item {
-  display: block;
+  text-align: left;
+  display: inline-block;
   padding-right: 80px;
   color: white;
   text-decoration: none;
 }
 .footer-copyright {
-  padding-top: 5%;
+  padding-top: 10px;
+  padding-left: 10px;
   color: white;
   text-align: center;
   display: inline-block;
@@ -64,10 +66,12 @@
     width: 95%;
   }
   .footer-right-panel {
+    text-align: center;
     width: 100%;
     padding-top: 0px;
   }
   .footer-right-item {
+    display: inline-block;
     padding-right: 5%;
     text-align: left;
     padding-left: 5%;

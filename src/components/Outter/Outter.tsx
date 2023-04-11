@@ -20,7 +20,7 @@ export const Outter = (props: any): JSX.Element => {
             <div className="footer-outter">
                 <div className="footer-left-panel">
                     <div className="footer-copyright">
-                        This independent TEDx event is operated under license from TED.
+                        This independent TEDx event is operated under license from TED.<br />
                         TED CONFERENCES, LLC Some Rights Reserved | TEDxFukuoka 2023
                     </div>
                 </div>

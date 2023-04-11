@@ -34,7 +34,6 @@
 .title {
   position: absolute;
   bottom: 0px;
-  opacity: 75%;
   background-color: black;
   text-align: center;
   width: 100%;
@@ -42,5 +41,6 @@
 }
 .title-inner {
   text-decoration: none;
+  margin: 6px 0px;
   color: white;
 }

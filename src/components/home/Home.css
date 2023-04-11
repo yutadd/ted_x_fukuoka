@@ -1,5 +1,5 @@
 .top {
-  padding-top: 102.66px;
+  padding-top: 72px;
   width: 100%;
   height: auto;
   background-color: black;
@@ -19,8 +19,8 @@
   padding: 10px 0px;
   font-weight: 800;
 }
-@media (max-width: 700px) {
+@media (max-width: 490px) {
   .top {
-    padding-top: 75px;
+    padding-top: 59px;
   }
 }
