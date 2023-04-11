@@ -13,7 +13,11 @@ export const Events = () => {
     const [text, setText] = useState("");
     const { event } = useParams<{ event: any }>();
     fetch("/events/" + event + "_" + context.lang + ".md").then((res) => res.text().then((tx) => {
-        setText(tx);
+        if(tx.startsWith("<!DOCTYPE")){
+setText("404 not found");
+        }else{
+            setText(tx);
+        }
     }));
     const events = [];
     for (const elm of context.recentlyLang["events"]) {
