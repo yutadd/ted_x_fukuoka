@@ -1,4 +1,4 @@
-# TEDxFukuoka2023 All Good Things
+# TEDxFukuoka2020 tipping point
 
 ![concept_image](/images/concept_image2020.jpg)
 
