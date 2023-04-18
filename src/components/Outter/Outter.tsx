@@ -12,7 +12,7 @@ export const Outter = (props: any): JSX.Element => {
         <div id="top">
             <div className="header">
                 <div className="header-logo-outter">
-                    <Link to="/"><img width="auto" className="header-logo-img" src="/images/TEDxFukuoka-logo-k-RGB450.webp" alt="TEDxFukuoka_logo" /></Link>
+                    <Link to="/"><img width="auto" className="header-logo-img" src="/images/tedxfukuoka-logo-k-rgb450.webp" alt="TEDxFukuoka_logo" /></Link>
                 </div>
                 <HamburgerMenu />
             </div>

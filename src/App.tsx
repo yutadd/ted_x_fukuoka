@@ -11,6 +11,7 @@ import { Media } from './components/About/Media/Media';
 import { TED } from './components/About/TED/TED';
 import { TEDx } from './components/About/TEDx/TEDx';
 import { Partners } from './components/About/Partners/Partners';
+import { Outter } from './components/Outter/Outter';
 export type SharedState = {
   lang: string
   category: string
@@ -74,7 +75,7 @@ function App() {
           <Route path='/partners' Component={Partners} />
           {/*パス互換性*/}
           <Route path='/:event' Component={Events} />
-          <Route Component={NotFound} />
+          <Route path="*" Component={NotFound} />
         </Routes>
       </BrowserRouter>
     </stateContext.Provider>
@@ -82,13 +83,16 @@ function App() {
   );
 }
 export function NotFound() {
+  console.log("404")
   return (
-
-    <div>
+<>
+<Outter>
+    <div style={{paddingTop:"120px"}}>
       <h1>404 Not Found</h1>
       <p>The page you are looking for does not exist.</p>
     </div>
-
+    </Outter>
+    </>
   );
 }
 export default App;
