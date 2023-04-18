@@ -46,7 +46,7 @@ export const Home = (): JSX.Element => {
         <Outter>
             <div className="top" >
                 <a href={(context.category == "2023" ? "http://bit.ly/3Jfx83D" : "/event/tedxfukuoka2020")} className="top-inner">
-                    <img className="background-image" src={"/images/" + (context.category == "2023" ? "concept_image.jpg" : "concept_image2020.jpg")} alt="" />
+                    <img className="background-image" src={"/images/" + (context.category == "2023" ? "concept-image.webp" : "concept-image2020.webp")} alt="" />
                 </a>
             </div>
             {speakers}

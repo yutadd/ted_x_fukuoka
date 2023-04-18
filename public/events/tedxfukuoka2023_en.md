@@ -1,6 +1,6 @@
 # TEDxFukuoka2023 All Good Things
 
-![concept_image](/images/concept_image.jpg)
+![concept_image](/images/concept-image.webp)
 
 **We are pleased to announce TEDxFukuoka2023 conference.**
 

@@ -1,27 +1,27 @@
 {
   "partners": [
     {
-      "file": "info_factory.png",
+      "file": "info-factory.webp",
       "link": "https://internet-biz.jp/"
     },
     {
-      "file": "IBA.png",
+      "file": "IBA.webp",
       "link": "https://internet-biz.jp/"
     },
     {
-      "file": "LOVE_LAB_MUSIC.png",
+      "file": "LOVE-LAB-MUSIC.webp",
       "link": "https://lovelabmusic.com/"
     },
     {
-      "file": "adamanda.png",
+      "file": "adamanda.webp",
       "link": "https://www.amadaman.com/"
     },
     {
       "link": "https://peatix.com/?lang=ja",
-      "file": "peatix.png"
+      "file": "peatix.webp"
     },
     {
-      "file": "lolipop.png",
+      "file": "lolipop.webp",
       "link": "https://lolipop.jp/"
     }
   ]

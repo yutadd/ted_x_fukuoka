@@ -1,6 +1,6 @@
 # TEDxFukuoka2020 tipping point
 
-![concept_image](/images/concept_image2020.jpg)
+![concept_image](/images/concept-image2020.webp)
 
 **概要**
 

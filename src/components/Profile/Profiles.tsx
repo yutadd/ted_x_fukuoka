@@ -11,7 +11,7 @@ export const Profiles = () => {
     for (const elm of lang["speakers"]) {
         if (elm["category"] === context.category) {
             result.push(
-                <SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.png")} name={elm["name"]} text={elm["profile"]} />
+                <SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.webp")} name={elm["name"]} text={elm["profile"]} />
             );
         }
     }

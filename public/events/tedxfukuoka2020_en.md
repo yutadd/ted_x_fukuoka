@@ -1,6 +1,6 @@
 # TEDxFukuoka2023 All Good Things
 
-![concept_image](/images/concept_image2020.jpg)
+![concept_image](/images/concept-image2020.webp)
 
 **Summary**
 

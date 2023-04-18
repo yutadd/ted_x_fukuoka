@@ -13,9 +13,11 @@ export const Events = () => {
     const [text, setText] = useState("");
     const { event } = useParams<{ event: any }>();
     fetch("/events/" + event + "_" + context.lang + ".md").then((res) => res.text().then((tx) => {
-        if(tx.startsWith("<!DOCTYPE")&&tx.startsWith("<!doctype")){
-setText("404 not found");
+        if(tx.startsWith("<!DOCTYPE")||tx.startsWith("<!doctype.*")){
+            console.log("404")
+            setText("404 not found");
         }else{
+            console.log(tx)
             setText(tx);
         }
     }));
