@@ -21,7 +21,8 @@ export const Home = (): JSX.Element => {
     const lang = context.speakerLang;
     //登壇者パネルの準備
     useEffect(() => {
-        setspeakers(lang["speakers"]
+        setspeakers(
+            lang["speakers"]
             .filter((speaker: any) => speaker.category === context.category)
             .map((speaker: any) => (
                 <SpeakerTile
