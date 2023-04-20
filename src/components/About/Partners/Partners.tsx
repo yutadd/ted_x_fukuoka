@@ -12,11 +12,28 @@ export const Partners = () => {
     const [logoEls, setLogoEls] = useState<JSX.Element[]>([]);
     useEffect(() => {
         fetch("/about/partners.json").then((res) => res.json().then((json) => {
-            const result = [];
+            const result: { link: string, file: string }[][] = [];
             for (const els of json["partners"]) {
-                result.push(<a key={els["file"]} className="partner-link" href={els["link"]}><img className="partner-logo-img" src={"/images/" + els["file"]} alt={els["file"]} /> </a>)
+                if (result[els["index"]]) {
+                    result[els["index"]].push({ link: els["link"], file: els["file"] })
+                } else {
+                    result[els["index"]] = [{ link: els["link"], file: els["file"] }]
+                }
             }
-            setLogoEls(result);
+            const resultElement: JSX.Element[] = []
+            for (let i = 0; i < result.length; i++) {
+                let resultelements = result[i];
+                if (resultelements.length > 1) {
+                    for (let partner_card of resultelements) {
+                        resultElement.push(<a key={partner_card.file} className="partner-link" href={partner_card.link}><img className="partner-logo-img" src={"/images/" + partner_card.file} alt={partner_card.file} /> </a>);
+                    }
+                    resultElement.push(<br />);
+                } else {
+                    resultElement.push(<a key={resultelements[0].file} className="partner-link-big" href={resultelements[0].link}><img className="partner-logo-img" src={"/images/" + resultelements[0].file} alt={resultelements[0].file} /> </a>);
+                    resultElement.push(<br />);
+                }
+            }
+            setLogoEls(resultElement);
         }));
     }, [])
 
@@ -26,14 +43,13 @@ export const Partners = () => {
                 {context.outterLang["header"]["about"]["partners"]}
             </div>
         </div>
-        {/** 
         <div className="partners-contents-outter">
             <div className="partners-contents-inner">
-                {logoEls}
+                <a key="https://internet-biz.jp/" className="partner-link" href="https://internet-biz.jp/"><img className="partner-logo-img" src={"/images/iba.webp"} alt="/images/iba.webp" /> </a>
+                {/*logoEls*/}
             </div>
         </div>
-       */
-       }
+
         <Recently />
     </Outter>
 }

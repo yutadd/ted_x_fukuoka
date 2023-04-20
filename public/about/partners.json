@@ -1,28 +1,79 @@
 {
   "partners": [
     {
-      "file": "info-factory.webp",
-      "link": "https://internet-biz.jp/"
-    },
-    {
       "file": "iba.webp",
-      "link": "https://internet-biz.jp/"
+      "link": "https://internet-biz.jp/",
+      "index": 0
     },
     {
       "file": "love-lab-music.webp",
-      "link": "https://lovelabmusic.com/"
+      "link": "https://lovelabmusic.com/",
+      "index": 0
+    },
+    {
+      "file": "fsm_logo.jpg",
+      "link": "https://www.fsm.ac.jp/",
+      "index": 1
+    },
+    {
+      "file": "tech_c.jpg",
+      "link": "https://www.fca.ac.jp/",
+      "index": 2
     },
     {
       "file": "adamanda.webp",
-      "link": "https://www.amadaman.com/"
+      "link": "https://www.amadaman.com/",
+      "index": 3
+    },
+    {
+      "file": "cnn_glents.jpg",
+      "link": "https://www.asahipress.com/special/glents/",
+      "index": 4
+    },
+    {
+      "file": "oltana.webp",
+      "link": "https://oltana.jp/",
+      "index": 4
+    },
+    {
+      "file": "adachicoffee.png",
+      "link": "https://www.adachicoffee.com/",
+      "index": 5
+    },
+    {
+      "file": "organicpapa.png",
+      "link": "https://organicpapa.org/",
+      "index": 5
+    },
+    {
+      "link": "https://www.facebook.com/kawasakiseichaen/about/?ref=page_internal&locale=ja_JP",
+      "file": "printio.jpg",
+      "index": 6
+    },
+    {
+      "link": "https://printio.me/",
+      "file": "printio.jpg",
+      "index": 6
     },
     {
       "link": "https://peatix.com/?lang=ja",
-      "file": "peatix.webp"
+      "file": "peatix.webp",
+      "index": 7
     },
     {
       "file": "lolipop.webp",
-      "link": "https://lolipop.jp/"
+      "link": "https://lolipop.jp/",
+      "index": 7
+    },
+    {
+      "file": "fukuoka-city.webp",
+      "link": "https://www.city.fukuoka.lg.jp/",
+      "index": 8
+    },
+    {
+      "file": "fukuokanow.png",
+      "link": "https://www.fukuoka-now.com/ja/",
+      "index": 8
     }
   ]
 }
