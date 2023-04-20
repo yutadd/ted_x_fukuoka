@@ -87,7 +87,7 @@ export function NotFound() {
   return (
 <>
 <Outter>
-    <div style={{paddingTop:"120px"}}>
+    <div style={{backgroundColor:"white",paddingTop:"120px"}}>
       <h1>404 Not Found</h1>
       <p>The page you are looking for does not exist.</p>
     </div>

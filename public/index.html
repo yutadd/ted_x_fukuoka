@@ -101,13 +101,21 @@
     -->
   </head>
   <body
-    style="
+    style="--darkreader-inline-bgcolor:white;background-color: white;
       margin: 0px;
       font-family: Arial, ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN,
         メイリオ, Meiryo, sans-serif;
     "
   >
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      setInterval(() => {
+        let styles=document.getElementById("root").style;
+        styles.setProperty("--darkreader-inline-bgcolor","white")
+        document.getElementById("root").style=null;
+      }, 500);
+      
+     </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.

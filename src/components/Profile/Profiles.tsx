@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Outter } from '../Outter/Outter';
 import "./Profile.css";
 import { SpeakerCard } from './SpeakerCard';
@@ -6,15 +6,36 @@ import { stateContext } from '../../App';
 import { Recently } from '../home/Recently';
 export const Profiles = () => {
     const context = useContext(stateContext);
-    const lang = context.speakerLang;
-    let result = [];
-    for (const elm of lang["speakers"]) {
-        if (elm["category"] === context.category) {
-            result.push(
-                <SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.webp")} name={elm["name"]} text={elm["profile"]} />
-            );
+    const [cardList,setCardList]=useState<JSX.Element[]>([]);
+    useEffect(()=>{
+        const lang = context.speakerLang;
+        let result:{session:string,card:JSX.Element}[][]=[];
+        for (const elm of lang["speakers"]) {
+            if (elm["category"] === context.category) {
+                let found=false;
+                const session:string=elm["session"];
+                for (let i=0;i<result.length;i++){
+                    if (result[i][0].session===session){
+                        found=true
+                        result[i].push({session:session,card:<SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.webp")} name={elm["name"]} text={elm["profile"]} />})
+                        break;
+                    }
+                }
+                if(!found){
+                    result.push([{session:session,card:<SpeakerCard key={"/images/" + elm["file"] + elm["name"]} file={(elm["file"] ? elm["file"] : "unknown.webp")} name={elm["name"]} text={elm["profile"]} />}])
+                }
+            }
         }
-    }
+        const _cards:JSX.Element[]=[];
+        for(const cards of result){
+            _cards.push(<div className='profile-session-title'>Session: {cards[0].session?cards[0].session:"All"}</div>)
+            for (const card of cards){
+                _cards.push(card.card)
+            }
+        }
+        setCardList(_cards);
+    },[context.category])
+   
     useEffect(() => {
         setTimeout(() => {
             const targetEl = document.getElementById(window.location.hash.split('#')[1]);
@@ -32,7 +53,7 @@ export const Profiles = () => {
                     </div>
                     <div className='profile-title-subtext'>Speakers on TEDxFukuoka</div>
                 </div>
-                {result}
+                {cardList}
                 <Recently />
             </Outter>
         </>

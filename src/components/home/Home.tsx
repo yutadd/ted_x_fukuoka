@@ -32,7 +32,7 @@ export const Home = (): JSX.Element => {
                     file={speaker.file}
                 />
             )));
-    }, []);
+    }, [context.category]);
     // Use map instead of for loop
     //読み込み終了後200ミリ秒後にURLのハッシュがある位置にスクロールする
     useEffect(() => {
