@@ -28,6 +28,9 @@ export const Outter = (props: any): JSX.Element => {
                     <a href="/cc/" className="footer-right-item">
                         {lang["footer"]["cc"]}
                     </a>
+                    <a href="/partners" className="footer-right-item">
+                        {lang["header"]["about"]["partners"]}
+                    </a>
                     <a href="/contact" className="footer-right-item">
                         {lang["footer"]["contact"]}
                     </a>

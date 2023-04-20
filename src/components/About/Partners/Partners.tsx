@@ -26,11 +26,14 @@ export const Partners = () => {
                 {context.outterLang["header"]["about"]["partners"]}
             </div>
         </div>
+        {/** 
         <div className="partners-contents-outter">
             <div className="partners-contents-inner">
                 {logoEls}
             </div>
         </div>
+       */
+       }
         <Recently />
     </Outter>
 }
