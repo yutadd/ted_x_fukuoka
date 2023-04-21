@@ -22,7 +22,6 @@ Cost: 5,000 Yen/Adult or 2,500 Yen/Student
 **Miyuki Kawamura** - Polyhedral and geometric-based origami artist  
 **Nuren Abedin** - Research Fellow, Yunus & Shiiki Social Business Research Center, Kyushu University  
 **Ryoko Inoue** - Innovation Coordinator/Researcher, Social Innovation Lab Kyoto  
-**Scott Valentine** - Professor, Kyushu University Institute for Asian and Oceanian Studies  
 **Takayuki Konishi** - Irish Traditional Dance "Sean Nós" Dancer  
 **Takushi Sato** - Medical doctor  
 **Tatsuo Kuzuhara** - Cook on a Country Hill  
