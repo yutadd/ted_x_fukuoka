@@ -23,23 +23,21 @@ export const Home = (): JSX.Element => {
     useEffect(() => {
         setspeakers(
             lang["speakers"]
-            .filter((speaker: any) => speaker.category === context.category)
-            .map((speaker: any) => (
-                <SpeakerTile
-                    key={speaker.name}
-                    name={speaker.name}
-                    category={speaker.category}
-                    file={speaker.file}
-                />
-            )));
+                .filter((speaker: any) => speaker.category === context.category && speaker.profile)
+                .map((speaker: any) => (
+                    <SpeakerTile
+                        key={speaker.name}
+                        name={speaker.name}
+                        category={speaker.category}
+                        file={speaker.file}
+                    />
+                )));
     }, [context.category]);
     // Use map instead of for loop
     //読み込み終了後200ミリ秒後にURLのハッシュがある位置にスクロールする
     useEffect(() => {
         setTimeout(() => {
             const targetEl = document.getElementById(window.location.hash.split('#')[1])
-            console.log(window.location.hash.split('#')[1]);
-            console.log("scrolling to " + targetEl);
             targetEl?.scrollIntoView({ behavior: 'smooth' });
         }, 200);
     }, [window.location.hash]);

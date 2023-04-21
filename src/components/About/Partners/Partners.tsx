@@ -44,12 +44,81 @@ export const Partners = () => {
             </div>
         </div>
         <div className="partners-contents-outter">
-            <div className="partners-contents-inner">
-                <a key="https://internet-biz.jp/" className="partner-link" href="https://internet-biz.jp/"><img className="partner-logo-img" src={"/images/iba.webp"} alt="/images/iba.webp" /> </a>
-                {/*logoEls*/}
+            <div style={{ display: "block", height: "100px" }}></div>
+            <div>
+                <a href="https://lovelabmusic.com/">
+                    <img style={{ width: "30%" }} src={"/images/love-lab-music.webp"} alt="/images/love-lab-music.webp" />
+                </a>
+                <div style={{ width: "23%", display: "inline-block" }}></div>
+                <a href="https://internet-biz.jp/">
+                    <img style={{ width: "30%" }} src={"/images/iba.webp"} alt="/images/iba.webp" />
+                </a>
             </div>
+            <div style={{ display: "block", height: "100px" }}></div>
+            <a href="https://www.fsm.ac.jp/">
+                <img style={{ width: "70%" }} src={"/images/fsm_logo.jpg"} alt="/images/fsm_logo.jpg" />
+            </a>
+            <div style={{ display: "block", height: "100px" }}></div>
+            <a href="https://www.fca.ac.jp/">
+                <img style={{ width: "60%" }} src={"/images/tech_c.jpg"} alt="/images/tech_c.jpg" />
+            </a>
+            <div style={{ display: "block", height: "100px" }}></div>
+            <a href="https://www.amadaman.com/">
+                <img style={{ width: "55%" }} src={"/images/adamanda.webp"} alt="/images/tech_c.jpg" />
+            </a>
+            <div style={{ display: "block", height: "100px" }}></div>
+            <div>
+                <a href="https://www.asahipress.com/special/glents/">
+                    <img style={{ width: "30%" }} src={"/images/cnn_glents.jpg"} alt="/images/cnn_glents.jpg" />
+                </a>
+                <div style={{ width: "23%", display: "inline-block" }}></div>
+                <a href="https://oltana.jp/">
+                    <img style={{ width: "20%" }} src={"/images/oltana.webp"} alt="/images/oltana.webp" />
+                </a>
+            </div>
+            <div style={{ display: "block", height: "100px" }}></div>
+            <div>
+                <a href="https://www.adachicoffee.com/">
+                    <img style={{ width: "30%" }} src={"/images/adachicoffee.png"} alt="/images/adachicoffee.png" />
+                </a>
+                <div style={{ width: "23%", display: "inline-block" }}></div>
+                <a href="https://organicpapa.org/">
+                    <img style={{ width: "30%" }} src={"/images/organicpapa.png"} alt="/images/organicpapa.png" />
+                </a>
+            </div>
+            <div style={{ display: "block", height: "100px" }}></div>
+            <div>
+                <a href="https://www.facebook.com/kawasakiseichaen/about/?ref=page_internal&locale=ja_JP">
+                    <img style={{ width: "20%" }} src={"/images/kawasakien.jpg"} alt="/images/kawasakien.jpg" />
+                </a>
+                <div style={{ width: "23%", display: "inline-block" }}></div>
+                <a href="https://printio.me/">
+                    <img style={{ width: "35%" }} src={"/images/printio.jpg"} alt="/images/printio.jpg" />
+                </a>
+            </div>
+            <div style={{ display: "block", height: "100px" }}></div>
+            <div>
+                <a href="https://peatix.com/?lang=ja">
+                    <img style={{ width: "30%" }} src={"/images/peatix.webp"} alt="/images/peatix.webp" />
+                </a>
+                <div style={{ width: "23%", display: "inline-block" }}></div>
+                <a href="https://lolipop.jp/">
+                    <img style={{ width: "30%" }} src={"/images/lolipop.webp"} alt="/images/lolipop.webp" />
+                </a>
+            </div>
+            <div style={{ display: "block", height: "100px" }}></div>
+            <div>
+                <a href="https://www.city.fukuoka.lg.jp/">
+                    <img style={{ width: "30%" }} src={"/images/fukuoka-city.png"} alt="/images/fukuoka-city.png" />
+                </a>
+                <div style={{ width: "23%", display: "inline-block" }}></div>
+                <a href="https://www.fukuoka-now.com/ja/">
+                    <img style={{ width: "20%" }} src={"/images/fukuokanow.png"} alt="/images/fukuokanow.png" />
+                </a>
+            </div>
+            {/*logoEls*/}
         </div>
 
         <Recently />
-    </Outter>
+    </Outter >
 }
