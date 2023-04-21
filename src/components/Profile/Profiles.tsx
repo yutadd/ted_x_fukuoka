@@ -31,7 +31,7 @@ export const Profiles = () => {
         const _cards: JSX.Element[] = [];
         intermission = 1;
         for (const cards of result) {
-            _cards.push(<div key={cards[0].card.key?.toString() + "alpha"} className='profile-session-title'>{cards[0].card.key?.toString().startsWith("inter") ? "Intermission" + intermission++ : "Session" + session++}: {cards[0].session ? cards[0].session : "All"}</div>)
+            _cards.push(<div key={cards[0].card.key?.toString() + "alpha"} className='profile-session-title'>{cards[0].card.key?.toString().startsWith("inter") ? "" : "Session" + session++ + ":"} {cards[0].session ? cards[0].session : "All"}</div>)
             for (const card of cards) {
                 _cards.push(card.card)
             }

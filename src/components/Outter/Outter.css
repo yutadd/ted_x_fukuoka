@@ -36,6 +36,7 @@
   display: inline-block;
 }
 .footer-right-item {
+  padding-top: 40px;
   text-align: left;
   display: inline-block;
   padding-right: 80px;
