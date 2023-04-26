@@ -4,6 +4,8 @@
 
 **We are pleased to announce TEDxFukuoka2023 conference.**
 
+
+
 TEDxFukuoka2023 will be held on Saturday, April 22 at the Science Hall, Fukuoka City Science Museum.  
 Between the show, enjoy talk with speakers/performers and participants mingle to discuss the presentations, generate new ideas and celebrate this year's theme “ALL GOOD THINGS”.
 
@@ -11,6 +13,8 @@ Date: Saturday, April 22, 2023
 Time: (Open:12:20PM) 1:00PM-5:30PM  
 Place: Science Hall, 6F Fukuoka City Science Museum, 4-2-1 Chuo-Ku, Fukuoka City  
 Cost: 5,000 Yen/Adult or 2,500 Yen/Student
+
+Youtube Stream url: https://youtube.com/live/SEG-UZNOF-4
 
 **Scheduled Speakers and Performers;**  
 **Chika Tsubouchi** - President of GHIBLI/Model for the drama "First Penguin”  

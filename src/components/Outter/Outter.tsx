@@ -17,6 +17,9 @@ export const Outter = (props: any): JSX.Element => {
                 <HamburgerMenu />
             </div>
             {props.children}
+            <ul className="follow-me">
+                <li><a href="https://www.youtube.com/" className="youtube"></a></li>
+            </ul>
             <div className="footer-outter">
                 <div className="footer-left-panel">
                     <div className="footer-copyright">

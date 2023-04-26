@@ -4,6 +4,7 @@ import { SpeakerTile } from "./SpeakerTile";
 import "./Home.css";
 import { Recently } from "./Recently";
 import { stateContext } from "../../App";
+import { Link } from "react-router-dom";
 
 /**
  * トップ画面のすべての要素をひとまとめにする要素
@@ -44,9 +45,9 @@ export const Home = (): JSX.Element => {
     return (
         <Outter>
             <div className="top" >
-                <a href={(context.category == "2023" ? "https://youtube.com/live/SEG-UZNOF-4" : "/event/tedxfukuoka2020")} className="top-inner">
+                <Link to={(context.category == "2023" ? "/event/tedxfukuoka2023" : "/event/tedxfukuoka2020")} className="top-inner">
                     <img className="background-image" src={"/images/" + (context.category == "2023" ? "concept-image.webp" : "concept-image2020.webp")} alt="" />
-                </a>
+                </Link>
             </div>
             {speakers}
             <div id="recently">
