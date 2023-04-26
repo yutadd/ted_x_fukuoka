@@ -62,6 +62,13 @@
   display: inline-block;
 }
 @media (max-width: 700px) {
+  .outter-sns-links {
+    font-size: 25px;
+    padding-inline-start: 0px;
+  }
+  .outter-sns-links li {
+    padding: 15px;
+  }
   .header-logo-img {
     width: 200px;
   }
