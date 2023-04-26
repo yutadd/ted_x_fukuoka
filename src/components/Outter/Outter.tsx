@@ -17,8 +17,11 @@ export const Outter = (props: any): JSX.Element => {
                 <HamburgerMenu />
             </div>
             {props.children}
-            <ul className="follow-me">
-                <li><a href="https://www.youtube.com/" className="youtube"></a></li>
+            <ul className="outter-sns-links">
+                <li><a href="https://www.youtube.com/@TEDxFukuoka/playlists"><i className="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.flickr.com/photos/tedxfukuoka"><i className="fa-brands fa-flickr"></i></a></li>
+                <li><a href="https://twitter.com/TEDx_Fukuoka"><i className="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/TEDxFukuoka"><i className="fa-brands fa-facebook"></i></a></li>
             </ul>
             <div className="footer-outter">
                 <div className="footer-left-panel">
