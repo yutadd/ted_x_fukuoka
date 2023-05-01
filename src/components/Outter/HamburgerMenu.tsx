@@ -4,7 +4,21 @@ import { DropDownMenu } from "./DropDownMenu/DropDownMenu";
 import "./HamburgerMenu.css"
 export const HamburgerMenu = () => {
     const context = useContext(stateContext);
-    const lang = context.outterLang;
+    let [lang, setLang] = useState<any>();
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+        console.log("changed")
+        console.log(context.outterLang)
+        if (context.outterLang) {
+            console.log("loaded")
+            setIsLoaded(true)
+            setLang(context.outterLang);
+        } else {
+            console.log("not ready")
+        }
+
+    }, [context.outterLang])
+
     const [showInsideHamburgerMenu, setShowInsideHamburgerMenu] = useState(false);
     const path = window.location.pathname;
     return (
@@ -14,7 +28,7 @@ export const HamburgerMenu = () => {
                 <a onClick={() => setShowInsideHamburgerMenu(!showInsideHamburgerMenu)} className="HamburgerMenu">
                     <img width="auto" className="hamburger-img" src="/hamburger.png" alt="" />
                 </a>
-                {showInsideHamburgerMenu ?
+                {showInsideHamburgerMenu && isLoaded ?
                     <div>
                         <DropDownMenu isSingle={true} link={"/"} text={lang["header"]["home"]} />
                         <DropDownMenu isSingle={true} link="/event/tedxfukuoka2023" text={lang["header"]["latest"]["latest"]} />

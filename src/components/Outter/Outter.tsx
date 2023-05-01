@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { stateContext } from "../../App";
 import { HamburgerMenu } from "./HamburgerMenu";
 import "./Outter.css";
@@ -7,7 +7,17 @@ export const Outter = (props: any): JSX.Element => {
 
 
     const context = useContext(stateContext);
-    const lang = context.outterLang;
+    let [lang, setLang] = useState<any>();
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+        if (context.outterLang) {
+            setIsLoaded(true)
+            setLang(context.outterLang);
+        } else {
+            console.log("not ready")
+        }
+
+    }, [context.outterLang])
     return (
         <div id="top">
             <div className="header">
@@ -31,18 +41,19 @@ export const Outter = (props: any): JSX.Element => {
                     </div>
                 </div>
                 <div className="footer-right-panel">
-                    <a href="/cc/" className="footer-right-item">
-                        {lang["footer"]["cc"]}
-                    </a>
-                    <a href="/partners" className="footer-right-item">
-                        {lang["header"]["about"]["partners"]}
-                    </a>
-                    <a href="/contact" className="footer-right-item">
-                        {lang["footer"]["contact"]}
-                    </a>
-                    <a href="/media" className="footer-right-item">
-                        {lang["footer"]["media"]}
-                    </a>
+                    {isLoaded && <>
+                        <a href="/cc/" className="footer-right-item">
+                            {lang["footer"]["cc"]}
+                        </a>
+                        <a href="/partners" className="footer-right-item">
+                            {lang["header"]["about"]["partners"]}
+                        </a>
+                        <a href="/contact" className="footer-right-item">
+                            {lang["footer"]["contact"]}
+                        </a>
+                        <a href="/media" className="footer-right-item">
+                            {lang["footer"]["media"]}
+                        </a></>}
                 </div>
             </div>
         </div>

@@ -7,34 +7,45 @@ import { stateContext } from "../../App";
 import { Link } from "react-router-dom";
 
 /**
- * トップ画面のすべての要素をひとまとめにする要素
+ * path:/
  * ・ヘッダー
  * ・トップ画像
  * ・スピーカータイル
  * ・最新情報
  * ・フッター
+ * をひとまとめにした要素
  */
 export const Home = (): JSX.Element => {
     //表示のモードを取得・設定できる共有された変数の取得。
     const context = useContext(stateContext);
+    const [speakerJson, setSpeakerJson] = useState<any>();
     const [speakers, setspeakers] = useState([]);
-    //登壇者タイルに表示される言語情報の読み込み
-    const lang = context.speakerLang;
-    //登壇者パネルの準備
     useEffect(() => {
-        setspeakers(
-            lang["speakers"]
-                .filter((speaker: any) => speaker.category === context.category && speaker.profile)
-                .map((speaker: any) => (
-                    <SpeakerTile
-                        key={speaker.name}
-                        name={speaker.name}
-                        category={speaker.category}
-                        file={speaker.file}
-                    />
-                )));
-    }, [context.category]);
-    // Use map instead of for loop
+        const _category = context.category;
+        fetch("/locales/speakers/" + context.lang + ".json").then((res) => res.text().then((tx) => {
+            if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
+                console.log("can't fetch \"speaker\" json file");
+            } else {
+                setSpeakerJson(JSON.parse(tx));
+            }
+        }));
+    }, [context.category, context.lang]);
+    useEffect(() => {
+        const _category = context.category;
+        if (speakerJson) {
+            setspeakers(
+                speakerJson["speakers"]
+                    .filter((speaker: any) => speaker.category === _category && speaker.profile)//休憩情報などを表示しないためにプロファイルが埋められているもののみ表示する。
+                    .map((speaker: any) => (
+                        <SpeakerTile
+                            key={speaker.name}
+                            name={speaker.name}
+                            category={speaker.category}
+                            file={speaker.file}
+                        />
+                    )));
+        }
+    }, [speakerJson])
     //読み込み終了後200ミリ秒後にURLのハッシュがある位置にスクロールする
     useEffect(() => {
         setTimeout(() => {
