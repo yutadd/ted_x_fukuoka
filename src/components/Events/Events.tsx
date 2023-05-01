@@ -12,7 +12,8 @@ export const Events = () => {
     const context = useContext(stateContext);
     const [text, setText] = useState("");
     const { event } = useParams<{ event: any }>();
-    const events: JSX.Element[] = [];
+    const [events, setEvents] = useState<JSX.Element[]>();
+    const [isLoaded, setIsLoaded] = useState(false);
     useEffect(() => {
         fetch("/events/" + event + "_" + context.lang + ".md").then((res) => res.text().then((tx) => {
             if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
@@ -21,22 +22,29 @@ export const Events = () => {
             } else {
                 console.log(tx)
                 setText(tx);
+
             }
         }));
-
-        for (const elm of context.recentlyLang["events"]) {
-            events.push(
-                elm["link"].startsWith("http") ?
-                    <a key={elm["title"]} className="event-others-link" href={elm["link"]}>
-                        {elm["title"]}
-                    </a>
-                    :
-                    <Link key={elm["title"]} className="event-others-link" to={elm["link"]}>
-                        {elm["title"]}
-                    </Link>
-            )
-        }
     }, [context.lang])
+    useEffect(() => {
+        const _events = []
+        if (context.recentlyLang) {
+            for (const elm of context.recentlyLang["events"]) {
+                _events.push(
+                    elm["link"].startsWith("http") ?
+                        <a key={elm["title"]} className="event-others-link" href={elm["link"]}>
+                            {elm["title"]}
+                        </a>
+                        :
+                        <Link key={elm["title"]} className="event-others-link" to={elm["link"]}>
+                            {elm["title"]}
+                        </Link>
+                )
+            }
+            setEvents(_events);
+            setIsLoaded(true)
+        }
+    }, [context.recentlyLang]);
 
     return (
         <Outter>
@@ -50,10 +58,12 @@ export const Events = () => {
                     </ReactMarkdown>
                 </div>
             </div>
-            <div className="event-others-outter">
-                <div className="event-others-title">{context.recentlyLang["other_events"]}</div>
-                {events}
-            </div>
+            {
+                isLoaded && <div className="event-others-outter">
+                    <div className="event-others-title">{context.recentlyLang["other_events"]}</div>
+                    {events}
+                </div>
+            }
             <Recently />
         </Outter>
     );

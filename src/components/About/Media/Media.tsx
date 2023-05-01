@@ -14,12 +14,12 @@ export const Media = () => {
         fetch("/about/Media_" + context.lang + ".md").then((res) => res.text().then((tx) => {
             setText(tx);
         }));
-    }, []);
+    }, [context.lang]);
 
     return <Outter>
         <div className="media-title-outter">
             <div className="media-title">
-                {context.outterLang["footer"]["media"]}
+                {context.outterLang && context.outterLang["footer"]["media"]}
             </div>
         </div>
         <div className="media-contents-outter">

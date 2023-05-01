@@ -15,12 +15,12 @@ export const CC = () => {
         fetch("/about/CC_" + context.lang + ".md").then((res) => res.text().then((tx) => {
             setText(tx);
         }));
-    }, []);
+    }, [context.lang]);
 
     return <Outter>
         <div className="cc-title-outter">
             <div className="cc-title">
-                {context.outterLang["footer"]["cc"]}
+                {context.outterLang && context.outterLang["footer"]["cc"]}
             </div>
         </div>
         <div className="cc-contents-outter">

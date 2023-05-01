@@ -16,7 +16,7 @@ export const TED = () => {
     return <Outter>
         <div className="ted-title-outter">
             <div className="ted-title">
-                {context.outterLang["header"]["about"]["TEDx"]}
+                {context.outterLang && context.outterLang["header"]["about"]["TEDx"]}
             </div>
         </div>
         <div className="ted-contents-outter">

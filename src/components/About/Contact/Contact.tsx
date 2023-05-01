@@ -14,12 +14,12 @@ export const Contact = () => {
         fetch("/about/Contact_" + context.lang + ".md").then((res) => res.text().then((tx) => {
             setText(tx);
         }));
-    }, [])
+    }, [context.lang])
 
     return <Outter>
         <div className="contact-title-outter">
             <div className="contact-title">
-                {context.outterLang["footer"]["contact"]}
+                {context.outterLang && context.outterLang["footer"]["contact"]}
             </div>
         </div>
         <div className="contact-contents-outter">
