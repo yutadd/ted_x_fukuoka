@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./DropDownMenu.css";
+/**
+ * こちらはハンバーガーメニュー内のドロップダウンメニューのコンポーネントです
+ * @returns ハンバーガーメニュー内のドロップダウンメニューのコンポーネント
+ */
 export const DropDownMenu = (props: any): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false);
     let menues = [];
-    if (!props.isSingle) {
+    if (!props.isSingle) {//ドロップダウンメニュー内部のメニューを全て表示する
         for (let i = 0; i < props.inner_texts.length; i++) {
             menues.push(
-                (props.inner_links[i].startsWith('http') || window.location.pathname.endsWith(props.link)) ?
+                (props.inner_links[i].startsWith('http') || window.location.pathname.endsWith(props.link)) ?//もし外部のページであればaタグを使い、内部ページであればLinkコンポーネントを使用することで、遷移することなく表示を切り替えられ、応答速度を早められる
                     <a href={props.inner_links[i]} key={props.inner_texts[i]} className="menu inner">
                         {props.inner_texts[i]}
                     </a>
@@ -18,6 +22,9 @@ export const DropDownMenu = (props: any): JSX.Element => {
             )
         }
     }
+    /**
+     * 表示部
+     */
     return (
         <>
             <div className="dropdownmenu-outter ">

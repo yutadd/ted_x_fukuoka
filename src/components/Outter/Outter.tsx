@@ -4,11 +4,15 @@ import { HamburgerMenu } from "./HamburgerMenu";
 import "./Outter.css";
 import { Link, useParams } from "react-router-dom";
 export const Outter = (props: any): JSX.Element => {
-
-
+    /**
+     * ヘッダとフッタ(一番外側)のコンポーネントです。
+     */
     const context = useContext(stateContext);
     let [lang, setLang] = useState<any>();
     const [isLoaded, setIsLoaded] = useState(false);
+    /**
+     * 言語対応表の読み込みが完了してから描画を開始する
+     */
     useEffect(() => {
         if (context.outterLang) {
             setIsLoaded(true)
@@ -16,8 +20,10 @@ export const Outter = (props: any): JSX.Element => {
         } else {
             console.log("not ready")
         }
-
     }, [context.outterLang])
+    /**
+     * 表示部
+     */
     return (
         <div id="top">
             <div className="header">

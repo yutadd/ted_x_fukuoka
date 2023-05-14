@@ -4,9 +4,14 @@ import { Outter } from "../../Outter/Outter"
 import "./Partners.css"
 // Support GFM (tables, autolinks, tasklists, strikethrough)
 import { Recently } from "../../home/Recently";
+/**
+ * こちらはパートナーのページのコンポーネントです。
+ * @returns パートナーのページの内容
+ */
 export const Partners = () => {
+    //パートナーページは使いまわし不可能であるため、HTML要素を直接書いております。
     const context = useContext(stateContext);
-    const [logoEls, setLogoEls] = useState<JSX.Element[]>([]);
+    /*const [logoEls, setLogoEls] = useState<JSX.Element[]>([]);
     useEffect(() => {
         fetch("/about/partners.json").then((res) => res.json().then((json) => {
             const result: { link: string, file: string }[][] = [];
@@ -32,7 +37,11 @@ export const Partners = () => {
             }
             setLogoEls(resultElement);
         }));
-    }, [])
+    }, [])*/
+    /**
+     * 表示部
+     * パートナーページは使いまわし不可能であるため、HTML要素を直接書いております。
+     */
     return <Outter>
         <div className="partners-title-outter">
             <div className="partners-title">

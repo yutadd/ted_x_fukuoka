@@ -7,21 +7,17 @@ import { stateContext } from "../../App";
 import { Link } from "react-router-dom";
 
 /**
- * path:/
- * ・ヘッダー
- * ・トップ画像
- * ・スピーカータイル
- * ・最新情報
- * ・フッター
- * をひとまとめにした要素
+ * こちらはトップページのコンポーネントです。
+ * @returns トップページのコンポーネント
  */
 export const Home = (): JSX.Element => {
-    //表示のモードを取得・設定できる共有された変数の取得。
     const context = useContext(stateContext);
     const [speakerJson, setSpeakerJson] = useState<any>();
     const [speakers, setspeakers] = useState([]);
+    /**
+     * こちらでjsonファイル/locales/speakers/<en/ja>.jsonを読み込みます。
+     */
     useEffect(() => {
-        const _category = context.category;
         fetch("/locales/speakers/" + context.lang + ".json").then((res) => res.text().then((tx) => {
             if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
                 console.log("can't fetch \"speaker\" json file");
@@ -30,6 +26,9 @@ export const Home = (): JSX.Element => {
             }
         }));
     }, [context.category, context.lang]);
+    /**
+     * こちらは言語対応表が読み込まれた際にそれからJSX.Elementに変換するためのuseEffect関数です
+     */
     useEffect(() => {
         const _category = context.category;
         if (speakerJson) {
@@ -53,6 +52,9 @@ export const Home = (): JSX.Element => {
             targetEl?.scrollIntoView({ behavior: 'smooth' });
         }, 200);
     }, [window.location.hash]);
+    /**
+     * 表示部
+     */
     return (
         <Outter>
             <div className="top" >

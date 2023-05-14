@@ -8,12 +8,19 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { stateContext } from "../../App";
 import { Recently } from "../home/Recently";
+/**
+ * こちらはイベント記事のページのコンポーネントです。
+ * @returns イベント記事のページの内容
+ */
 export const Events = () => {
     const context = useContext(stateContext);
     const [text, setText] = useState("");
     const { event } = useParams<{ event: any }>();
     const [events, setEvents] = useState<JSX.Element[]>();
     const [isLoaded, setIsLoaded] = useState(false);
+    /**
+     * こちらでマークダウンファイル/events/:evet名_<en/ja>.mdを読み込みます。
+     */
     useEffect(() => {
         fetch("/events/" + event + "_" + context.lang + ".md").then((res) => res.text().then((tx) => {
             if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
@@ -22,10 +29,12 @@ export const Events = () => {
             } else {
                 console.log(tx)
                 setText(tx);
-
             }
         }));
-    }, [context.lang])
+    }, [context.lang])//もし途中で言語が変更されたときのため、言語情報をhookに登録しておくことで、言語情報に変更が入ったらこのuseEffectがもう一度呼ばれ、切り替え後の言語を読み込み、表示します。
+    /**
+     * 表示部
+     */
     useEffect(() => {
         const _events = []
         if (context.recentlyLang) {

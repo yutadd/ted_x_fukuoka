@@ -2,9 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+/**
+ * ブラウザがjavascriptを読み込んで真っ先に呼ばれる処理です
+ * root　idのついたコンポーネントを取得し、その配下にコンポーネントをreact.jsで作っていきます
+ */
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+/**
+ * ルーティングやシェアされるオブジェクトが定義されているAppコンポーネントを呼び出しています
+*/
 root.render(
 
   <App />
