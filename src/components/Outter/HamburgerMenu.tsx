@@ -26,7 +26,7 @@ export const HamburgerMenu = () => {
 
             <>
                 <a onClick={() => setShowInsideHamburgerMenu(!showInsideHamburgerMenu)} className="HamburgerMenu">
-                    <img width="auto" className="hamburger-img" src="/hamburger.png" alt="" />
+                    <img width="auto" className="hamburger-img" src="/images/components/hamburger.png" alt="" />
                 </a>
                 {showInsideHamburgerMenu && isLoaded ?
                     <div>

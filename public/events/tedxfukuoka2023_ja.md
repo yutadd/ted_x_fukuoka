@@ -1,6 +1,6 @@
 # TEDxFukuoka2023 All Good Things
 
-![concept_image](/images/concept-image.webp)
+![concept_image](/images/components/concept-image.webp)
 
 **TEDxFukuoka2023 “ALL GOOD THINGS” プログラム概要**
 

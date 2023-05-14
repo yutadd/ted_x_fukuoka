@@ -18,7 +18,7 @@ export const Recently = (): JSX.Element => {
             for (const els of _lang["events"]) {
                 _result.push(
                     <a key={els["title"]} href={els["link"]} className="recently-panel-outter">
-                        <img className="recently-panel-logo" src={"/images/" + els["logo"]} alt="" />
+                        <img className="recently-panel-logo" src={"/images/components/" + els["logo"]} alt="" />
                         <div className="recently-title">
                             {els["title"]}
                         </div>
