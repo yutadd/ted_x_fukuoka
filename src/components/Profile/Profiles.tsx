@@ -4,10 +4,17 @@ import "./Profile.css";
 import { SpeakerCard } from './SpeakerCard';
 import { stateContext } from '../../App';
 import { Recently } from '../home/Recently';
+/**
+ * こちらは登壇者情報ページのコンポーネントです。
+ * @returns 登壇者情報ページの内容
+ */
 export const Profiles = () => {
     const context = useContext(stateContext);
     const [speakerJson, setSpeakerJson] = useState<any>()
     const [cardList, setCardList] = useState<JSX.Element[]>([]);
+    /**
+     * こちらで登壇者情報が含まれるjsonファイル/locales/speakers/<en/ja>.jsonを読み込みsetSpeakerJsonでspeakerJsonに値を設定します。
+     */
     useEffect(() => {
         const _category = context.category;
         fetch("/locales/speakers/" + context.lang + ".json").then((res) => res.text().then((tx) => {
@@ -18,6 +25,9 @@ export const Profiles = () => {
             }
         }));
     }, [context.category, context.lang]);
+    /**
+     * speakerJsonが変更(言語設定の変更など)されるたびに呼び出される登壇者情報のリスト要素を作るための関数 
+     */
     useEffect(() => {
         const lang = speakerJson;
         let result: { session: string, card: JSX.Element }[][] = [];
@@ -52,13 +62,18 @@ export const Profiles = () => {
         }
 
     }, [speakerJson])
-
+    /**
+     * 500ms後にurlで指定されているオブジェクトの位置にスクロールする。
+     */
     useEffect(() => {
         setTimeout(() => {
             const targetEl = document.getElementById(window.location.hash.split('#')[1]);
             targetEl?.scrollIntoView({ behavior: 'smooth' });
         }, 500);
     }, []);
+    /**
+     * 表示部
+     */
     return (
         <>
             <Outter>

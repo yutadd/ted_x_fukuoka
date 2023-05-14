@@ -12,6 +12,14 @@ import { TED } from './components/About/TED/TED';
 import { TEDx } from './components/About/TEDx/TEDx';
 import { Partners } from './components/About/Partners/Partners';
 import { Outter } from './components/Outter/Outter';
+
+/**
+ * ルーティング処理と、言語情報などを他のコンポーネントと共有するためのContextというものを定義しているファイルです。
+ */
+
+/**
+ * コンテキストの型を定義
+ */
 export type SharedState = {
   lang: string
   category: string
@@ -19,6 +27,9 @@ export type SharedState = {
   outterLang: any
   recentlyLang: any
 }
+/**
+ * 引数に渡された言語情報をもとに言語の対応表を読み込み、set***で読み込んだ対応表グローバル
+ */
 function load(lang_str: string, setOutter: any, setRecently: any) {
   if (lang_str === "ja") {
     fetch("/locales/outter/ja.json").then((res) => res.text().then((tx) => {
@@ -52,27 +63,42 @@ function load(lang_str: string, setOutter: any, setRecently: any) {
     }));
   }
 }
+/**Contextの初期値を定義します */
 const initialValue = { category: "2023", lang: "ja", setCategory: null, outterLang: null, recentlyLang: null, speakerLang: null }
+/**
+ * 他のコンポーネントで使用できるcontextインスタンスを作成します
+ */
 export const stateContext = createContext<SharedState>(initialValue);
+/**
+ * ページのurlに基づいてルーティングを行ったり、共有する言語情報そのものを定義するコンポーネントです
+ */
 function App() {
+
   const [lang, setLang] = useState("ja");
   const [outterLang, setOutterLang] = useState();
   const [recentlyLang, setRecentlyLang] = useState();
   const [category, setCategory] = useState("2023");
   const cookieLang = Cookies.get('lang');
   const browserLang = navigator.language.trim();
-  useEffect(() => {
-    //初回訪問時はブラウザの言語設定を読み取り、それが日本語か英語であればそのままブラウザの言語を使用するが、もし他の言語であれば英語とする。
-    //もし再訪問であればクッキーの値をそのまま使用する。
-    let actualLanguage = cookieLang ? cookieLang : (browserLang == "ja" || browserLang == "en") ? browserLang : "en";
-    Cookies.set('lang', actualLanguage);
-    load(actualLanguage, setOutterLang, setRecentlyLang);
-  }, [lang])
 
+  /**
+     * 言語情報をクッキーに登録し、setLangで言語情報を更新し、useEffectを発火させ、言語情報の更新を促します。
+     */
   function changeLang(lang: string) {
     Cookies.set('lang', lang);
     setLang(lang);
   }
+  /**
+   * 言語情報をset***で更新することで、画面の更新も促されます。
+   */
+  useEffect(() => {
+    let actualLanguage = cookieLang ? cookieLang : (browserLang == "ja" || browserLang == "en") ? browserLang : "en";
+    Cookies.set('lang', actualLanguage);
+    load(actualLanguage, setOutterLang, setRecentlyLang);
+  }, [lang])
+  /**
+   * コンポーネント内のreturnがそのコンポーネントの表示部を担当します
+   */
   return (
     <stateContext.Provider value={{ category: category, lang: lang, setCategory: setCategory, outterLang: outterLang, recentlyLang: recentlyLang }}>
       <div className='language-switcher-outter'>
@@ -90,8 +116,11 @@ function App() {
           <Route path='/ted' Component={TED} />
           <Route path='/tedx' Component={TEDx} />
           <Route path='/partners' Component={Partners} />
-          {/*2020年度とのパス互換性*/}
+          {/*2020年度とのパス互換性のため、どの条件にも当てはまらなかった場合、以下のルーティングで/イベント名の形式のルーティングだと解釈します。*/}
           <Route path='/:event' Component={Events} />
+          {/**
+           * urlのルート/以下がイベント名でもなかった場合、最終的に404エラーを表示します。ただし、reactがクライアントサイドレンダリングである仕様上、404のエラーコードで返すのは不可能であるため
+           * ブラウザには200が返ります。以下のコンポーネントは単純に存在しないページだということを表示するためのコンポーネントに過ぎません。 */}
           <Route path="*" Component={NotFound} />
         </Routes>
       </BrowserRouter>
@@ -99,6 +128,7 @@ function App() {
 
   );
 }
+/**存在しないページだということを表示するためのコンポーネント */
 export function NotFound() {
   console.log("404")
   return (
