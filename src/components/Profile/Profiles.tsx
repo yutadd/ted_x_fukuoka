@@ -16,7 +16,6 @@ export const Profiles = () => {
      * こちらで登壇者情報が含まれるjsonファイル/locales/speakers/<en/ja>.jsonを読み込みsetSpeakerJsonでspeakerJsonに値を設定します。
      */
     useEffect(() => {
-        const _category = context.category;
         fetch("/locales/speakers/" + context.lang + ".json").then((res) => res.text().then((tx) => {
             if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
                 console.log("can't fetch \"speaker\" json file");
@@ -30,35 +29,38 @@ export const Profiles = () => {
      */
     useEffect(() => {
         const lang = speakerJson;
-        let result: { session: string, card: JSX.Element }[][] = [];
-        let intermission = 1;
-        let session = 1;
-        if (lang) {
-            for (const elm of lang["speakers"]) {
-                if (elm["category"] === context.category) {
+        let resultElement: { sessionName: string, speakerCardElement: JSX.Element }[][] = [];
+        let CurrentIntermissionNumber = 1;
+        let CurrentSessionNumber = 1;
+        if (lang!=null) {
+            for (const SpeakerElement of lang["speakers"]) {
+                if (SpeakerElement["category"] === context.category) {
                     let found = false;
-                    const session: string = elm["session"];
-                    for (let i = 0; i < result.length; i++) {
-                        if (result[i][0].session === session) {
+                    const session: string = SpeakerElement["session"];
+                    for (let i = 0; i < resultElement.length; i++) {
+                        if (resultElement[i][0].sessionName === session) {
                             found = true
-                            result[i].push({ session: session, card: <SpeakerCard key={(elm["profile"] ? "session" : "intermission") + intermission++} file={(elm["file"] ? elm["file"] : "unknown.webp")} name={elm["name"]} text={elm["profile"]} /> })
+                            resultElement[i].push({ sessionName: session, speakerCardElement: <SpeakerCard key={(SpeakerElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++} file={(SpeakerElement["file"] ? SpeakerElement["file"] : "unknown.webp")} name={SpeakerElement["name"]} text={SpeakerElement["profile"]} /> })
                             break;
                         }
                     }
                     if (!found) {
-                        result.push([{ session: session, card: <SpeakerCard key={(elm["profile"] ? "session" : "intermission") + intermission++} file={(elm["file"] ? elm["file"] : "unknown.webp")} name={elm["name"]} text={elm["profile"]} /> }])
+                        resultElement.push([{ sessionName: session, speakerCardElement: <SpeakerCard key={(SpeakerElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++} file={(SpeakerElement["file"] ? SpeakerElement["file"] : "unknown.webp")} name={SpeakerElement["name"]} text={SpeakerElement["profile"]} /> }])
                     }
                 }
             }
-            const _cards: JSX.Element[] = [];
-            intermission = 1;
-            for (const cards of result) {
-                _cards.push(<div key={cards[0].card.key?.toString() + "alpha"} className='profile-session-title'>{cards[0].card.key?.toString().startsWith("inter") ? "" : "Session" + session++ + ":"} {cards[0].session ? cards[0].session : "All"}</div>)
+            const _speakerCards: JSX.Element[] = [];
+            CurrentIntermissionNumber = 1;
+            for (const cards of resultElement) {
+                _speakerCards.push(<div key={cards[0].speakerCardElement.key?.toString() + "alpha"} className='profile-session-title'>
+                    {cards[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"} 
+                    {cards[0].sessionName!=null? cards[0].sessionName : "All"}
+                    </div>)
                 for (const card of cards) {
-                    _cards.push(card.card)
+                    _speakerCards.push(card.speakerCardElement)
                 }
             }
-            setCardList(_cards);
+            setCardList(_speakerCards);
         }
 
     }, [speakerJson])
