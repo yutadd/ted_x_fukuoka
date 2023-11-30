@@ -10,7 +10,7 @@ import { Recently } from '../home/Recently';
  */
 export const Profiles = () => {
     const context = useContext(stateContext);
-    const [speakerJson, setSpeakerJson] = useState<any>()
+    const [LangJsonObject, setSpeakerJson] = useState<any>()
     const [cardList, setCardList] = useState<JSX.Element[]>([]);
     /**
      * こちらで登壇者情報が含まれるjsonファイル/locales/speakers/<en/ja>.jsonを読み込みsetSpeakerJsonでspeakerJsonに値を設定します。
@@ -28,42 +28,41 @@ export const Profiles = () => {
      * speakerJsonが変更(言語設定の変更など)されるたびに呼び出される登壇者情報のリスト要素を作るための関数 
      */
     useEffect(() => {
-        const lang = speakerJson;
-        let resultElement: { sessionName: string, speakerCardElement: JSX.Element }[][] = [];
+        let categorizedSpeakerJSXElements: { sessionName: string, speakerCardElement: JSX.Element }[][] = [];
         let CurrentIntermissionNumber = 1;
         let CurrentSessionNumber = 1;
-        if (lang!=null) {
-            for (const SpeakerElement of lang["speakers"]) {
-                if (SpeakerElement["category"] === context.category) {
+        if (LangJsonObject!=null) {
+            for (const SpeakerJsonElement of LangJsonObject["speakers"]) {
+                if (SpeakerJsonElement["category"] === context.category) {
                     let found = false;
-                    const session: string = SpeakerElement["session"];
-                    for (let i = 0; i < resultElement.length; i++) {
-                        if (resultElement[i][0].sessionName === session) {
+                    const session: string = SpeakerJsonElement["session"];
+                    for (let i = 0; i < categorizedSpeakerJSXElements.length; i++) {
+                        if (categorizedSpeakerJSXElements[i][0].sessionName === session) {
                             found = true
-                            resultElement[i].push({ sessionName: session, speakerCardElement: <SpeakerCard key={(SpeakerElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++} file={(SpeakerElement["file"] ? SpeakerElement["file"] : "unknown.webp")} name={SpeakerElement["name"]} text={SpeakerElement["profile"]} /> })
+                            categorizedSpeakerJSXElements[i].push({ sessionName: session, speakerCardElement: <SpeakerCard key={(SpeakerJsonElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++} file={(SpeakerJsonElement["file"] ? SpeakerJsonElement["file"] : "unknown.webp")} name={SpeakerJsonElement["name"]} text={SpeakerJsonElement["profile"]} /> })
                             break;
                         }
                     }
                     if (!found) {
-                        resultElement.push([{ sessionName: session, speakerCardElement: <SpeakerCard key={(SpeakerElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++} file={(SpeakerElement["file"] ? SpeakerElement["file"] : "unknown.webp")} name={SpeakerElement["name"]} text={SpeakerElement["profile"]} /> }])
+                        categorizedSpeakerJSXElements.push([{ sessionName: session, speakerCardElement: <SpeakerCard key={(SpeakerJsonElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++} file={(SpeakerJsonElement["file"] ? SpeakerJsonElement["file"] : "unknown.webp")} name={SpeakerJsonElement["name"]} text={SpeakerJsonElement["profile"]} /> }])
                     }
                 }
             }
             const _speakerCards: JSX.Element[] = [];
             CurrentIntermissionNumber = 1;
-            for (const cards of resultElement) {
-                _speakerCards.push(<div key={cards[0].speakerCardElement.key?.toString() + "alpha"} className='profile-session-title'>
-                    {cards[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"} 
-                    {cards[0].sessionName!=null? cards[0].sessionName : "All"}
+            for (const speakerJSXElements of categorizedSpeakerJSXElements) {
+                _speakerCards.push(<div key={speakerJSXElements[0].speakerCardElement.key?.toString() + "_inner"} className='profile-session-title'>
+                    {speakerJSXElements[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"} 
+                    {speakerJSXElements[0].sessionName!=null? speakerJSXElements[0].sessionName : "All"}
                     </div>)
-                for (const card of cards) {
+                for (const card of speakerJSXElements) {
                     _speakerCards.push(card.speakerCardElement)
                 }
             }
             setCardList(_speakerCards);
         }
 
-    }, [speakerJson])
+    }, [LangJsonObject])
     /**
      * 500ms後にurlで指定されているオブジェクトの位置にスクロールする。
      */
