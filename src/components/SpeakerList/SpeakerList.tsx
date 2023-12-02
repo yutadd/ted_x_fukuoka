@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { Outter } from '../Outter/Outter';
-import "./Profile.css";
+import "./SpeakerList.css";
 import { SpeakerCard } from './SpeakerCard';
 import { stateContext } from '../../App';
 import { Recently } from '../home/Recently';
@@ -10,7 +10,7 @@ import { Recently } from '../home/Recently';
  */
 export const Profiles = () => {
     const context = useContext(stateContext);
-    const [LangJsonObject, setSpeakerJsonObject] = useState<any>()
+    const [LangJsonObject, setSpeakerJsonObject] = useState<any>();
     const [speakerCardList, setSpeakerCardList] = useState<JSX.Element[]>([]);
     /**
      * こちらで登壇者情報が含まれるjsonファイル/locales/speakers/<en/ja>.jsonを読み込みsetSpeakerJsonでspeakerJsonに値を設定します。
@@ -24,11 +24,11 @@ export const Profiles = () => {
             }
         }));
     }, [context.category, context.lang]);
-    const generateSessionInfomationElement=(speakerJSXElements:any,CurrentSessionNumber:&number)=>{
+    const generateSessionInfomationElement = (speakerJSXElements: any, CurrentSessionNumber: & number) => {
         return <div key={speakerJSXElements[0].speakerCardElement.key?.toString() + "_inner"} className='profile-session-title'>
-                    {speakerJSXElements[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"} 
-                    {speakerJSXElements[0].sessionName!=null? speakerJSXElements[0].sessionName : "All"}
-                    </div>
+            {speakerJSXElements[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"}
+            {speakerJSXElements[0].sessionName != null ? speakerJSXElements[0].sessionName : "All"}
+        </div>
     }
     /**
      * speakerJsonが変更(言語設定の変更など)されるたびに呼び出される登壇者情報のリスト要素を作るための関数 
@@ -37,7 +37,7 @@ export const Profiles = () => {
         let categorizedSpeakerJSXElementList: { sessionName: string, speakerCardElement: JSX.Element }[][] = [];
         let CurrentIntermissionNumber = 1;
         let CurrentSessionNumber = 1;
-        if (LangJsonObject!=null) {
+        if (LangJsonObject != null) {
             for (const SpeakerJsonElement of LangJsonObject["speakers"]) {
                 if (SpeakerJsonElement["category"] === context.category) {
                     let found = false;
@@ -46,14 +46,14 @@ export const Profiles = () => {
                         if (categorizedSpeakerJSXElementList[i][0].sessionName === sessionName) {
                             found = true
                             categorizedSpeakerJSXElementList[i].push(
-                                { 
+                                {
                                     sessionName: sessionName,
                                     speakerCardElement:
-                                        <SpeakerCard 
+                                        <SpeakerCard
                                             key={(SpeakerJsonElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++}
                                             file={(SpeakerJsonElement["file"] ? SpeakerJsonElement["file"] : "unknown.webp")}
                                             name={SpeakerJsonElement["name"]}
-                                            text={SpeakerJsonElement["profile"]} /> 
+                                            text={SpeakerJsonElement["profile"]} />
                                 })
                             break;
                         }
@@ -62,12 +62,12 @@ export const Profiles = () => {
                         categorizedSpeakerJSXElementList.push(
                             [{
                                 sessionName: sessionName,
-                                speakerCardElement: 
-                                    <SpeakerCard 
-                                    key={(SpeakerJsonElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++}
-                                    file={(SpeakerJsonElement["file"] ? SpeakerJsonElement["file"] : "unknown.webp")}
-                                    name={SpeakerJsonElement["name"]}
-                                    text={SpeakerJsonElement["profile"]} /> 
+                                speakerCardElement:
+                                    <SpeakerCard
+                                        key={(SpeakerJsonElement["profile"] ? "session" : "intermission") + CurrentIntermissionNumber++}
+                                        file={(SpeakerJsonElement["file"] ? SpeakerJsonElement["file"] : "unknown.webp")}
+                                        name={SpeakerJsonElement["name"]}
+                                        text={SpeakerJsonElement["profile"]} />
                             }]
                         )
                     }
@@ -76,14 +76,13 @@ export const Profiles = () => {
             const _speakerCardList: JSX.Element[] = [];
             CurrentIntermissionNumber = 1;
             for (const speakerJSXElementList of categorizedSpeakerJSXElementList) {
-                _speakerCardList.push(generateSessionInfomationElement(speakerJSXElementList,CurrentSessionNumber))
+                _speakerCardList.push(generateSessionInfomationElement(speakerJSXElementList, CurrentSessionNumber))
                 for (const speakerJSXElement of speakerJSXElementList) {
                     _speakerCardList.push(speakerJSXElement.speakerCardElement)
                 }
             }
             setSpeakerCardList(_speakerCardList);
         }
-
     }, [LangJsonObject])
     /**
      * 500ms後にurlで指定されているオブジェクトの位置にスクロールする。

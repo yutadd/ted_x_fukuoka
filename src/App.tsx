@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import "./App.css"
 import { Home } from './components/home/Home';
-import { Profiles } from './components/Profile/Profiles';
+import { Profiles } from './components/SpeakerList/SpeakerList';
 import { Events } from './components/Events/Events';
 import { CC } from './components/About/CC/CC';
 import { Contact } from './components/About/Contact/Contact';
