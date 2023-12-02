@@ -12,7 +12,7 @@ import { TED } from './components/About/TED/TED';
 import { TEDx } from './components/About/TEDx/TEDx';
 import { Partners } from './components/About/Partners/Partners';
 import { Outter } from './components/Outter/Outter';
-import {Profile} from './components/SpeakerList/Profile/Profile'
+import { Profile } from './components/SpeakerList/Profile/Profile'
 
 /**
  * ルーティング処理と、言語情報などを他のコンポーネントと共有するためのContextというものを定義しているファイルです。
@@ -109,7 +109,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={Home} />
-          <Route path='/SpeakerList/Profile/:speaker' Component={Profile} />
+          <Route path='/SpeakerList/Profile' Component={Profile} />
           <Route path='/SpeakerList' Component={SpeakerList} />
           <Route path='/event/:event' Component={Events} />
           <Route path='/cc' Component={CC} />
