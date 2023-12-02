@@ -5,7 +5,7 @@ import "./SpeakerTile.css";
  */
 export const SpeakerTile = (props: any): JSX.Element => {
     return (
-        <NavLink className="box" to={{ pathname: "/profiles", hash: props.file }} >
+        <NavLink className="box" to={{ pathname: "/SpeakerList", hash: props.file }} >
             <img className="image" width="100%" height="auto" src={props.file} alt="" />
             <p className="category">{props.category}</p>
             <div className="title">

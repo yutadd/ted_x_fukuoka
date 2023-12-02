@@ -12,6 +12,7 @@ import { TED } from './components/About/TED/TED';
 import { TEDx } from './components/About/TEDx/TEDx';
 import { Partners } from './components/About/Partners/Partners';
 import { Outter } from './components/Outter/Outter';
+import {Profile} from './components/SpeakerList/Profile/Profile'
 
 /**
  * ルーティング処理と、言語情報などを他のコンポーネントと共有するためのContextというものを定義しているファイルです。
@@ -108,7 +109,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={Home} />
-          <Route path='/profiles' Component={SpeakerList} />
+          <Route path='/SpeakerList' Component={SpeakerList} />
           <Route path='/event/:event' Component={Events} />
           <Route path='/cc' Component={CC} />
           <Route path='/contact' Component={Contact} />
@@ -118,6 +119,7 @@ function App() {
           <Route path='/partners' Component={Partners} />
           {/*2020年度とのパス互換性のため、どの条件にも当てはまらなかった場合、以下のルーティングで/イベント名の形式のルーティングだと解釈します。*/}
           <Route path='/:event' Component={Events} />
+          <Route path='/SpeakerList/:speaker' Component={Profile} />
           {/**
            * urlのルート/以下がイベント名でもなかった場合、最終的に404エラーを表示します。ただし、reactがクライアントサイドレンダリングである仕様上、404のエラーコードで返すのは不可能であるため
            * ブラウザには200が返ります。以下のコンポーネントは単純に存在しないページだということを表示するためのコンポーネントに過ぎません。 */}
