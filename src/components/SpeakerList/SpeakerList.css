@@ -1,16 +1,16 @@
-.profile-title{
+.speaker-list-title{
     text-align: center;
     padding:100px 0px;
 }
-.profile-title-text{
+.speaker-list-title-text{
     font-size: 38px;
     color: #929699;
 }
-.profile-title-subtext{
+.speaker-list-title-subtext{
     font-size: 15px;
     color: #929699;
 }
-.profile-session-title{
+.speaker-list-session-title{
     text-align: center;
     font-size: 30px;
 }

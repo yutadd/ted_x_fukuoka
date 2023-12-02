@@ -25,7 +25,7 @@ export const SpeakerList = () => {
         }));
     }, [context.category, context.lang]);
     const generateSessionInfomationElement = (speakerJSXElements: any, CurrentSessionNumber: & number) => {
-        return <div key={speakerJSXElements[0].speakerCardElement.key?.toString() + "_inner"} className='profile-session-title'>
+        return <div key={speakerJSXElements[0].speakerCardElement.key?.toString() + "_inner"} className='speaker-list-session-title'>
             {speakerJSXElements[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"}
             {speakerJSXElements[0].sessionName != null ? speakerJSXElements[0].sessionName : "All"}
         </div>
@@ -99,11 +99,11 @@ export const SpeakerList = () => {
     return (
         <>
             <Outter>
-                <div className='profile-title'>
-                    <div className='profile-title-text'>
+                <div className='speaker-list-title'>
+                    <div className='speaker-list-title-text'>
                         LiveSpeakers
                     </div>
-                    <div className='profile-title-subtext'>Speakers on TEDxFukuoka</div>
+                    <div className='speaker-list-title-subtext'>Speakers on TEDxFukuoka</div>
                 </div>
                 {speakerCardList}
                 <Recently />
