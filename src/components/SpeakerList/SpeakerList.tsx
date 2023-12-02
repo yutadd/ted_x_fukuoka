@@ -10,7 +10,7 @@ import { Recently } from '../home/Recently';
  */
 export const SpeakerList = () => {
     const context = useContext(stateContext);
-    const [LangJsonObject, setSpeakerJsonObject] = useState<any>();
+    const [speakerJsonObject, setSpeakerJsonObject] = useState<any>();
     const [speakerCardList, setSpeakerCardList] = useState<JSX.Element[]>([]);
     /**
      * こちらで登壇者情報が含まれるjsonファイル/locales/speakers/<en/ja>.jsonを読み込みsetSpeakerJsonでspeakerJsonに値を設定します。
@@ -37,8 +37,8 @@ export const SpeakerList = () => {
         let categorizedSpeakerJSXElementList: { sessionName: string, speakerCardElement: JSX.Element }[][] = [];
         let CurrentIntermissionNumber = 1;
         let CurrentSessionNumber = 1;
-        if (LangJsonObject != null) {
-            for (const SpeakerJsonElement of LangJsonObject["speakers"]) {
+        if (speakerJsonObject != null) {
+            for (const SpeakerJsonElement of speakerJsonObject["speakers"]) {
                 if (SpeakerJsonElement["category"] === context.category) {
                     let found = false;
                     const sessionName: string = SpeakerJsonElement["session"];
@@ -83,7 +83,7 @@ export const SpeakerList = () => {
             }
             setSpeakerCardList(_speakerCardList);
         }
-    }, [LangJsonObject])
+    }, [speakerJsonObject])
     /**
      * 500ms後にurlで指定されているオブジェクトの位置にスクロールする。
      */
