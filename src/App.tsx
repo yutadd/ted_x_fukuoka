@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import "./App.css"
 import { Home } from './components/home/Home';
-import { Profiles } from './components/SpeakerList/SpeakerList';
+import { SpeakerList } from './components/SpeakerList/SpeakerList';
 import { Events } from './components/Events/Events';
 import { CC } from './components/About/CC/CC';
 import { Contact } from './components/About/Contact/Contact';
@@ -108,7 +108,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={Home} />
-          <Route path='/profiles' Component={Profiles} />
+          <Route path='/profiles' Component={SpeakerList} />
           <Route path='/event/:event' Component={Events} />
           <Route path='/cc' Component={CC} />
           <Route path='/contact' Component={Contact} />

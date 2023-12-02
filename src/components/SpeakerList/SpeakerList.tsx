@@ -8,7 +8,7 @@ import { Recently } from '../home/Recently';
  * こちらは登壇者情報ページのコンポーネントです。
  * @returns 登壇者情報ページの内容
  */
-export const Profiles = () => {
+export const SpeakerList = () => {
     const context = useContext(stateContext);
     const [LangJsonObject, setSpeakerJsonObject] = useState<any>();
     const [speakerCardList, setSpeakerCardList] = useState<JSX.Element[]>([]);
