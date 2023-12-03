@@ -3,7 +3,7 @@ import { stateContext } from "../../../App"
 import { Outter } from "../../Outter/Outter"
 import "./Partners.css"
 // Support GFM (tables, autolinks, tasklists, strikethrough)
-import { Recently } from "../../home/Recently";
+import { Recently } from "../../home/LatestInfoList";
 /**
  * こちらはパートナーのページのコンポーネントです。
  * @returns パートナーのページの内容

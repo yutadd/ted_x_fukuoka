@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 // Support GFM (tables, autolinks, tasklists, strikethrough)
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from "rehype-raw";
-import { Recently } from "../../home/Recently";
+import { Recently } from "../../home/LatestInfoList";
 /**
  * こちらはお問い合わせのページのコンポーネントです。
  * @returns お問い合わせのページの内容

@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 // Support GFM (tables, autolinks, tasklists, strikethrough)
 import remarkGfm from 'remark-gfm';
 import { stateContext } from "../../App";
-import { Recently } from "../home/Recently";
+import { Recently } from "../home/LatestInfoList";
 /**
  * こちらはイベント記事のページのコンポーネントです。
  * @returns イベント記事のページの内容

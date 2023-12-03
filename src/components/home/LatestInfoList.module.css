@@ -1,20 +1,23 @@
-.recently-outter {
-  margin-top: 50px;
-  width: 100%;
+.ListRoot {
   text-align: center;
+  margin-top: 20px;
 }
-.recently-title-outter {
+
+.ListTitleContainer {
   display: block;
   background-color: black;
   color: white;
   font-size: 30px;
   padding: 10px;
 }
-.recently-events-outter {
+
+.List {
+  margin-top: 50px;
+  width: 100%;
   text-align: center;
-  margin-top: 20px;
 }
-.recently-panel-outter {
+
+.Block {
   position: relative;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
   display: inline-block;
@@ -26,23 +29,27 @@
   text-decoration: none;
   margin-bottom: 10px;
 }
-.recently-panel-logo {
+
+.BlockThumbnail {
   width: 100%;
   display: block;
 }
-.recently-title {
+
+.BlockTitle {
   margin-top: 8px;
   overflow-wrap: break-word;
   padding-bottom: 14px;
 }
-.recently-added-date {
+
+.UpdatedDate {
   right: 0px;
   bottom: 0px;
   font-size: 10px;
   position: absolute;
 }
+
 @media (max-width: 500px) {
-  .recently-panel-outter {
+  .Block {
     width: 90%;
     margin-right: 0px;
     margin-left: 0px;

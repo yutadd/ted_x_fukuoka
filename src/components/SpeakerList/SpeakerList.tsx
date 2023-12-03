@@ -3,7 +3,7 @@ import { Outter } from '../Outter/Outter';
 import "./SpeakerList.css";
 import { SpeakerCard } from './SpeakerCard';
 import { stateContext } from '../../App';
-import { Recently } from '../home/Recently';
+import { Recently } from '../home/LatestInfoList';
 /**
  * こちらは登壇者情報ページのコンポーネントです。
  * @returns 登壇者情報ページの内容

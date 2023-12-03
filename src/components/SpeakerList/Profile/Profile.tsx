@@ -1,5 +1,5 @@
 import { Outter } from "../../Outter/Outter";
-import { Recently } from "../../home/Recently";
+import { Recently } from "../../home/LatestInfoList";
 import scss from './Profile.module.css'
 import { useContext, useEffect, useState } from "react";
 import { stateContext } from "../../../App";

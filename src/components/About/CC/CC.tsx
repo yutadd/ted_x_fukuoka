@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from "rehype-raw";
 //import rehypeSanitize from "rehype-sanitize";このimportを有効化することで読み取ったmdのサニタイズが行なえますが、いくつかのhtmlタグが無効化されることと、今回は内部のmdを使用しているため、コメントアウトしております。
-import { Recently } from "../../home/Recently";
+import { Recently } from "../../home/LatestInfoList";
 /**
  * こちらはクリエイティブ・コモンズのページのコンポーネントです。
  * @returns クリエイティブ・コモンズのページの内容

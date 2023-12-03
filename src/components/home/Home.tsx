@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Outter } from "../Outter/Outter";
 import { SpeakerTile } from "./SpeakerTile";
 import "./Home.css";
-import { Recently } from "./Recently";
+import { Recently } from "./LatestInfoList";
 import { stateContext } from "../../App";
 import { Link } from "react-router-dom";
 
@@ -63,9 +63,7 @@ export const Home = (): JSX.Element => {
                 </Link>
             </div>
             {speakers}
-            <div id="recently">
-                <Recently />
-            </div>
+            <Recently />
         </Outter >
     )
 }
