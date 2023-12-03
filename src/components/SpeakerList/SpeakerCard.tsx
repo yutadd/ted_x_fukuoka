@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./SpeakerCard.css";
 /**
  * こちらは登壇者の情報(写真とプロフィール文章のペア)一つ分のコンポーネントです。
@@ -13,16 +14,16 @@ export const SpeakerCard = (props: any) => {
     }
     return (<>
         <div key={props.file} id={props.file} className="card-container">
-            <a href={generateUrl()}>
+            <Link to={generateUrl()}>
                 <img src={props.file} alt={props.file} className="card-image" />
-            </a>
+            </Link>
             <div className="card-text-outter">
-                <a href={generateUrl()} className="card-name">
+                <Link to={generateUrl()} className="card-name">
                     {props.name}
-                </a>
-                <a href={generateUrl()} className="card-text">
+                </Link>
+                <Link to={generateUrl()} className="card-text">
                     {props.text}
-                </a>
+                </Link>
             </div>
         </div >
     </>)

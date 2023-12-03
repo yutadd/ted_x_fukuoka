@@ -19,11 +19,6 @@ export const Profile = () => {
                 for (const _SpeakerObject of JSON.parse(tx)['speakers']) {
                     if (_SpeakerObject['file'] == speakerImageFile) {
                         setSpeakerJsonObject(_SpeakerObject);
-                        var _speakerImageList = [...speakerImageList];
-                        for (const speakerImage of _SpeakerObject["flicker"]) {
-                            _speakerImageList.push(<img src={speakerImage} alt={speakerImage} className={scss.ProfileSlideShowImageContainer} />)
-                            setSpeakerImageList(_speakerImageList)
-                        }
                     }
                 }
 
@@ -38,12 +33,8 @@ export const Profile = () => {
                 <h1 className={scss.ProfileTitle}>
                     {speakerJsonObject["name"]}
                 </h1>
-                <img src={speakerJsonObject["file"]} className={scss.ProfileImage} alt="" />
-                <div className={scss.Profiledescription}>{speakerJsonObject["profile"]}<br /><a href={speakerJsonObject["youtube"]}>{speakerJsonObject["youtube"]}</a></div>
-                <h2 className={scss.ProfileslideShowSubTitle}>Flicker</h2>
-                <div className={scss.ProfileSlideShow}>
-                    {speakerImageList}
-                </div>
+                <img src={speakerJsonObject["flicker"]} className={scss.ProfileImage} alt="" />
+                <div className={scss.Profiledescription}>{speakerJsonObject["profile"]}<br /><a className={scss.YoutubeLink} href={speakerJsonObject["youtube"]}>{speakerJsonObject["youtube"]}</a></div>
             </>)
         } else {
             <h1 className={scss.NoSpeakerFound}>No such speaker</h1>
