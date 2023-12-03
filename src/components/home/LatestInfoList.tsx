@@ -8,19 +8,17 @@ import styles from "./LatestInfoList.module.css";
  */
 export const Recently = (): JSX.Element => {
     const context = useContext(stateContext);
-    const [latestInfoObject, setLang] = useState<any>(null)
     const [isLoaded, setIsLoaded] = useState(false);
-    const [result, setResult] = useState<JSX.Element[]>();
+    const [latestInfoBlockListResult, setLatestInfoBlockListResult] = useState<JSX.Element[]>();
     /**
      * こちらで言語情報からイベントリストの
      */
     useEffect(() => {
-        const _LatestInfoObject = context.recentlyLang
-        const _LatestInfoBlockResult = [];
-        if (_LatestInfoObject) {
+        const _LatestInfoBlockListResult = [];
+        if (context.recentlyLang) {
             let i = 0;//表示するのはeventsのjsonファイルの上から3つまで
-            for (const latestEventObject of _LatestInfoObject["events"]) {
-                _LatestInfoBlockResult.push(
+            for (const latestEventObject of context.recentlyLang["events"]) {
+                _LatestInfoBlockListResult.push(
                     <a key={latestEventObject["title"]} href={latestEventObject["link"]} className={styles.Block}>
                         <img className={styles.BlockThumbnail} src={"/images/components/" + latestEventObject["logo"]} alt="" />
                         <div className={styles.BlockTitle}>
@@ -32,9 +30,8 @@ export const Recently = (): JSX.Element => {
                 if (i > 3) break;
                 i++;
             }
-            setResult(_LatestInfoBlockResult)
+            setLatestInfoBlockListResult(_LatestInfoBlockListResult)
             setIsLoaded(true)
-            setLang(_LatestInfoObject)
         }
     }, [context.recentlyLang])
 
@@ -43,8 +40,8 @@ export const Recently = (): JSX.Element => {
      */
     return (
         <div className={styles.ListRoot}>
-            <div className={styles.ListTitleContainer}>{isLoaded && latestInfoObject["title"]}</div>
-            <div className={styles.List}>{result}</div>
+            <div className={styles.ListTitleContainer}>{isLoaded && context.recentlyLang["title"]}</div>
+            <div className={styles.List}>{latestInfoBlockListResult}</div>
         </div>
     )
 }
