@@ -39,7 +39,7 @@ export const Home = (): JSX.Element => {
                         <SpeakerTile
                             key={speaker.name}
                             name={speaker.name}
-                            category={speaker.category}
+                            year={speaker.category}
                             file={speaker.file}
                         />
                     )));

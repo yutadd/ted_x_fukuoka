@@ -1,15 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
-import "./SpeakerTile.css";
+import styles from "./SpeakerTile.module.css";
 /**
  * トップページの登壇者のタイル１枚分 
  */
 export const SpeakerTile = (props: any): JSX.Element => {
     return (
-        <NavLink className="box" to={{ pathname: "/SpeakerList", hash: props.file }} >
-            <img className="image" width="100%" height="auto" src={props.file} alt="" />
-            <p className="category">{props.category}</p>
-            <div className="title">
-                <p className="title-inner" >{props.name}</p>
+        <NavLink className={styles.SpeakerTileContainer} to={{ pathname: "/SpeakerList", hash: props.file }} >
+            <img className={styles.image} width="100%" height="auto" src={props.file} alt="" />
+            <p className={styles.year}>{props.year}</p>
+            <div className={styles.name}>
+                <p className={styles.nameText} >{props.name}</p>
             </div>
         </NavLink>
 

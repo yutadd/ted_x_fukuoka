@@ -1,15 +1,17 @@
-.box {
+.SpeakerTileContainer {
   width: 25%;
   position: relative;
   background-color: black;
   display: inline-block;
 }
+
 @media (max-width: 768px) {
-  .box {
+  .SpeakerTileContainer {
     width: 100%;
   }
 }
-.category {
+
+.year {
   position: absolute;
   float: left;
   top: 0;
@@ -19,19 +21,23 @@
   text-decoration: none;
   color: white;
 }
+
+.year:hover {
+  background-color: aqua;
+}
+
 .image {
   vertical-align: bottom;
   opacity: 93%;
   transition-duration: 600ms;
 }
+
 .image:hover {
   opacity: 100%;
   transition-duration: 600ms;
 }
-.category:hover {
-  background-color: aqua;
-}
-.title {
+
+.name {
   position: absolute;
   bottom: 0px;
   background-color: black;
@@ -39,7 +45,8 @@
   width: 100%;
   font-size: 18px;
 }
-.title-inner {
+
+.nameText {
   text-decoration: none;
   margin: 6px 0px;
   color: white;
