@@ -10,6 +10,7 @@ import { Contact } from './components/About/Contact/Contact';
 import { Media } from './components/About/Media/Media';
 import { TED } from './components/About/TED/TED';
 import { TEDx } from './components/About/TEDx/TEDx';
+import { TEDxFukuoka } from './components/About/TEDxFukuoka/TEDxFukuoka';
 import { Partners } from './components/About/Partners/Partners';
 import { Outter } from './components/Outter/Outter';
 import { Profile } from './components/SpeakerList/Profile/Profile'
@@ -117,6 +118,7 @@ function App() {
           <Route path='/media' Component={Media} />
           <Route path='/ted' Component={TED} />
           <Route path='/tedx' Component={TEDx} />
+          <Route path='/TEDxFukuoka' Component={TEDxFukuoka} />
           <Route path='/partners' Component={Partners} />
           {/*2020年度とのパス互換性のため、どの条件にも当てはまらなかった場合、以下のルーティングで/イベント名の形式のルーティングだと解釈します。*/}
           <Route path='/:event' Component={Events} />

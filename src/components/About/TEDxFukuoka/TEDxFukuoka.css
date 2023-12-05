@@ -1,0 +1,16 @@
+.tedx-title-outter {
+  padding-top: 100px;
+  font-size: 30px;
+  padding-left: 5%;
+}
+.tedx-title {
+  color: #929699;
+}
+.tedx-contents-outter {
+  text-align: center;
+}
+.tedx-contents-inner {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+}

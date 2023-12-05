@@ -27,7 +27,7 @@ export const HamburgerMenu = () => {
                 <div>
                     <DropDownMenu isSingle={true} link={"/"} text={lang["header"]["home"]} />
                     <DropDownMenu isSingle={true} link="/event/tedxfukuoka2023" text={lang["header"]["latest"]["latest"]} />
-                    <DropDownMenu isSingle={false} link="/" text={lang["header"]["about"]["about"]} inner_texts={[lang["header"]["about"]["TED"], lang["header"]["about"]["TEDx"], lang["header"]["about"]["partners"]]} inner_links={["/ted", "/tedx", "/partners"]} />
+                    <DropDownMenu isSingle={false} link="/" text={lang["header"]["about"]["about"]} inner_texts={[lang["header"]["about"]["TED"], lang["header"]["about"]["TEDx"], lang["header"]["about"]["partners"], lang["header"]["about"]["TEDxFukuoka"]]} inner_links={["/ted", "/tedx", "/partners", "/TEDxFukuoka"]} />
                     {(path === "/" || path === "/profiles") ?
                         <DropDownMenu onClick={() => {
                             context.setCategory(context.category === "2023" ? "2020" : "2023");

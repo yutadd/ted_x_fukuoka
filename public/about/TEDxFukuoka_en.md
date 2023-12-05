@@ -1,0 +1,3 @@
+TEDxFukuoka launched in 2012 in order to create a space for people in Fukuoka and the Kyushu area to exchange worthy ideas.  
+The TEDxFukuoka initiative focuses on spreading captivating, worthwhile ideas from Fukuoka to the world, in addition to taking exemplary ideas from around the world and spreading them around Fukuoka.  
+TEDxFukuoka also aims to contribute to strengthening Fukuoka’s cultural atmosphere by creating a united environment amongst the speakers, volunteer staff members, and participants.

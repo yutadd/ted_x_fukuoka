@@ -11,6 +11,7 @@
     },
     "about": {
       "about": "TEDxFukuoka",
+      "TEDxFukuoka":"about TEDxFukuoka",
       "TED": "about TED",
       "TEDx": "about TEDx",
       "partners": "partners"
