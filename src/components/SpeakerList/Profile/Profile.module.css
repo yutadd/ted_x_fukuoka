@@ -2,7 +2,15 @@
     text-align: center;
     padding-top: 20px;
 }
+.ReturnToSpeakerListButton{
+    margin-left:5%;
+    color:gray;
 
+    font-size: large;
+}
+.ReturnToSpeakerListButton:hover{
+    cursor: pointer;
+}
 .ProfileTitle {
     text-align: left;
     padding-left: 5%;

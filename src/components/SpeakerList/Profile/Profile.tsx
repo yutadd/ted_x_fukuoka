@@ -30,6 +30,7 @@ export const Profile = () => {
     const generateSpeakerProfile = () => {
         if (speakerJsonObject != null) {
             return (<>
+            <div className={scss.ReturnToSpeakerListButton}onClick={()=>window.location.pathname="/SpeakerList"}  >{context.lang=="ja"?"<登壇者一覧に戻る":"< Return To Speaker List"}</div>
                 <h1 className={scss.ProfileTitle}>
                     {speakerJsonObject["name"]}
                 </h1>
@@ -42,6 +43,7 @@ export const Profile = () => {
     }
 
     return (<Outter>
+
         <div style={{ backgroundColor: "white", paddingTop: "120px" }}>
             {generateSpeakerProfile()}
         </div>
