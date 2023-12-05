@@ -5,7 +5,7 @@ import styles from "./SpeakerTile.module.css";
  */
 export const SpeakerTile = (props: any): JSX.Element => {
     return (
-        <NavLink className={styles.SpeakerTileContainer} to={{ pathname: "/SpeakerList", hash: props.file }} >
+        <NavLink className={styles.SpeakerTileContainer} to={{ pathname: "/SpeakerList/Profile", hash: props.file }} >
             <img className={styles.image} width="100%" height="auto" src={props.file} alt="" />
             <p className={styles.year}>{props.year}</p>
             <div className={styles.name}>
