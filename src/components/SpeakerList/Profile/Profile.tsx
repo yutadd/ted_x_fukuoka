@@ -7,7 +7,6 @@ export const Profile = () => {
     const speakerImageFile = window.location.hash.split('#')[1];
     const [speakerJsonObject, setSpeakerJsonObject] = useState<any>();
     const context = useContext(stateContext);
-    const [speakerImageList, setSpeakerImageList] = useState<JSX.Element[]>([]);
     /**
      * こちらで登壇者情報が含まれるjsonファイル/locales/speakers/<en/ja>.jsonを読み込みsetSpeakerJsonでspeakerJsonに値を設定します。
      */
