@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { Outter } from '../Outter/Outter';
-import "./SpeakerList.css";
+import scss from './SpeakerList.module.css'
 import { SpeakerCard } from './SpeakerCard';
 import { stateContext } from '../../App';
 import { Recently } from '../home/LatestInfoList';
@@ -14,7 +14,7 @@ export const SpeakerList = () => {
     const [speakerCardList, setSpeakerCardList] = useState<JSX.Element[]>([]);
 
     const generateSessionInfomationElement = (speakerJSXElements: any, CurrentSessionNumber: & number) => {
-        return <div key={speakerJSXElements[0].speakerCardElement.key?.toString() + "_inner"} className='speaker-list-session-title'>
+        return <div key={speakerJSXElements[0].speakerCardElement.key?.toString() + "_inner"} className={scss.SessionTitle}>
             {speakerJSXElements[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"}
             {speakerJSXElements[0].sessionName != null ? speakerJSXElements[0].sessionName : "All"}
         </div>
@@ -88,11 +88,11 @@ export const SpeakerList = () => {
     return (
         <>
             <Outter>
-                <div className='speaker-list-title'>
-                    <div className='speaker-list-title-text'>
+                <div className={scss.TitleContaner}>
+                    <div className={scss.TitleText}>
                         LiveSpeakers
                     </div>
-                    <div className='speaker-list-title-subtext'>Speakers on TEDxFukuoka</div>
+                    <div className={scss.SubTitle}>Speakers on TEDxFukuoka</div>
                 </div>
                 {speakerCardList}
                 <Recently />

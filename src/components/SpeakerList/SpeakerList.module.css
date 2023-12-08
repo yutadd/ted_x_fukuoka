@@ -1,16 +1,16 @@
-.speaker-list-title{
+.TitleContaner{
     text-align: center;
     padding:100px 0px;
 }
-.speaker-list-title-text{
+.TitleText{
     font-size: 38px;
     color: #929699;
 }
-.speaker-list-title-subtext{
+.SubTitle{
     font-size: 15px;
     color: #929699;
 }
-.speaker-list-session-title{
+.SessionTitle{
     text-align: center;
     font-size: 30px;
 }
