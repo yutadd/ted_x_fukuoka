@@ -28,86 +28,83 @@ export type SharedState = {
   setCategory: any
   outterLang: any
   recentlyLang: any
-}
-/**
- * 引数に渡された言語情報をもとに言語の対応表を読み込む
- */
-function load(lang_str: string, setOutter: any, setRecently: any,setLang:any) {
-  console.log(lang_str)
-  setLang(lang_str);
-  if (lang_str === "ja") {
-    fetch("/locales/outter/ja.json").then((res) => res.text().then((tx) => {
-      if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
-        console.log("can't fetch \"outter\" json file");
-      } else {
-        setOutter(JSON.parse(tx));
-      }
-    }));
-    fetch("/locales/recently/ja.json").then((res) => res.text().then((tx) => {
-      if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
-        console.log("can't fetch \"recently\" json file");
-      } else {
-        setRecently(JSON.parse(tx));
-      }
-    }));
-  } else {
-    fetch("/locales/outter/en.json").then((res) => res.text().then((tx) => {
-      if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
-        console.log("can't fetch \"outter\" json file");
-      } else {
-        setOutter(JSON.parse(tx));
-      }
-    }));
-    fetch("/locales/recently/en.json").then((res) => res.text().then((tx) => {
-      if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
-        console.log("can't fetch \"recently\" json file");
-      } else {
-        setRecently(JSON.parse(tx));
-      }
-    }));
-  }
+  speakerListJsonObject:any
 }
 /**Contextの初期値を定義します */
-const initialValue = { category: "2023", lang: "ja", setCategory: null, outterLang: null, recentlyLang: null, speakerLang: null }
+const initialValue = { category: "2023", lang: "ja", setCategory: null, outterLang: null, recentlyLang: null, speakerLang: null,speakerListJsonObject:null }
 /**
  * 他のコンポーネントで使用できるcontextインスタンスを作成します
  */
 export const stateContext = createContext<SharedState>(initialValue);
+
+
 /**
  * ページのurlに基づいてルーティングを行ったり、共有する言語情報そのものを定義するコンポーネントです
  */
 function App() {
 
   const [lang, setLang] = useState("ja");
-  const [outterLang, setOutterLang] = useState();
-  const [recentlyLang, setRecentlyLang] = useState();
+  const [outterLangJsonObject, setOutterLangJsonObject] = useState();
+  const [speakerListJsonObject,setSpeakerListJsonObject]=useState();
+  const [recentlyLangJsonObject, setRecentlyLangJsonObject] = useState();
   const [category, setCategory] = useState("2023");
+
+/**
+ * 引数に渡された言語情報をもとに言語の対応表を読み込む
+ */
+function refleshLanguageData(lang_str: string) {
+  setLang(lang_str)
+  fetch("/locales/outter/"+lang_str+".json").then((res) => res.text().then((tx) => {
+    if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
+      console.log("can't fetch \"outter\" json file");
+    } else {
+      setOutterLangJsonObject(JSON.parse(tx));
+    }
+  }));
+  fetch("/locales/recently/"+lang_str+".json").then((res) => res.text().then((tx) => {
+    if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
+      console.log("can't fetch \"recently\" json file");
+    } else {
+      setRecentlyLangJsonObject(JSON.parse(tx));
+    }
+  }));
+  fetch("/locales/speakers/"+lang_str+".json").then((res) => res.text().then((tx) => {
+    if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
+      console.log("can't fetch \"recently\" json file");
+    } else {
+      setSpeakerListJsonObject(JSON.parse(tx));
+    }
+  }));
+}
+function readLanguageSetting(){
   const cookieLang = Cookies.get('lang');
   const browserLang = navigator.language.trim();
-
-  /**
-     * 言語情報をクッキーに登録し、setLangで言語情報を更新し、useEffectを発火させ、言語情報の更新を促します。
-     */
-  function changeLang(lang: string) {
-    Cookies.set('lang', lang);
-    setLang(lang);
+  if (cookieLang==undefined){
+    if(browserLang == "ja" || browserLang == "en"){
+      return browserLang
+    }else{
+      return "ja";
+    }
+  }else{
+    return cookieLang
   }
-  /**
-   * 言語情報をset***で更新することで、画面の更新も促されます。
-   */
+}
+function saveLangageSetting(language_str:string){
+  Cookies.set('lang', language_str);
+}
   useEffect(() => {
-    let actualLanguage = cookieLang ? cookieLang : (browserLang == "ja" || browserLang == "en") ? browserLang : "en";
-    Cookies.set('lang', actualLanguage);
-    load(actualLanguage, setOutterLang, setRecentlyLang,setLang);
-  }, [lang])
+    let actualLanguage=readLanguageSetting()
+    refleshLanguageData(actualLanguage)
+  },[])
+
   /**
    * コンポーネント内のreturnがそのコンポーネントの表示部を担当します
    */
   return (
-    <stateContext.Provider value={{ category: category, lang: lang, setCategory: setCategory, outterLang: outterLang, recentlyLang: recentlyLang }}>
+    <stateContext.Provider value={{ category: category, lang: lang, setCategory: setCategory, outterLang: outterLangJsonObject, recentlyLang: recentlyLangJsonObject,speakerListJsonObject:speakerListJsonObject }}>
       <div className='language-switcher-outter'>
-        <div onClick={() => changeLang("ja")} className={'language-switcher-inner' + (lang === "ja" ? " selected" : " unselected")}>JP</div>
-        <div onClick={() => changeLang("en")} className={'language-switcher-inner' + (lang === "en" ? " selected" : " unselected")}>EN</div>
+        <div onClick={() => {refleshLanguageData("ja");saveLangageSetting("ja")}} className={'language-switcher-inner' + (lang === "ja" ? " selected" : " unselected")}>JP</div>
+        <div onClick={() => {refleshLanguageData("en");saveLangageSetting("en")}} className={'language-switcher-inner' + (lang === "en" ? " selected" : " unselected")}>EN</div>
       </div>
       <BrowserRouter>
         <Routes>

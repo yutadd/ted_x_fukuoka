@@ -10,21 +10,9 @@ import { Recently } from '../home/LatestInfoList';
  */
 export const SpeakerList = () => {
     const context = useContext(stateContext);
-    const [speakerJsonObject, setSpeakerJsonObject] = useState<any>();
+    const speakerListJsonObject=context.speakerListJsonObject;
     const [speakerCardList, setSpeakerCardList] = useState<JSX.Element[]>([]);
-    /**
-     * こちらで登壇者情報が含まれるjsonファイル/locales/speakers/<en/ja>.jsonを読み込みsetSpeakerJsonでspeakerJsonに値を設定します。
-     */
-    useEffect(() => {
-        fetch("/locales/speakers/" + context.lang + ".json").then((res) => res.text().then((tx) => {
-            if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
-                console.log("can't fetch \"speaker\" json file");
-            } else {
-                console.log(context.lang)
-                setSpeakerJsonObject(JSON.parse(tx));
-            }
-        }));
-    }, [context.category, context.lang]);
+    
     const generateSessionInfomationElement = (speakerJSXElements: any, CurrentSessionNumber: & number) => {
         return <div key={speakerJSXElements[0].speakerCardElement.key?.toString() + "_inner"} className='speaker-list-session-title'>
             {speakerJSXElements[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"}
@@ -38,8 +26,8 @@ export const SpeakerList = () => {
         let categorizedSpeakerJSXElementList: { sessionName: string, speakerCardElement: JSX.Element }[][] = [];
         let CurrentIntermissionNumber = 1;
         let CurrentSessionNumber = 1;
-        if (speakerJsonObject != null) {
-            for (const SpeakerJsonElement of speakerJsonObject["speakers"]) {
+        if (speakerListJsonObject != null) {
+            for (const SpeakerJsonElement of speakerListJsonObject["speakers"]) {
                 if (SpeakerJsonElement["category"] === context.category) {
                     let found = false;
                     const sessionName: string = SpeakerJsonElement["session"];
@@ -84,7 +72,7 @@ export const SpeakerList = () => {
             }
             setSpeakerCardList(_speakerCardList);
         }
-    }, [speakerJsonObject])
+    }, [speakerListJsonObject])
     /**
      * 500ms後にurlで指定されているオブジェクトの位置にスクロールする。
      */
