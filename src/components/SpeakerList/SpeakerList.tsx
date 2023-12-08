@@ -12,7 +12,7 @@ export const SpeakerList = () => {
     const context = useContext(stateContext);
     const speakerListJsonObject=context.speakerListJsonObject;
     const [speakerCardList, setSpeakerCardList] = useState<JSX.Element[]>([]);
-    
+
     const generateSessionInfomationElement = (speakerJSXElements: any, CurrentSessionNumber: & number) => {
         return <div key={speakerJSXElements[0].speakerCardElement.key?.toString() + "_inner"} className='speaker-list-session-title'>
             {speakerJSXElements[0].speakerCardElement.key?.toString().startsWith("inter") ? "" : "Session" + CurrentSessionNumber++ + ":"}
@@ -72,7 +72,7 @@ export const SpeakerList = () => {
             }
             setSpeakerCardList(_speakerCardList);
         }
-    }, [speakerListJsonObject])
+    }, [speakerListJsonObject,context.category])
     /**
      * 500ms後にurlで指定されているオブジェクトの位置にスクロールする。
      */
