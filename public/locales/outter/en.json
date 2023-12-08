@@ -2,19 +2,19 @@
   "header": {
     "switchTo2020": "switch to 2020",
     "switchTo2023": "switch to 2023",
-    "home": "home",
+    "home": "Home",
     "latest": {
-      "latest": "event",
+      "latest": "Event",
       "upcoming": "upcoming",
       "past": "past events",
       "blog": "blog"
     },
     "about": {
       "about": "TEDxFukuoka",
-      "TEDxFukuoka":"about TEDxFukuoka",
-      "TED": "about TED",
-      "TEDx": "about TEDx",
-      "partners": "partners"
+      "TEDxFukuoka":"About TEDxFukuoka",
+      "TED": "About TED",
+      "TEDx": "About TEDx",
+      "partners": "Partners"
     }
   },
   "footer": {

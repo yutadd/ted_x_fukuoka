@@ -47,7 +47,7 @@ function App() {
   const [outterLangJsonObject, setOutterLangJsonObject] = useState();
   const [speakerListJsonObject,setSpeakerListJsonObject]=useState();
   const [recentlyLangJsonObject, setRecentlyLangJsonObject] = useState();
-  const [category, setCategory] = useState("2023");
+  const [Year, setYear] = useState("2023");
 
 /**
  * 引数に渡された言語情報をもとに言語の対応表を読み込む
@@ -101,7 +101,7 @@ function saveLangageSetting(language_str:string){
    * コンポーネント内のreturnがそのコンポーネントの表示部を担当します
    */
   return (
-    <stateContext.Provider value={{ category: category, lang: lang, setCategory: setCategory, outterLang: outterLangJsonObject, recentlyLang: recentlyLangJsonObject,speakerListJsonObject:speakerListJsonObject }}>
+    <stateContext.Provider value={{ category: Year, lang: lang, setCategory: setYear, outterLang: outterLangJsonObject, recentlyLang: recentlyLangJsonObject,speakerListJsonObject:speakerListJsonObject }}>
       <div className='language-switcher-outter'>
         <div onClick={() => {refleshLanguageData("ja");saveLangageSetting("ja")}} className={'language-switcher-inner' + (lang === "ja" ? " selected" : " unselected")}>JP</div>
         <div onClick={() => {refleshLanguageData("en");saveLangageSetting("en")}} className={'language-switcher-inner' + (lang === "en" ? " selected" : " unselected")}>EN</div>
@@ -115,10 +115,10 @@ function saveLangageSetting(language_str:string){
           <Route path='/cc' Component={CC} />
           <Route path='/contact' Component={Contact} />
           <Route path='/media' Component={Media} />
-          <Route path='/ted' Component={TED} />
-          <Route path='/tedx' Component={TEDx} />
+          <Route path='/TED' Component={TED} />
+          <Route path='/TEDx' Component={TEDx} />
           <Route path='/TEDxFukuoka' Component={TEDxFukuoka} />
-          <Route path='/partners' Component={Partners} />
+          <Route path='/Partners' Component={Partners} />
           {/*2020年度とのパス互換性のため、どの条件にも当てはまらなかった場合、以下のルーティングで/イベント名の形式のルーティングだと解釈します。*/}
           <Route path='/:event' Component={Events} />
 
