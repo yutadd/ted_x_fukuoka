@@ -20,6 +20,7 @@ export const SpeakerList = () => {
             if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
                 console.log("can't fetch \"speaker\" json file");
             } else {
+                console.log(context.lang)
                 setSpeakerJsonObject(JSON.parse(tx));
             }
         }));

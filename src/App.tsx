@@ -30,9 +30,11 @@ export type SharedState = {
   recentlyLang: any
 }
 /**
- * 引数に渡された言語情報をもとに言語の対応表を読み込み、set***で読み込んだ対応表グローバル
+ * 引数に渡された言語情報をもとに言語の対応表を読み込む
  */
-function load(lang_str: string, setOutter: any, setRecently: any) {
+function load(lang_str: string, setOutter: any, setRecently: any,setLang:any) {
+  console.log(lang_str)
+  setLang(lang_str);
   if (lang_str === "ja") {
     fetch("/locales/outter/ja.json").then((res) => res.text().then((tx) => {
       if (tx.startsWith("<!DOCTYPE") || tx.startsWith("<!doctype")) {
@@ -96,7 +98,7 @@ function App() {
   useEffect(() => {
     let actualLanguage = cookieLang ? cookieLang : (browserLang == "ja" || browserLang == "en") ? browserLang : "en";
     Cookies.set('lang', actualLanguage);
-    load(actualLanguage, setOutterLang, setRecentlyLang);
+    load(actualLanguage, setOutterLang, setRecentlyLang,setLang);
   }, [lang])
   /**
    * コンポーネント内のreturnがそのコンポーネントの表示部を担当します

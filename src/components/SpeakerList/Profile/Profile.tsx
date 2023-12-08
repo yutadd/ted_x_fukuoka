@@ -34,7 +34,7 @@ export const Profile = () => {
                     {speakerJsonObject["name"]}
                 </h1>
                 <img src={speakerJsonObject["flicker"]} className={scss.ProfileImage} alt="" />
-                <div className={scss.Profiledescription}>{speakerJsonObject["profile"]}<br /><a className={scss.YoutubeLink} href={speakerJsonObject["youtube"]}>{speakerJsonObject["youtube"]}</a></div>
+                <div className={scss.Profiledescription}>{speakerJsonObject["profile"]}<br /><a className={scss.YoutubeLink} href={speakerJsonObject["youtube"]}>{speakerJsonObject["youtubeTitle"]}</a></div>
             </>)
         } else {
             <h1 className={scss.NoSpeakerFound}>No such speaker</h1>
