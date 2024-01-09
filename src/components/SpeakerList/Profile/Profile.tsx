@@ -12,12 +12,15 @@ export const Profile = () => {
      * こちらで登壇者情報が含まれるjsonファイル/locales/speakers/<en/ja>.jsonを読み込みsetSpeakerJsonでspeakerJsonに値を設定します。
      */
     useEffect(() => {
-        console.log("context updated:"+context.lang);
-                for (const _SpeakerObject of context.speakerListJsonObject["speakers"]) {
-                    if (_SpeakerObject['file'] == speakerImageFile) {
-                        setSpeakerJsonObject(_SpeakerObject);
-                    }
+        if(context.speakerListJsonObject!=undefined){
+            console.log("context updated:"+context.lang);
+            for (const _SpeakerObject of context.speakerListJsonObject["speakers"]) {
+                if (_SpeakerObject['file'] == speakerImageFile) {
+                    setSpeakerJsonObject(_SpeakerObject);
                 }
+            }
+        }
+        
         },[context.speakerListJsonObject,]);
 
     const generateSpeakerProfile = () => {
@@ -27,7 +30,7 @@ export const Profile = () => {
                 <h1 className={scss.ProfileTitle}>
                     {speakerJsonObject["name"]}
                 </h1>
-                <img src={speakerJsonObject["flicker"]} className={scss.ProfileImage} alt="" />
+                <img src={speakerJsonObject["flicker"]} className={scss.ProfileImage} alt={speakerJsonObject["name"]} />
                 <div className={scss.Profiledescription}>{speakerJsonObject["profile"]}<br /><a className={scss.YoutubeLink} href={speakerJsonObject["youtube"]}>{speakerJsonObject["youtubeTitle"]}</a></div>
             </>)
         } else {

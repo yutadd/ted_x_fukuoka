@@ -15,7 +15,7 @@ export const SpeakerCard = (props: any) => {
     return (<>
         <div key={props.file} id={props.file} className="card-container">
             <Link to={generateUrl()}>
-                <img src={props.file} alt={props.file} className="card-image" />
+                <img src={props.file} alt={props.name} className="card-image" />
             </Link>
             <div className="card-text-outter">
                 <Link to={generateUrl()} className="card-name">

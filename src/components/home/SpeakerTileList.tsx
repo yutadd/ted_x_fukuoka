@@ -32,7 +32,7 @@ export const SpeakerTileList = (props: any): JSX.Element => {
 function SpeakerTile(props:any){
     return (
         <Link className={styles.SpeakerTileContainer} to={{ pathname: "/SpeakerList/Profile", hash: props.file }} >
-            <img className={styles.image} width="100%" height="auto" src={props.file} alt="" />
+            <img className={styles.image} width="100%" height="auto" src={props.file} alt={props.name} />
             <p className={styles.year}>{props.year}</p>
             <div className={styles.name}>
                 <p className={styles.nameText} >{props.name}</p>
