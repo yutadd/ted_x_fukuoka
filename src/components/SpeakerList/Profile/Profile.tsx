@@ -26,7 +26,7 @@ export const Profile = () => {
     const generateSpeakerProfile = () => {
         if (speakerJsonObject != null) {
             return (<>
-            <Link className={scss.ReturnToSpeakerListButton}to="/SpeakerList"  >{context.lang=="ja"?"<登壇者一覧に戻る":"< Return To Speaker List"}</Link>
+            <Link className={scss.ReturnToSpeakerListButton}to={"/SpeakerList"+window.location.hash} >{context.lang=="ja"?"<登壇者一覧に戻る":"< Return To Speaker List"}</Link>
                 <h1 className={scss.ProfileTitle}>
                     {speakerJsonObject["name"]}
                 </h1>
