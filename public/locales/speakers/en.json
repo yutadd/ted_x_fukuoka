@@ -1,168 +1,168 @@
 {
   "speakers": [
     {
-      "id":1,
+      "id": 1,
       "session": "Start(13:00)",
       "category": "2023",
       "file": "/images/components/20230304-tedxfukuoka2023-handsign05.webp"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Mamoru Masumoto",
       "category": "2023",
       "file": "/images/speakers/2023/mamoru-masumoto.webp",
       "profile": "Masumoto graduated from the Faculty of Law at Seinan Gakuin University and the Department of Business and Technology Management at Kyushu University's Graduate School of Economics (MBA). After obtaining his degrees, he joined Nippon Telecom (now SoftBank) as a sales representative. In 2014, Masumoto launched a drone business with the founding of TrueBizon. Subsequently, he devised a model to \"share the sky\" called \"sora:share\" to enhance the social acceptance of drones, and obtained a business model patent. Matsumoto has appeared on numerous programs such as TV Tokyo's \"Gaia no Yoake\" and TBS's \"Gacchiri Monday\".",
       "session": "Cycle",
-      "youtube":"https://www.youtube.com/watch?v=ejkyD66owrI&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL",
-      "youtubeTitle":"エアモビリティ空路デザインの未来 | 増本 衛 | Mamoru Masumoto | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/2.webp"
+      "youtube": "https://www.youtube.com/watch?v=ejkyD66owrI&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL",
+      "youtubeTitle": "エアモビリティ空路デザインの未来 | 増本 衛 | Mamoru Masumoto | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/2.webp"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Kay Taira",
       "category": "2023",
       "file": "/images/speakers/2023/kei-taira.webp",
       "profile": "Fukuoka-native Kei Taira is a composting trainer and advisor for Local Food Cycling Co., Ltd. and Director of the NPO Sustainable Lifestyle Laboratory. As an intern at the NPO while a university student, she was involved in the \"Half Farmer/Half Urbanite Lifestyle\" program, composting courses, and the launch of the Local Food Cycling project, which focuses on resource recycling of organic waste within a 2-km radius. Taira completed a Master's in March 2019 at Rikkyo University's Graduate School of Social Design Studies, where she researched the potential of community composting.  She currently works as a composting advisor to promote and support the ongoing activities for LFC composting, mainly in the Kanto region. Her favorite saying is, \"seikou udoku\", or living a quiet, peaceful life, dividing up time between physical and intellectual pursuits. ",
       "session": "Cycle",
-      "youtube":"https://www.youtube.com/watch?v=GBixyOPRZL8&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=3",
-      "youtubeTitle":"台所から始まる食循環 | 平 希井 | Kei Taira | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/3.webp"
+      "youtube": "https://www.youtube.com/watch?v=GBixyOPRZL8&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=3",
+      "youtubeTitle": "台所から始まる食循環 | 平 希井 | Kei Taira | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/3.webp"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "Tatsuo Kuzuhara",
       "category": "2023",
       "file": "/images/speakers/2023/tatsuo-kuzuhara.webp",
       "profile": "Born in Tagawa-gun, Fukuoka Prefecture, Tatsuo Kuzuhara longed to become a cook skilled in the art of Western cuisine, despite his dislike of meat, taking the first step on the path to his dream after being offered a spot in culinary school. After graduation, he landed a job at the first Royal Host restaurant in Japan, working his way through the restaurant industry at coffee shops, takoyaki restaurants, and bento shops. Following the explosive rise of his own restaurant and outbreaks of mad cow disease, Kuzuhara returned to his hometown after suffering a serious illness. Honing his craft as a \"cook on a country hill\", he opened a satoyama restaurant in Fukuchi Town in 2018, which has become increasingly popular, and has attracted attention in recent years with the creation of \"Laughing Tickets\" for children's cafeterias. With eyes steady on the horizon, Kuzuhara aims to find solutions to problems affecting society today, such as vacant houses, shortage of people ready and able to carry things forward into the next generation, and issues faced by single mothers.",
       "session": "Cycle",
-      "youtube":"https://www.youtube.com/watch?v=Y509fF9BlIc&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=6",
-      "youtubeTitle":"肉嫌いからコックさんになった道 | 葛原 辰夫 | Tatsuo Kuzuhara | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/4.webp"
+      "youtube": "https://www.youtube.com/watch?v=Y509fF9BlIc&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=6",
+      "youtubeTitle": "肉嫌いからコックさんになった道 | 葛原 辰夫 | Tatsuo Kuzuhara | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/4.webp"
     },
     {
-      "id":5,
+      "id": 5,
       "name": "Nuren Abedin",
       "category": "2023",
       "file": "/images/speakers/2023/nuren-abedin.webp",
       "profile": "Nuren Abedin is a Research Fellow at the Yunus-Shiiki Social Business Research Center at Kyushu University. She is working on designing community rideshare based on different community travel demands in developing countries, an alternative transport model to the mainstream transport choices. She has attained her Ph.D. (Doctor of Information Science) in September 2021 from the Graduate School of Information Science and Electrical Engineering (ISEE). She was also an affiliated student at the Institute of Decision Science for Sustainable Society (IDS3) of Kyushu University, Fukuoka, Japan. She is an enthusiast for data science, Yunus Social Business, and the use of ICT in solving social issues and achieving SDGs.",
       "session": "Cycle",
-      "youtube":"https://www.youtube.com/watch?v=_N4uc2dleI8&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=4",
-      "youtubeTitle":"The Power of Social Business Towards Creating a Safer World for Girls | Nuren Abedin | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/5.webp"
+      "youtube": "https://www.youtube.com/watch?v=_N4uc2dleI8&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=4",
+      "youtubeTitle": "The Power of Social Business Towards Creating a Safer World for Girls | Nuren Abedin | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/5.webp"
     },
     {
-      "id":6,
+      "id": 6,
       "session": "Intermission1(about 30 min)",
       "category": "2023",
       "file": "/images/components/20230304-tedxfukuoka2023-handsign06.webp"
     },
     {
-      "id":7,
+      "id": 7,
       "name": "Takushi Sato",
       "category": "2023",
       "file": "/images/speakers/2023/takushi-sato.webp",
       "profile": "After graduating from the University of Tokyo and Hamamatsu University School of Medicine, AMDA board member Dr. Takushi Sato began his career in the field of emergency medicine. He also started taking part in disaster relief at home and abroad, which led him to join medical missions in Sudan and Cambodia, especially following his participation in the 2002 Afghan refugee assistance organized by Peshawar-kai, a leading Japanese medical NGO. The relationship between Dr. Sato and AMDA was formed when he took part in AMDA’s 2015 Nepal earthquake response. Ever since, he has been an essential part of the team where he became the driving force behind emergency relief activities for the earthquake in Kumamoto, Japan (2016), cholera outbreak in Haiti (2016), and torrential rain disaster, also in Kumamoto (2020), to name a few. In 2022, he was dispatched to Hungary to respond to the Ukraine humanitarian crisis. As an endoscopy and emergency medicine specialist, Dr. Sato has provided technical guidance at medical institutions overseas, which include AMDA Damak Hospital (Nepal), Mongolian National University of Medical Sciences (MNUMS) and Ulaanbaatar Emergency Service 103.  In addition to serving as a visiting professor at MNUMS, he was awarded the Honored Badge by Mongolia’s health minister in recognition of his outstanding contributions to the nation’s medical sector.  ",
       "session": "Origin",
-      "youtube":"https://www.youtube.com/watch?v=YJS3U-1_d2g&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=5",
-      "youtubeTitle":"あなたの人生どうありたいですか？ | 佐藤 拓史 | Takushi Sato | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/7.webp"
+      "youtube": "https://www.youtube.com/watch?v=YJS3U-1_d2g&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=5",
+      "youtubeTitle": "あなたの人生どうありたいですか？ | 佐藤 拓史 | Takushi Sato | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/7.webp"
     },
     {
-      "id":8,
+      "id": 8,
       "name": "Chika Tsubouchi",
       "category": "2023",
       "file": "/images/speakers/2023/chika-tsubouchi.webp",
       "profile": "Chika Tsubouchi is the Representative Director of Ghibli Inc. Born in Fukui Prefecture, Tsubouchi left her university studies mid-way and moved to Hagi City. After meeting fishers and \"diving\" into the unknown world of the fishing industry, she established the \"Hagi-Oshima Sendanmaru (Fleet)\" project with about 60 fishers and became the representative director. She applied to the Ministry of Agriculture, Forestry and Fisheries to certify Sendanmaru as a \"sixth industrialization\" project (integration and diversification into production, processing and marketing), and began to ship out products under this brand. Tsubouchi's interest in food stems from her experience with cancer and a desire to provide safe and secure food from the primary industry. Fishers from all over the country are gathered together under the sustainable Sendanmaru fishing brand and are involved in marine environment conservation activities that extend beyond prefectural borders. Tsubouchi coordinates with fishing cooperatives, identifies and secures shipping routes, and develops sales channels, and since 2015, has been involved in reconstruction work on fishing ports in Fukushima Prefecture. The Sendanmaru brand is being developed and expanded throughout the country as Ghibli continues its dynamic work in regional development.",
       "session": "Origin",
-      "youtube":"https://www.youtube.com/watch?v=j6Isg5MewtA&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=6",
-      "youtubeTitle":"自然との共生を追求する生き方 | 坪内 知佳 | Chika Tsubouchi | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/8.webp"
+      "youtube": "https://www.youtube.com/watch?v=j6Isg5MewtA&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=6",
+      "youtubeTitle": "自然との共生を追求する生き方 | 坪内 知佳 | Chika Tsubouchi | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/8.webp"
     },
     {
-      "id":9,
+      "id": 9,
       "name": "Miyuki Kawamura",
       "category": "2023",
       "file": "/images/speakers/2023/miyuki-kawamura.webp",
       "profile": "Born in Osaka. While in and out of the hospital due to a chronic illness, Kawamura started origami at the age of 2. She wanted to understand the snake biting area of the Ouroboros, but was frustrated and went on to a doctoral program in particle theory at Kobe University. However, she did not complete this program. She left school early when she got married, and she published several original papers on the subject of origami. Her \"Hajimete no Polyhedron Origami\" (Polyhedron Origami for Beginners) was published in Nihon Vogue, and she continues to create new origami art today.",
       "session": "Origin",
-      "youtube":"https://www.youtube.com/watch?v=aFlDMJ-rBIk&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=2",
-      "youtubeTitle":"折紙が拓く数学の心 | Miyuki Kawamura | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/9.webp"
+      "youtube": "https://www.youtube.com/watch?v=aFlDMJ-rBIk&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=2",
+      "youtubeTitle": "折紙が拓く数学の心 | Miyuki Kawamura | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/9.webp"
     },
     {
-      "id":10,
+      "id": 10,
       "name": "Minami Shibata",
       "category": "2023",
       "file": "/images/speakers/2023/minami-shibata.webp",
       "profile": "Born and currently living in Fukuoka City, Shibata has loved to create since she was a child, eventually finding her way into a career in design. She began her creative lifework  in 2013, working as an architect. In 2014, she made her way to New York alone, where she held both a solo  and group exhibition. After traveling the world to Germany, Spain, Kyoto, Tokyo, and Naoshima, she has since returned to Japan and continued her creative journey with acrylic paintings, illustrations, and three-dimensional works, setting up a workshop in her hometown of Fukuoka in 2018. Shibata has been working on an art project called \"ORINASU – Build with Scrap,\" in which she reimagines objects traditionally viewed as \"trash\" and reinvents them as new and innovative works of art to convey the impact of beach cleanups, the reality of what is happening in our oceans, and that innovation can be found, even in places we never imagined. Shibata received the Minister of the Environment Award of the UMIGOMI Zero Award 2021.",
       "session": "Origin",
-      "youtube":"https://www.youtube.com/watch?v=rWNtH7dw0Lo&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=8",
-      "youtubeTitle":"「すき」のエネルギーは架け橋 | しばた みなみ | Minami Shibata | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/10.webp"
+      "youtube": "https://www.youtube.com/watch?v=rWNtH7dw0Lo&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=8",
+      "youtubeTitle": "「すき」のエネルギーは架け橋 | しばた みなみ | Minami Shibata | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/10.webp"
     },
     {
-      "id":11,
+      "id": 11,
       "session": "Intermission2(about 30min)",
       "category": "2023",
       "file": "/images/components/20230304-tedxfukuoka2023-handsign07.webp"
     },
     {
-      "id":12,
+      "id": 12,
       "name": "Takayuki Konishi",
       "category": "2023",
       "file": "/images/speakers/2023/takayuki-konishi.webp",
       "profile": "Dance: Takayuki Konishi Konishi was awestruck when he first encounted Irish dance while traveling in Ireland. He studied sean nós dance at a local summer school in 2004, and has been leading a practice group since 2007. Music: The Clane The Clane is a traditional Irish music unit with members Yosuke Inoue (fiddle) and Seisuke Ito (flat mandolin). Based in Fukuoka, The Clane performs and hosts sessions throughout Kyushu to promote the joy of Irish music.",
       "session": "Coming and Going",
-      "youtube":"https://www.youtube.com/watch?v=ek9-CN5V9JE&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=9",
-      "youtubeTitle":"シャン・ノース・ダンスとアイルランド伝統音楽 | 小西 高之 | Takayuki Konishi | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/12.webp"
+      "youtube": "https://www.youtube.com/watch?v=ek9-CN5V9JE&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=9",
+      "youtubeTitle": "シャン・ノース・ダンスとアイルランド伝統音楽 | 小西 高之 | Takayuki Konishi | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/12.webp"
     },
     {
-      "id":13,
+      "id": 13,
       "name": "Ryoko Inoue",
       "category": "2023",
       "file": "/images/speakers/2023/ryoko-inoue.webp",
       "profile": "Fukuoka-native Ryoko Inoue graduated from Kyushu University Law School. Inspired by the social entrepreneurs and social innovation movements she encountered in Asia, she intuitively changed career paths while preparing for the bar exam to become an international human rights lawyer. She worked at the Yunus & Shiiki Social Business Research Center at Kyushu University for seven years, where she was involved in the dissemination and promotion of social business, support for creation, research and education. Inoue has promoted partnerships with Dr. Muhammad Yunus, the Grameen Group and overseas educational institutions, and since 2017, has been in charge of a residency program and field study projects at the non-profit organization Crossfields, focusing on providing hands-on support for growth beyond the boundaries of organizations and sectors. Inoue joined Social Innovation Laboratory Kyoto in April 2020, with the aim of connecting Kyoto, home to the culture and wisdom of Japan's forebearers, with other parts of the world through business and social innovations rooted in the concept of shiho-yoshi, good for the world and the future",
       "session": "Coming and Going",
-      "youtube":"https://www.youtube.com/watch?v=4HE6p2B2Of8&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=5",
-      "youtubeTitle":"私から創発するソーシャルイノベーション | 井上 良子 | Ryoko Inoue | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/13.webp"
+      "youtube": "https://www.youtube.com/watch?v=4HE6p2B2Of8&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=5",
+      "youtubeTitle": "私から創発するソーシャルイノベーション | 井上 良子 | Ryoko Inoue | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/13.webp"
     },
     {
-      "id":14,
+      "id": 14,
       "name": "Kozo Hino",
       "category": "2023",
       "file": "/images/speakers/2023/kozo-hino.webp",
       "profile": "Kozo Hino is the Headmaster and Director of Meihokan High School, Director of Atmark Cosmopolitan High School, Director of the NPO Japan Homeschool Support Association, and a member of the Japan P.E.N. Club. After working in the ICT industry as a director at Recruit Co., Ltd. and k-net Inc. (a public-private company in Kanagawa Prefecture), Hino decided to set up a correspondence high school in 1999 and founded Tokyo Inter-High School and Atmark Cosmopolitan High School. Since Naoki Higashida, an autistic writer, attended Atmark Cosmopolitan High School, Hino has felt a strong vocation to helping students with developmental disabilities learn. He founded and became the headmaster of Meihokan High School in 2009. Since opening the first Special Needs Education Center (SNEC) in Shinagawa/Gotenyama in 2013, others have been set up around Japan in a total of 36 locations. SNECs are attracting attention as unique special needs education and human resources development centers, without precedence or parallel in regular high school curriculums.",
       "session": "Coming and Going",
-      "youtube":"https://www.youtube.com/watch?v=LPhiXXlaDG0&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=7",
-      "youtubeTitle":"答えはすべて生徒の中にある | 日野 公三 | Kozo Hino | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/14.webp"
+      "youtube": "https://www.youtube.com/watch?v=LPhiXXlaDG0&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=7",
+      "youtubeTitle": "答えはすべて生徒の中にある | 日野 公三 | Kozo Hino | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/14.webp"
     },
     {
-      "id":15,
+      "id": 15,
       "name": "Yoshiko Ishibashi",
       "category": "2023",
       "file": "/images/speakers/2023/yoshiko-ishibashi.webp",
       "profile": "After attending junior and senior high school in the U.S., Yoshiko Ishibashi took on a position at a global media company after graduating university, and has devoted time to exploring her interests in counseling, Pilates and yoga, mindfulness and coaching over the years. She completed training in SEL and EQ (Social Emotional Learning and Emotional Intelligence) in the U.S. and currently offers EQ courses and workshops for parents, educators, and human resource professionals. Ishibashi provides spaces for people to learn, discover and connect with their inner selves on her quest to helping others live life to the fullest and stay true to what is in their hearts.",
       "session": "Coming and Going",
-      "youtube":"https://www.youtube.com/watch?v=njNJ8UapMhY&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=8",
-      "youtubeTitle":"「感情」を味方につけて「わたし」を生きる | 石橋 芳子 | Yoshiko Ishibashi | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/15.webp"
+      "youtube": "https://www.youtube.com/watch?v=njNJ8UapMhY&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=8",
+      "youtubeTitle": "「感情」を味方につけて「わたし」を生きる | 石橋 芳子 | Yoshiko Ishibashi | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/15.webp"
     },
     {
-      "id":16,
+      "id": 16,
       "name": "Ippei Matsukiyo",
       "category": "2023",
       "file": "/images/speakers/2023/ippei-matsukiyo.webp",
       "profile": "Born the son of a watchmaker in Fukuoka, Ippei Matsukiyo’s samurai roots are deeply ingrained in the border island of Tsushima. Matsukiyo started playing rugby from a young age in the quiet, unpretentious position of hooker. After finding a job in the media covering stories in Korea and learning the Korean language, he found himself experiencing a paradigm shift that forever altered his worldview: the desire to create business with neighboring countries. He reskilled himself in business administration, specializing in finance, accounting, business strategy theory and marketing, and founded Asia Future in 2007. With marketing and recruiting for Korea at the heart of its operations, Matsukiyo’s company is often referred to as a “bridge between Japan and Korea”, but its business concept is best described as “front line of business and communication between Japan and Korea”.",
       "session": "Coming and Going",
-      "youtube":"https://www.youtube.com/watch?v=zdPIibjiKyg&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=13",
-      "youtubeTitle":"私たちはなぜ外国語を学ぶのか？ | 松清 一平 | Ippei Matsukiyo | TEDxFukuoka",
-      "flicker":"/images/speakers/2023/flicker/16.webp"
+      "youtube": "https://www.youtube.com/watch?v=zdPIibjiKyg&list=PLHK0UE8yc1Q0iQEJ3RSZ8qgINPecmP9XL&index=13",
+      "youtubeTitle": "私たちはなぜ外国語を学ぶのか？ | 松清 一平 | Ippei Matsukiyo | TEDxFukuoka",
+      "flicker": "/images/speakers/2023/flicker/16.webp"
     },
     {
-      "id":17,
+      "id": 17,
       "session": "End(17:30)",
       "category": "2023",
       "file": "/images/components/20230304-tedxfukuoka2023-handsign01.webp"
@@ -171,85 +171,99 @@
       "name": "Tatsushi Momen",
       "category": "2020",
       "file": "/images/speakers/2020/tatsushi-momen.webp",
-      "profile": "KOO-KI Co.,Ltd. president, video director. Tatsushi Momen is a video director and the president of KOO-KI Co.,Ltd. He was born in Ishikawa prefecture. After he left Kyusyu Institute Design before graduating, he established KOO-KI Co.,Ltd. with other voluntary members. He plans and directs music videos, commercials, openings for games, TV show packages, and video for events. He creates his work with a cute, light hearted, and fun taste. They often direct and edit their own work. They keep working with the desire to create more entertaining videos."
+      "profile": "KOO-KI Co.,Ltd. president, video director. Tatsushi Momen is a video director and the president of KOO-KI Co.,Ltd. He was born in Ishikawa prefecture. After he left Kyusyu Institute Design before graduating, he established KOO-KI Co.,Ltd. with other voluntary members. He plans and directs music videos, commercials, openings for games, TV show packages, and video for events. He creates his work with a cute, light hearted, and fun taste. They often direct and edit their own work. They keep working with the desire to create more entertaining videos.",
+      "flicker": "/images/speakers/2020/flicker/Tatsushi-Momen-profile.webp"
     },
     {
       "name": "Yusuke Engeorge",
       "category": "2020",
       "file": "/images/speakers/2020/yusuke-engeorge.webp",
-      "profile": "Saga prefectural civil servant. Yusuke Engeorge, a lover of history and Saga, has served the Saga prefecture as a local government official since 2001. He is know as \"the most innovative civil servant in Japan\". He believes in having a \"hands-on approach\" to every task, even in fields that are unfamiliar to him. With his determination, he led the medical emergency revolution in Saga prefecture by successfully introducing ICT systems to its doctors and ambulances. He received the National Governor's Association Advanced Policy and the Minister of Internal Affairs and Communication awards for his contributions. Engeorge's project, \"Information Network that Saves Lives\" is in Japanses elementary school textbooks and was featured on the TBS Television program, \"Yume no tobira+\". Due to is innovative sprit and trailblazing approach to civil service, he is often teased, \"Did you go too far?\", \"Are you going to be fired?\". Although he faces many internal obstacles as a government official, he enthusiastically approaches new challenges. Engeorge has published a book titled \"県庁そろそろクビですか？\", meaning \"Will i get fired from the prefectural capital soon?. He is currently venturing into the realm of space technology through his \"Drones Aids in Disaster Response\" and \"Digital Saga Ninja\" projects, and he eagerly anticipate new opportunities to serve his community."
+      "profile": "Saga prefectural civil servant. Yusuke Engeorge, a lover of history and Saga, has served the Saga prefecture as a local government official since 2001. He is know as \"the most innovative civil servant in Japan\". He believes in having a \"hands-on approach\" to every task, even in fields that are unfamiliar to him. With his determination, he led the medical emergency revolution in Saga prefecture by successfully introducing ICT systems to its doctors and ambulances. He received the National Governor's Association Advanced Policy and the Minister of Internal Affairs and Communication awards for his contributions. Engeorge's project, \"Information Network that Saves Lives\" is in Japanses elementary school textbooks and was featured on the TBS Television program, \"Yume no tobira+\". Due to is innovative sprit and trailblazing approach to civil service, he is often teased, \"Did you go too far?\", \"Are you going to be fired?\". Although he faces many internal obstacles as a government official, he enthusiastically approaches new challenges. Engeorge has published a book titled \"県庁そろそろクビですか？\", meaning \"Will i get fired from the prefectural capital soon?. He is currently venturing into the realm of space technology through his \"Drones Aids in Disaster Response\" and \"Digital Saga Ninja\" projects, and he eagerly anticipate new opportunities to serve his community.",
+      "flicker": "/images/speakers/2020/flicker/Yusuke-Engeorge-profile.webp"
     },
     {
       "name": "Yumika Yuriko・Uno",
       "category": "2020",
       "file": "/images/speakers/2020/yumika-yuriko-uno.webp",
-      "profile": "菜の花元気プロジェクト(Medical student, Highschool student) Yumika Uno is a medical student at Kumamoto University. She started a project named \"菜の花元気プロジェクト\", meaning \"The Project of Canola blossoms\".Yuriko, her younger sister had helped her project for 10 years since she was 5 years old. The project aim to re-invigorate the Ropponmatsu area after Kyusyu University moved with planting canola blossoms. When the Great East Japan earthquake happened, she expanded the movement \"012(オイッチニー)運動\",meaning\"Oichini Movement\". It was the project which they send canola blossom's seed contain a wish to victims.Yuriko coverd a water source in south Aso only which was dried up by Kumamoto earthquake and offered information how the water source revived in her junior high school student's age.They are devoting to realize a social business plan for more revival of their loved Minami-Aso village. Their current goal is to create a platform that connects the affected areas with Minami Aso as a starting point."
+      "profile": "菜の花元気プロジェクト(Medical student, Highschool student) Yumika Uno is a medical student at Kumamoto University. She started a project named \"菜の花元気プロジェクト\", meaning \"The Project of Canola blossoms\".Yuriko, her younger sister had helped her project for 10 years since she was 5 years old. The project aim to re-invigorate the Ropponmatsu area after Kyusyu University moved with planting canola blossoms. When the Great East Japan earthquake happened, she expanded the movement \"012(オイッチニー)運動\",meaning\"Oichini Movement\". It was the project which they send canola blossom's seed contain a wish to victims.Yuriko coverd a water source in south Aso only which was dried up by Kumamoto earthquake and offered information how the water source revived in her junior high school student's age.They are devoting to realize a social business plan for more revival of their loved Minami-Aso village. Their current goal is to create a platform that connects the affected areas with Minami Aso as a starting point.",
+      "flicker":"/images/speakers/2020/flicker/Yumika-Yuriko・Uno-profile.webp"
     },
     {
       "name": "Hideo Kinoshita",
       "category": "2020",
       "file": "/images/speakers/2020/hideo-kinoshita.webp",
-      "profile": "Artist, shinto priest. Fukuoka native Hideo Kinoshita graduated from Tokyo Zokei University with a degree in sculpting. He then completed Shinto studies at Kokugakuin University. In his art, he uses mankind and prayer as sources of artistic inspiration and works to blend the two. He has become a priest in order to study prayer since finishing his studies. He is currently a priest at Kashii-gu shrine."
+      "profile": "Artist, shinto priest. Fukuoka native Hideo Kinoshita graduated from Tokyo Zokei University with a degree in sculpting. He then completed Shinto studies at Kokugakuin University. In his art, he uses mankind and prayer as sources of artistic inspiration and works to blend the two. He has become a priest in order to study prayer since finishing his studies. He is currently a priest at Kashii-gu shrine.",
+      "flicker":"/images/speakers/2020/flicker/Hideo-Kinoshita-profile.webp"
     },
     {
       "name": "Anne Crescini",
       "category": "2020",
       "file": "/images/speakers/2020/anne-crescini.webp",
-      "profile": "Educator, writer. Anne Crescini is a speaker, writer, teacher, TV commentator and blogger based in Fukuoka Prefecture. She is most well-known for her bilingual blog, アンちゃんから見るニッポン、which has thousand of readers all over Japan. In her blog, which she writes in Hakata dialect and English, she writes about language and culture, using personal experiences and observations from her 20 years in Japan. Anne has also written 5 books about her passion—Japanese language and culture. ranging from Japanese culture. She has been teaching communication, presentation and writing classes at the University of Kitakyushu for 17 years. Anne lives in the city of Munakata. She is working hard to plug her awesome city in her role as Munakata Goodwill Ambassador. In her rare free time, she enjoys trying crazy things for blog material, baking cookies, playing the shamisen and wearing kimono. She is totally crazy about Japan."
+      "profile": "Educator, writer. Anne Crescini is a speaker, writer, teacher, TV commentator and blogger based in Fukuoka Prefecture. She is most well-known for her bilingual blog, アンちゃんから見るニッポン、which has thousand of readers all over Japan. In her blog, which she writes in Hakata dialect and English, she writes about language and culture, using personal experiences and observations from her 20 years in Japan. Anne has also written 5 books about her passion—Japanese language and culture. ranging from Japanese culture. She has been teaching communication, presentation and writing classes at the University of Kitakyushu for 17 years. Anne lives in the city of Munakata. She is working hard to plug her awesome city in her role as Munakata Goodwill Ambassador. In her rare free time, she enjoys trying crazy things for blog material, baking cookies, playing the shamisen and wearing kimono. She is totally crazy about Japan.",
+      "flicker":"/images/speakers/2020/flicker/Anne-Crescini-profile.webp"
     },
     {
       "name": "Shogo Ochiai",
       "category": "2020",
       "file": "/images/speakers/2020/shogo-ochiai.webp",
-      "profile": "Philosopher, Hacktivist. Shogo Ochiai is the founder of Cryptoeconomics Lab(CEL). He supervises “O'Reilly Co.’s Mastering Ethereum Technology”. Influenced by Nakamoto Satoshi and Vitalic Britain, he started a research and development of “Smart Contract” in 2016. As a part of CEL Co., he made great achievements of Layer-2 technologies and CryptoLaw area, and then he started dao4n.org as his ambitious non-profit project. His former research field is like below.[Tech & Math] zk-S [NT] ARKs, Rollups, Optimistic Virtual Machine, Shardings, Casper FFG, ChainLocks [Econ & Law] DeFi and Law [Poli-sci & Logic] Democracy and Formal Verification"
+      "profile": "Philosopher, Hacktivist. Shogo Ochiai is the founder of Cryptoeconomics Lab(CEL). He supervises “O'Reilly Co.’s Mastering Ethereum Technology”. Influenced by Nakamoto Satoshi and Vitalic Britain, he started a research and development of “Smart Contract” in 2016. As a part of CEL Co., he made great achievements of Layer-2 technologies and CryptoLaw area, and then he started dao4n.org as his ambitious non-profit project. His former research field is like below.[Tech & Math] zk-S [NT] ARKs, Rollups, Optimistic Virtual Machine, Shardings, Casper FFG, ChainLocks [Econ & Law] DeFi and Law [Poli-sci & Logic] Democracy and Formal Verification",
+      "flicker":"/images/speakers/2020/flicker/Shogo-Ochiai-profile.webp"
     },
     {
       "name": "Shogo Shimura",
       "category": "2020",
       "file": "/images/speakers/2020/shogo-shimura.webp",
-      "profile": "Psychiatrist, Magician. Shogo Shimura, also known as, “Magic Doctor”, is a psychiatrist and magician. As a child, he began practicing magic tricks and became fascinated with optical illusions and “mind tricks”. In 2012, Shimura won the World Magic Seminar Teens Contest Championship title in Las Vegas. He studied psychiatry in the School of Medicine at Keio University to research the science behind “mind tricks”. He currently holds mental training events all over Japan that integrate magic tricks with psychiatry. Shimura is a representative director of the Japan Institute of Cognitive Science and a member of the Olympic Committee training staff. He serves as a mental coach for gymnastics and canoe slalom athletes for the 2020 Tokyo Olympics."
+      "profile": "Psychiatrist, Magician. Shogo Shimura, also known as, “Magic Doctor”, is a psychiatrist and magician. As a child, he began practicing magic tricks and became fascinated with optical illusions and “mind tricks”. In 2012, Shimura won the World Magic Seminar Teens Contest Championship title in Las Vegas. He studied psychiatry in the School of Medicine at Keio University to research the science behind “mind tricks”. He currently holds mental training events all over Japan that integrate magic tricks with psychiatry. Shimura is a representative director of the Japan Institute of Cognitive Science and a member of the Olympic Committee training staff. He serves as a mental coach for gymnastics and canoe slalom athletes for the 2020 Tokyo Olympics.",
+      "flicker":"/images/speakers/2020/flicker/Shogo-Shimura-profile.webp"
     },
     {
       "name": "Makoto Ayunaga",
       "category": "2020",
       "file": "/images/speakers/2020/makoto-ayunaga.webp",
-      "profile": "The label-less person. Kyoto-born Ayuko Sano became an All-Japan Champion snowboarder while attending Doshisha University, ranking 20th in the world.　While serving in the first-class international flights as a CA, she became a certified member of Japan Sommelier Association. After various and illustrious career as a networking business professional, photographer, and a hospitality consultant, she became the CMO of an AI developer, as she supervised in the market development and service direction of a dialogue AI company. However, the profession she professes she loves the most is “being a mom.”"
+      "profile": "The label-less person. Kyoto-born Ayuko Sano became an All-Japan Champion snowboarder while attending Doshisha University, ranking 20th in the world.　While serving in the first-class international flights as a CA, she became a certified member of Japan Sommelier Association. After various and illustrious career as a networking business professional, photographer, and a hospitality consultant, she became the CMO of an AI developer, as she supervised in the market development and service direction of a dialogue AI company. However, the profession she professes she loves the most is “being a mom.”",
+      "flicker":"/images/speakers/2020/flicker/Makoto-Ayunaga-profile.webp"
     },
     {
       "name": "Justin Teoh",
       "category": "2020",
       "file": "/images/speakers/2020/justin-teoh-profile.webp",
-      "profile": "Video marketer. Justin Teoh is a speaker, author and business owner based in Shimokitazawa in Tokyo. He is the creator of the Video Rockstar Bootcamp, the Thought Leaders Intensive and the Heroes Collective. His signature programs have been taught by trainers in 15 countries around the world to over 19,914 students. A book co-authored by Justin, \"Viral Video Heroes,\" recently became an International Bestseller. In his spare time he loves surfing and snowboarding, dancing with his daughter and trying new rice cracker flavours with his wife."
+      "profile": "Video marketer. Justin Teoh is a speaker, author and business owner based in Shimokitazawa in Tokyo. He is the creator of the Video Rockstar Bootcamp, the Thought Leaders Intensive and the Heroes Collective. His signature programs have been taught by trainers in 15 countries around the world to over 19,914 students. A book co-authored by Justin, \"Viral Video Heroes,\" recently became an International Bestseller. In his spare time he loves surfing and snowboarding, dancing with his daughter and trying new rice cracker flavours with his wife.",
+      "flicker":"/images/speakers/2020/flicker/Justin-Teoh-profile.webp"
     },
     {
       "name": "Hirokazu Okano",
       "category": "2020",
       "file": "/images/speakers/2020/hirokazu-okano.webp",
-      "profile": "OKANO, President. Hirokazu Okano was born in Fukuoka Prefecture in 1971. After graduating from Meiji University School of Political Science and Economics, he established a human resources consulting company, and at the age of 26, he purchased his head family’s Hakata Ori weaver company, which had been in the red for 13 years, and successfully turned it into a profit. He is also a director of Fuudo Co., Ltd. which produces artists, and an advisor to the Lee Sanpei kiln, which is inherited from the founder of Arita-yaki. He learned about the global success stories of luxury brands that originate from Western traditional crafts and got tips on how to revive traditional crafts. Currently, he has stores in Hakata Riverain and GINZA SIX, aiming to build the first global brand in Japan based on Hakata weaving technology."
+      "profile": "OKANO, President. Hirokazu Okano was born in Fukuoka Prefecture in 1971. After graduating from Meiji University School of Political Science and Economics, he established a human resources consulting company, and at the age of 26, he purchased his head family’s Hakata Ori weaver company, which had been in the red for 13 years, and successfully turned it into a profit. He is also a director of Fuudo Co., Ltd. which produces artists, and an advisor to the Lee Sanpei kiln, which is inherited from the founder of Arita-yaki. He learned about the global success stories of luxury brands that originate from Western traditional crafts and got tips on how to revive traditional crafts. Currently, he has stores in Hakata Riverain and GINZA SIX, aiming to build the first global brand in Japan based on Hakata weaving technology.",
+      "flicker":"/images/speakers/2020/flicker/Hirokazu-Okano-profile.webp"
     },
     {
       "name": "Yayoi Oguma",
       "category": "2020",
       "file": "/images/speakers/2020/yayoi-oguma.webp",
-      "profile": "Education reformer Her abysmal scores on English-language proficiency tests shocked Yayoi Oguma. Instead of giving up, the girl who dreamed of becoming an interpreter transformed herself into a model for every clueless speaker of English in Japan, devising a 42-step approach to linguistic mastery. Three years later, Yayoi was linking Japan and the rest of the world across fields such as economics, industry, environment, medicine, entertainment and politics. She now counts self-help guru Tony Robbins, Nobel Prize winner Dr. Horst Ludwig Stormer and big-league CEOs among her clients, and her motivational and “super speedy learning” seminars earn a 99 percent participant satisfaction rating. Her first book, detailing her 42 rules for mastering the TOEIC test and becoming an interpreter, is a best-seller, and her second, Learning English with a Master Map: The Key to Staying Motivated, just debuted in April 2012 and is also selling fast."
+      "profile": "Education reformer Her abysmal scores on English-language proficiency tests shocked Yayoi Oguma. Instead of giving up, the girl who dreamed of becoming an interpreter transformed herself into a model for every clueless speaker of English in Japan, devising a 42-step approach to linguistic mastery. Three years later, Yayoi was linking Japan and the rest of the world across fields such as economics, industry, environment, medicine, entertainment and politics. She now counts self-help guru Tony Robbins, Nobel Prize winner Dr. Horst Ludwig Stormer and big-league CEOs among her clients, and her motivational and “super speedy learning” seminars earn a 99 percent participant satisfaction rating. Her first book, detailing her 42 rules for mastering the TOEIC test and becoming an interpreter, is a best-seller, and her second, Learning English with a Master Map: The Key to Staying Motivated, just debuted in April 2012 and is also selling fast.",
+      "flicker":"/images/speakers/2020/flicker/Yayoi-Oguma-profile.webp"
     },
     {
       "name": "Maharu Tashiro",
       "category": "2020",
       "file": "/images/speakers/2020/maharu-tashiro.webp",
-      "profile": "Professional kendama player. Maharu Tashiro is a professional kendama player, lives in Fukuoka. He started playing kendama when he was 7 years old.He became the finalist of Catch&Flow2017/2018/2019. Now he is 12 years old and he ranked 5th in Kendama World Cup 2019. His kendama practice usually last 2 hours on weekdays and whole day on weekends. He keeps brushing up his skill.You CAN'T miss his wonderful performance!"
+      "profile": "Professional kendama player. Maharu Tashiro is a professional kendama player, lives in Fukuoka. He started playing kendama when he was 7 years old.He became the finalist of Catch&Flow2017/2018/2019. Now he is 12 years old and he ranked 5th in Kendama World Cup 2019. His kendama practice usually last 2 hours on weekdays and whole day on weekends. He keeps brushing up his skill.You CAN'T miss his wonderful performance!",
+      "flicker":"/images/speakers/2020/flicker/Maharu-Tashiro-profile.webp"
     },
     {
       "name": "Miki Igarashi",
       "category": "2020",
       "file": "/images/speakers/2020/miki-igarashi.webp",
-      "profile": "Science edutainer, visiting researcher of the University of Tokyo. Miki Igarashi has organized many science shows and science classes for kids, and her famous show, known as “Dancing Science Show”, flavored with hip hop, has attracted large amount of audience. What brought her into the science world is the experiment generating the rainbow she saw while young. She was deeply impressed that there is science in common things, and decided to work in science field. In 2018, she was awarded “Girls in STEM Contest 2018” Runner-Up prize, honoring individuals or groups who practice science education for girls, from the Nissan Global Foundation. In addition, she has broadened her activities both domestically and internationally, including speaking at the Ministry of Foreign Affairs' International Women's Conference WAW! (World Assembly for Women), holding STEM workshops in the United States etc."
+      "profile": "Science edutainer, visiting researcher of the University of Tokyo. Miki Igarashi has organized many science shows and science classes for kids, and her famous show, known as “Dancing Science Show”, flavored with hip hop, has attracted large amount of audience. What brought her into the science world is the experiment generating the rainbow she saw while young. She was deeply impressed that there is science in common things, and decided to work in science field. In 2018, she was awarded “Girls in STEM Contest 2018” Runner-Up prize, honoring individuals or groups who practice science education for girls, from the Nissan Global Foundation. In addition, she has broadened her activities both domestically and internationally, including speaking at the Ministry of Foreign Affairs' International Women's Conference WAW! (World Assembly for Women), holding STEM workshops in the United States etc.",
+      "flicker":"/images/speakers/2020/flicker/Miki-Igarashi-profile.webp"
     },
     {
       "name": "Shinya Kiyokawa",
       "category": "2020",
       "file": "/images/speakers/2020/shinya-kiyokawa.webp",
-      "profile": "サウンドデザイナー、プロデューサー \"スーパーランゲージ”をコンセプトに音の新たな可能性を追求するサウンドアーティスト。2011年に自身の故郷で制作した“森の木琴”をきっかけにグローバルに活動を展開。音以外にも積極的に自己の表現を拡張しており、2017年には“別府市・湯~園地計画！”において総合プロデューサーを務めた。"
+      "profile": "サウンドデザイナー、プロデューサー \"スーパーランゲージ”をコンセプトに音の新たな可能性を追求するサウンドアーティスト。2011年に自身の故郷で制作した“森の木琴”をきっかけにグローバルに活動を展開。音以外にも積極的に自己の表現を拡張しており、2017年には“別府市・湯~園地計画！”において総合プロデューサーを務めた。",
+      "flicker":"/images/speakers/2020/flicker/Shinya-Kiyokawa-profile.webp"
     }
   ]
 }
