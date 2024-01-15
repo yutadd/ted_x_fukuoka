@@ -23,11 +23,11 @@ export const SpeakerList = () => {
      * URLで指定されたファイルが、現在のカテゴリに属する登壇者のファイルに存在しなければ、カテゴリを2020にしている。
      * speakerJsonが変更(言語設定の変更など)されるたびに呼び出される登壇者情報のリスト要素を作るための関数 
      */
-    const [loadCount,setLoadCount]=useState(0)
+    const [loadCount, setLoadCount] = useState(0)
     useEffect(() => {
-        if(loadCount<2){
+        if (loadCount < 2) {
             switchCategoryByUrlHash()
-            setLoadCount(value=>value+1)
+            setLoadCount(value => value + 1)
         }
         let categorizedSpeakerJSXElementList: { sessionName: string, speakerCardElement: JSX.Element }[][] = [];
         let CurrentIntermissionNumber = 1;
@@ -79,35 +79,53 @@ export const SpeakerList = () => {
             setSpeakerCardList(_speakerCardList);
         }
     }, [speakerListJsonObject, context.category])
-    
-    
+
+
     const switchCategoryByUrlHash = () => {
         console.log(speakerListJsonObject)
         const imageFileNameOnUrl = document.location.hash.split("#")[1]
-        if (imageFileNameOnUrl&&imageFileNameOnUrl.endsWith(".webp")) {
+        if (imageFileNameOnUrl && imageFileNameOnUrl.endsWith(".webp")) {
             if (speakerListJsonObject) {
                 for (const speakerObject of speakerListJsonObject["speakers"]) {
                     if (imageFileNameOnUrl == speakerObject.file) {
                         context.setCategory(speakerObject.category)
                     }
                 }
-            }else{
+            } else {
                 console.log("speakerListJsonObject is null")
             }
-        }else{
+        } else {
             console.log("There is no hash on url. Or invalid format")
         }
         console.log("end of switch category function")
     }
+    const [tryScrollCount, setTryScrollCount] = useState(0)
+    const scrollToPictureFileOnUrlHash = () => {
+        console.log("trying to scroll target element.")
+        if (tryScrollCount < 4) {
+            const targetElement = document.getElementById(window.location.hash.split('#')[1]);
+            if (targetElement) {
+                console.log("targetElement found going to scroll")
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.log("targetElement not found")
+                setTimeout(() => {
+                    scrollToPictureFileOnUrlHash();
+                }, 500);
+            }
+            setTryScrollCount(value => value + 1)
+        }else{
+            console.log("scroll try count reached to maximum try")
+        }
+
+    }
     /**
-     * 500ms後にurlで指定されているオブジェクトの位置にスクロールする。
+     * urlで指定されているオブジェクトの位置にスクロールする。
      */
     useEffect(() => {
-        setTimeout(() => {
-            const targetElement = document.getElementById(window.location.hash.split('#')[1]);
-            targetElement?.scrollIntoView({ behavior: 'smooth' });
-        }, 500);
-    }, [context.category]);
+        console.log("trying to call [trying to scroll to profile element] function")
+        scrollToPictureFileOnUrlHash()
+    }, []);
     /**
      * 表示部
      */
