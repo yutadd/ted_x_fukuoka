@@ -107,7 +107,7 @@ export const SpeakerList = () => {
             const targetElement = document.getElementById(window.location.hash.split('#')[1]);
             targetElement?.scrollIntoView({ behavior: 'smooth' });
         }, 500);
-    }, []);
+    }, [context.category]);
     /**
      * 表示部
      */
