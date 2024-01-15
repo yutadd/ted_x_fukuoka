@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { Outter } from '../Outter/Outter';
-import scss from './SpeakerList.module.css'
+import scss from './SpeakerList.module.css';
 import { SpeakerCard } from './SpeakerCard';
 import { stateContext } from '../../App';
 import { Recently } from '../home/LatestInfoList';
@@ -10,7 +10,7 @@ import { Recently } from '../home/LatestInfoList';
  */
 export const SpeakerList = () => {
     const context = useContext(stateContext);
-    const speakerListJsonObject=context.speakerListJsonObject;
+    const speakerListJsonObject = context.speakerListJsonObject;
     const [speakerCardList, setSpeakerCardList] = useState<JSX.Element[]>([]);
 
     const generateSessionInfomationElement = (speakerJSXElements: any, CurrentSessionNumber: & number) => {
@@ -20,9 +20,15 @@ export const SpeakerList = () => {
         </div>
     }
     /**
+     * URLで指定されたファイルが、現在のカテゴリに属する登壇者のファイルに存在しなければ、カテゴリを2020にしている。
      * speakerJsonが変更(言語設定の変更など)されるたびに呼び出される登壇者情報のリスト要素を作るための関数 
      */
+    const [loadCount,setLoadCount]=useState(0)
     useEffect(() => {
+        if(loadCount<2){
+            switchCategoryByUrlHash()
+            setLoadCount(value=>value+1)
+        }
         let categorizedSpeakerJSXElementList: { sessionName: string, speakerCardElement: JSX.Element }[][] = [];
         let CurrentIntermissionNumber = 1;
         let CurrentSessionNumber = 1;
@@ -72,7 +78,27 @@ export const SpeakerList = () => {
             }
             setSpeakerCardList(_speakerCardList);
         }
-    }, [speakerListJsonObject,context.category])
+    }, [speakerListJsonObject, context.category])
+    
+    
+    const switchCategoryByUrlHash = () => {
+        console.log(speakerListJsonObject)
+        const imageFileNameOnUrl = document.location.hash.split("#")[1]
+        if (imageFileNameOnUrl&&imageFileNameOnUrl.endsWith(".webp")) {
+            if (speakerListJsonObject) {
+                for (const speakerObject of speakerListJsonObject["speakers"]) {
+                    if (imageFileNameOnUrl == speakerObject.file) {
+                        context.setCategory(speakerObject.category)
+                    }
+                }
+            }else{
+                console.log("speakerListJsonObject is null")
+            }
+        }else{
+            console.log("There is no hash on url. Or invalid format")
+        }
+        console.log("end of switch category function")
+    }
     /**
      * 500ms後にurlで指定されているオブジェクトの位置にスクロールする。
      */
