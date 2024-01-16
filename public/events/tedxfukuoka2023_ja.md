@@ -20,19 +20,19 @@
 
 **下記の多彩なプレゼンターを予定**
 
-**坪内 知佳** - 船団丸経営者／ドラマ「ファーストペンギン」のモデル  
-**松清 一平** - 韓国人材マッチング/インバウンドマーケティング専門家  
-**平 希井** - 都市型循環生活デザイナー、LFC コンポストアドバイザー  
-**日野 公三** - インターネット高校創設者/教育改革者  
-**増本 衛** - エアモビリティ空路デザイナー  
-**しばた みなみ** - 描いてつくるヒト  
-**川村 みゆき** - 折り紙アーティスト、幾何学構造体／多面体を得意とする  
-**ヌレン アベディン** - 九州大学ユヌス&椎木ソーシャル•ビジネス研究センター学術研究員  
-**井上 良子** - 京都市ソーシャルイノベーション研究所リサーチャー／イノベーションコーディネーター  
-**小西 高之** - アイルランド伝統ステップダンスのシャン・ノース・ダンサー  
-**佐藤 拓史** - 医師  
-**葛原 辰夫** - 里山のコックさん  
-**石橋 芳子** - 感情学習(SEL/EQ)ワークショップ講師
+[**坪内 知佳**](/SpeakerList/Profile#/images/speakers/2023/chika-tsubouchi.webp) - 船団丸経営者／ドラマ「ファーストペンギン」のモデル  
+[**松清 一平**](/SpeakerList/Profile/#/images/speakers/2023/ippei-matsukiyo.webp) - 韓国人材マッチング/インバウンドマーケティング専門家  
+[**平 希井**](/SpeakerList/Profile/#/images/speakers/2023/kei-taira.webp) - 都市型循環生活デザイナー、LFC コンポストアドバイザー  
+[**日野 公三**](/SpeakerList/Profile/#/images/speakers/2023/kozo-hino.webp) - インターネット高校創設者/教育改革者  
+[**増本 衛**](/SpeakerList/Profile/#/images/speakers/2023/mamoru-masumoto.webp) - エアモビリティ空路デザイナー  
+[**しばた みなみ**](/SpeakerList/Profile/#/images/speakers/2023/minami-shibata.webp) - 描いてつくるヒト  
+[**川村 みゆき**](/SpeakerList/Profile/#/images/speakers/2023/miyuki-kawamura.webp) - 折り紙アーティスト、幾何学構造体／多面体を得意とする  
+[**ヌレン アベディン**](/SpeakerList/Profile/#/images/speakers/2023/nuren-abedin.webp) - 九州大学ユヌス&椎木ソーシャル•ビジネス研究センター学術研究員  
+[**井上 良子**](/SpeakerList/Profile/#/images/speakers/2023/ryoko-inoue.webp) - 京都市ソーシャルイノベーション研究所リサーチャー／イノベーションコーディネーター  
+[**小西 高之**](/SpeakerList/Profile/#/images/speakers/2023/takayuki-konishi.webp) - アイルランド伝統ステップダンスのシャン・ノース・ダンサー  
+[**佐藤 拓史**](/SpeakerList/Profile/#/images/speakers/2023/takushi-sato.webp) - 医師  
+[**葛原 辰夫**](/SpeakerList/Profile/#/images/speakers/2023/tatsuo-kuzuhara.webp) - 里山のコックさん  
+[**石橋 芳子**](/SpeakerList/Profile/#/images/speakers/2023/yoshiko-ishibashi.webp) - 感情学習(SEL/EQ)ワークショップ講師
 
 ぜひお早目にお申込みください。
 

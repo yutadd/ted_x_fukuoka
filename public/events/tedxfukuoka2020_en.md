@@ -14,17 +14,17 @@ will also be opportunities to discuss and interact with speakers and other parti
 
 **The speakers are as follows in alphabetical order:**
 
-**Anne Crescini** – Educator, Japanese-English language researcher  
-**Hideo Kinoshita** – Artist, shinto priest  
-**Hirokazu Okano** – OKANO Co., Ltd. President  
-**Justin Teoh** – Video marketing specialist  
-**Maharu Tashiro** – Professional kendama player  
-**Makoto Ayunaga** – The label-less Person  
-**Miki Igarashi** – Science edutainer, visiting researcher of the University of Tokyo  
-**Shinya Kiyokawa** – Sound designer, producer  
-**Shogo Ochiai** – Philosopher, hacktivist  
-**Shogo Shimura** – Psychiatrist, magician  
-**Tatsushi Momen** – Representative of KOO-KI, Video Director  
-**Yayoi Oguma** – Educational reformer  
-**Yumika,Yuriko Uno** – Nanohana Genki Project  
-**Yusuke Engeorge** - Saga Prefectural Government employee
+[**Anne Crescini**](/SpeakerList/Profile#/images/speakers/2020/justin-teoh-profile.webp) – Educator, Japanese-English language researcher  
+[**Hideo Kinoshita**](/SpeakerList/Profile#/images/speakers/2020/hideo-kinoshita.webp) – Artist, shinto priest  
+[**Hirokazu Okano**](/SpeakerList/Profile/#/images/speakers/2020/hirokazu-okano.webp) – OKANO Co., Ltd. President  
+[**Justin Teoh**](/SpeakerList/Profile/#/images/speakers/2020/justin-teoh-profile.webp) – Video marketing specialist  
+[**Maharu Tashiro**](/SpeakerList/Profile/#/images/speakers/2020/maharu-tashiro.webp) – Professional kendama player  
+[**Makoto Ayunaga**](/SpeakerList/Profile/#/images/speakers/2020/makoto-ayunaga.webp) – The label-less Person  
+[**Miki Igarashi**](/SpeakerList/Profile/#/images/speakers/2020/miki-igarashi.webp) – Science edutainer, visiting researcher of the University of Tokyo  
+[**Shinya Kiyokawa**](/SpeakerList/Profile/#/images/speakers/2020/shinya-kiyokawa.webp) – Sound designer, producer  
+[**Shogo Ochiai**](/SpeakerList/Profile/#/images/speakers/2020/shogo-ochiai.webp) – Philosopher, hacktivist  
+[**Shogo Shimura**](/SpeakerList/Profile/#/images/speakers/2020/shogo-shimura.webp) – Psychiatrist, magician  
+[**Tatsushi Momen**](/SpeakerList/Profile#/images/speakers/2020/tatsushi-momen.webp) – Representative of KOO-KI, Video Director  
+[**Yayoi Oguma**](/SpeakerList/Profile/#/images/speakers/2020/yayoi-oguma.webp) – Educational reformer  
+[**Yumika,Yuriko Uno**](/SpeakerList/Profile/#/images/speakers/2020/yumika-yuriko-uno.webp) – Nanohana Genki Project  
+[**Yusuke Engeorge**](/SpeakerList/Profile/#/images/speakers/2020/yusuke-engeorge.webp) - Saga Prefectural Government employee

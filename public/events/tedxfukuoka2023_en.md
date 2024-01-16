@@ -17,19 +17,19 @@ Cost: 5,000 Yen/Adult or 2,500 Yen/Student
 Youtube Stream url: https://youtube.com/live/SEG-UZNOF-4
 
 **Scheduled Speakers and Performers;**  
-**Chika Tsubouchi** - President of GHIBLI/Model for the drama "First Penguin”  
-**Ippei Matsukiyo** - Korean HR matching / inbound marketing specialist  
-**Kei Taira** - Urban Circular Lifestyle Designer/ LFC composting adviser  
-**Kozo Hino** - Founder of Internet High School/Education Innovator  
-**Mamoru Masumoto** - Drone(UAV) Airway Designer  
-**Minami Shibata** - Painter/creator  
-**Miyuki Kawamura** - Polyhedral and geometric-based origami artist  
-**Nuren Abedin** - Research Fellow, Yunus & Shiiki Social Business Research Center, Kyushu University  
-**Ryoko Inoue** - Innovation Coordinator/Researcher, Social Innovation Lab Kyoto  
-**Takayuki Konishi** - Irish Traditional Dance "Sean Nós" Dancer  
-**Takushi Sato** - Medical doctor  
-**Tatsuo Kuzuhara** - Cook on a Country Hill  
-**Yoshiko Ishibashi** - Social and Emotional Learning (SEL) ＆Emotional Intelligence workshop facilitator/trainer
+[**Chika Tsubouchi**](/SpeakerList/Profile#/images/speakers/2023/chika-tsubouchi.webp) - President of GHIBLI/Model for the drama "First Penguin”  
+[**Ippei Matsukiyo**](/SpeakerList/Profile/#/images/speakers/2023/ippei-matsukiyo.webp) - Korean HR matching / inbound marketing specialist  
+[**Kei Taira**](/SpeakerList/Profile/#/images/speakers/2023/kei-taira.webp) - Urban Circular Lifestyle Designer/ LFC composting adviser  
+[**Kozo Hino**](/SpeakerList/Profile/#/images/speakers/2023/kozo-hino.webp) - Founder of Internet High School/Education Innovator  
+[**Mamoru Masumoto**](/SpeakerList/Profile/#/images/speakers/2023/mamoru-masumoto.webp) - Drone(UAV) Airway Designer  
+[**Minami Shibata**](/SpeakerList/Profile/#/images/speakers/2023/minami-shibata.webp) - Painter/creator  
+[**Miyuki Kawamura**](/SpeakerList/Profile/#/images/speakers/2023/miyuki-kawamura.webp) - Polyhedral and geometric-based origami artist  
+[**Nuren Abedin**](/SpeakerList/Profile/#/images/speakers/2023/nuren-abedin.webp) - Research Fellow, Yunus & Shiiki Social Business Research Center, Kyushu University  
+[**Ryoko Inoue**](/SpeakerList/Profile/#/images/speakers/2023/ryoko-inoue.webp) - Innovation Coordinator/Researcher, Social Innovation Lab Kyoto  
+[**Takayuki Konishi**](/SpeakerList/Profile/#/images/speakers/2023/takayuki-konishi.webp) - Irish Traditional Dance "Sean Nós" Dancer  
+[**Takushi Sato**](/SpeakerList/Profile/#/images/speakers/2023/takushi-sato.webp) - Medical doctor  
+[**Tatsuo Kuzuhara** ](/SpeakerList/Profile/#/images/speakers/2023/tatsuo-kuzuhara.webp)- Cook on a Country Hill  
+[**Yoshiko Ishibashi**](/SpeakerList/Profile/#/images/speakers/2023/yoshiko-ishibashi.webp) - Social and Emotional Learning (SEL) ＆Emotional Intelligence workshop facilitator/trainer
 
 The TEDxFukuoka 2023 team is working hard to deliver an unforgettable show with captivating speakers and performers.
 

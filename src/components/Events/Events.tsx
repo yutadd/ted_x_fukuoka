@@ -40,14 +40,9 @@ export const Events = () => {
         if (context.recentlyLang) {
             for (const elm of context.recentlyLang["events"]) {
                 _events.push(
-                    elm["link"].startsWith("http") ?
                         <a key={elm["title"]} className="event-others-link" href={elm["link"]}>
                             {elm["title"]}
                         </a>
-                        :
-                        <Link key={elm["title"]} className="event-others-link" to={elm["link"]}>
-                            {elm["title"]}
-                        </Link>
                 )
             }
             setEvents(_events);
